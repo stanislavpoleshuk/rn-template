@@ -5,8 +5,8 @@ import {
     createBottomTabNavigator,
 } from '@react-navigation/bottom-tabs';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {HomeBottomNavigation} from "../../screen/home/home-bottom-navigation.component";
-import {HomeDrawer} from "../../screen/home/home-drawer.component";
+import {HomeBottomNavigation} from "../../../screen/home/home-bottom-navigation.component";
+import {HomeDrawer} from "../../../screen/home/home-drawer.component";
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
