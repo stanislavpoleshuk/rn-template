@@ -10,3 +10,5 @@ export class AppInfoService {
     return DeviceInfo.getBuildNumber();
   };
 }
+
+

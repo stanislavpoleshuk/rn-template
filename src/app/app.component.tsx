@@ -11,6 +11,7 @@ import {StatusBar} from "react-native";
 import {SplashImage} from "../core/components/common/splash-image.component";
 import {AppearanceProvider} from "react-native-appearance";
 import {AppNavigator} from "../core/navigation/app.navigator";
+import {ImageResources} from "../resources/images/imageResources";
 
 
 const loadingTasks: Task[] = [
@@ -51,7 +52,8 @@ const App = ({mapping, theme}): React.ReactElement => {
 const Splash = ({loading}: { loading: boolean }): React.ReactElement => (
     <SplashImage
         loading={loading}
-        source={require('../assets/images/image-splash.png')}
+        source={ImageResources.splash}
+
     />
 );
 

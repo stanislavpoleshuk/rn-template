@@ -16,6 +16,7 @@ import {BookIcon, GithubIcon} from "../../core/components/common/icons";
 import {AppInfoService} from "../../core/services/app-info.service";
 import {WebBrowserService} from "../../core/services/web-browser.service";
 import {SafeAreaLayout} from "../../core/components/common/safe-area-layout.component";
+import {ImageResources} from "../../resources/images/imageResources";
 
 
 const DATA: MenuItemType[] = [
@@ -49,7 +50,7 @@ export const HomeDrawer = ({ navigation }): DrawerElement => {
       <View style={styles.profileContainer}>
         <Avatar
           size='giant'
-          source={require('../../assets/images/image-app-icon.png')}
+          source={ImageResources.logo}
         />
         <Text
           style={styles.profileName}
