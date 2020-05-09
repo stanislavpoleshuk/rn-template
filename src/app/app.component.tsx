@@ -23,6 +23,7 @@ const defaultConfig: { mapping: Mapping, theme: Theme } = {
     mapping: 'eva',
     theme: 'light',
 };
+
 // @ts-ignore
 const App = ({mapping, theme}): React.ReactElement => {
     // @ts-ignore
@@ -53,7 +54,6 @@ const Splash = ({loading}: { loading: boolean }): React.ReactElement => (
     <SplashImage
         loading={loading}
         source={ImageResources.splash}
-
     />
 );
 

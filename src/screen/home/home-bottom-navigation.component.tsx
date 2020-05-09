@@ -4,6 +4,7 @@ import {BrandBottomNavigation} from "../../core/components/common/brand-bottom-n
 import {SafeAreaLayout} from "../../core/components/common/safe-area-layout.component";
 import {ColorPaletteIcon, LayoutIcon, StarOutlineIcon} from "../../core/components/common/icons";
 
+
 export const HomeBottomNavigation = (props): React.ReactElement => {
 
   const onSelect = (index: number): void => {
