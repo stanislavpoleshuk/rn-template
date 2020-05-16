@@ -37,7 +37,7 @@ export const LoadAssetsTask = (assets: number[]): Promise<TaskResult> => {
 };
 
 /**
- * Loads application configuration and returns content of the application when done.
+ * Loads application configuration and returns layouts of the application when done.
  *
  * @property {Task[]} tasks - Array of tasks to prepare application before it's loaded.
  * A single task should return a Promise with value and a by which this value is accessible.

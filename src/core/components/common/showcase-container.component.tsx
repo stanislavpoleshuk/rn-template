@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Divider, TopNavigation, TopNavigationAction } from '@ui-kitten/components';
-import { SafeAreaLayout, SafeAreaLayoutProps } from './safe-area-layout.component';
+import { SafeAreaLayout, SafeAreaLayoutProps } from '../layouts/safe-area-layout.component';
 import { Showcase } from './showcase.component';
 import { ShowcaseSettings } from './showcase-settings.component';
 import { Theme, ThemeContextValue, Theming } from '../services/theme.service';

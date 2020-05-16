@@ -15,7 +15,7 @@ import {
 import {BookIcon, GithubIcon} from "../../core/components/common/icons";
 import {AppInfoService} from "../../core/services/app-info.service";
 import {WebBrowserService} from "../../core/services/web-browser.service";
-import {SafeAreaLayout} from "../../core/components/common/safe-area-layout.component";
+import {SafeAreaLayout} from "../../core/components/layouts/safe-area-layout.component";
 import {ImageResources} from "../../resources/images/imageResources";
 
 

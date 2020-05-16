@@ -6,7 +6,7 @@ import {HistoryScreen} from "../../../screen/history/history.screen";
 const Stack = createStackNavigator();
 
 export const HistoryNavigation = (): React.ReactElement => (
-    <Stack.Navigator>
+    <Stack.Navigator headerMode={'none'}>
         <Stack.Screen name='History' component={HistoryScreen}/>
     </Stack.Navigator>
 )
