@@ -1,5 +1,7 @@
 export const tabsLocalization = {
   'ru': {
-    'auth': 'Вход',
+    'orders': 'Заказы',
+    'history': 'История',
+    'profile': 'Профиль',
   },
 };

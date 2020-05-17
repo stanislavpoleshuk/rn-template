@@ -35,7 +35,6 @@ const HomeTabsNavigator = (): React.ReactElement => (
         tabBar={props => <HomeBottomNavigation {...props} />}>
         <BottomTab.Screen name='MyOrders' component={MyOrdersNavigation}/>
         <BottomTab.Screen name='History' component={HistoryNavigation}/>
-        <BottomTab.Screen name='Notifications' component={NotificationsScreen}/>
         <BottomTab.Screen name='Profile' component={ProfileNavigation}/>
     </BottomTab.Navigator>
 );

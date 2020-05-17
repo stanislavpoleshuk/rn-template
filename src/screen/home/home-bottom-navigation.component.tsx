@@ -3,6 +3,7 @@ import {BottomNavigationTab, Divider} from '@ui-kitten/components';
 import {BrandBottomNavigation} from "../../core/components/common/brand-bottom-navigation.component";
 import {SafeAreaLayout} from "../../core/components/layouts/safe-area-layout.component";
 import {ColorPaletteIcon, LayoutIcon, StarOutlineIcon} from "../../core/components/common/icons";
+import {localization} from "../../core/localization";
 
 
 export const HomeBottomNavigation = (props): React.ReactElement => {
@@ -19,19 +20,15 @@ export const HomeBottomNavigation = (props): React.ReactElement => {
                 selectedIndex={props.state.index}
                 onSelect={onSelect}>
                 <BottomNavigationTab
-                    title='Orders'
+                    title={localization.tabs.orders}
                     icon={StarOutlineIcon}
                 />
                 <BottomNavigationTab
-                    title='History'
+                    title={localization.tabs.history}
                     icon={ColorPaletteIcon}
                 />
                 <BottomNavigationTab
-                    title='Notify'
-                    icon={LayoutIcon}
-                />
-                <BottomNavigationTab
-                    title='Profile'
+                    title={localization.tabs.profile}
                     icon={LayoutIcon}
                 />
             </BrandBottomNavigation>
