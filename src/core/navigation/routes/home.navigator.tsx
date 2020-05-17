@@ -10,16 +10,14 @@ import {HomeDrawer} from "../../../screen/home/home-drawer.component";
 import {ProfileNavigation} from "./profile.navigation";
 import {HistoryNavigation} from "./history.navigation";
 import {MyOrdersNavigation} from "./my-orders.navigation";
+import {NotificationsScreen} from "../../../screen/notifications/notifications.screen";
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
 
-const initialTabRoute: string = 'Layouts';
+const initialTabRoute: string = 'MyOrders';
 
-/*
- * Can we access it from `HomeNavigator`?
- */
-const ROOT_ROUTES: string[] = ['Home', 'Profile', 'MyOrders', 'History'];
+const ROOT_ROUTES: string[] = ['Home', 'MyOrders', 'History', 'Profile'];
 
 const isOneOfRootRoutes = (currentRoute: RouteProp<any, any>): boolean => {
     return ROOT_ROUTES.find(route => currentRoute.name === route) !== undefined;
@@ -35,15 +33,16 @@ const HomeTabsNavigator = (): React.ReactElement => (
         screenOptions={TabBarVisibleOnRootScreenOptions}
         initialRouteName={initialTabRoute}
         tabBar={props => <HomeBottomNavigation {...props} />}>
-        <BottomTab.Screen name='Profile' component={ProfileNavigation}/>
         <BottomTab.Screen name='MyOrders' component={MyOrdersNavigation}/>
         <BottomTab.Screen name='History' component={HistoryNavigation}/>
+        <BottomTab.Screen name='Notifications' component={NotificationsScreen}/>
+        <BottomTab.Screen name='Profile' component={ProfileNavigation}/>
     </BottomTab.Navigator>
 );
 
 export const HomeNavigator = (): React.ReactElement => (
     <Drawer.Navigator
-        screenOptions={{gestureEnabled: false}}
+        screenOptions={{gestureEnabled: true}}
         drawerContent={props => <HomeDrawer {...props}/>}>
         <Drawer.Screen name='Home' component={HomeTabsNavigator}/>
     </Drawer.Navigator>

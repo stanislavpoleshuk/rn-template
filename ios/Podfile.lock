@@ -182,7 +182,7 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
   - React-jsinspector (0.61.5)
-  - react-native-appearance (0.3.3):
+  - react-native-appearance (0.3.4):
     - React
   - react-native-safari-view (1.0.0):
     - React
@@ -225,15 +225,15 @@ PODS:
     - ReactCommon/jscallinvoker (= 0.61.5)
   - ReactNativeLocalization (2.1.6):
     - React
-  - RNCMaskedView (0.1.8):
+  - RNCMaskedView (0.1.10):
     - React
-  - RNDeviceInfo (5.5.5):
+  - RNDeviceInfo (5.5.7):
     - React
   - RNGestureHandler (1.6.1):
     - React
-  - RNReanimated (1.7.1):
+  - RNReanimated (1.8.0):
     - React
-  - RNScreens (2.4.0):
+  - RNScreens (2.7.0):
     - React
   - RNSVG (9.13.6):
     - React
@@ -371,7 +371,7 @@ SPEC CHECKSUMS:
   React-jsi: cb2cd74d7ccf4cffb071a46833613edc79cdf8f7
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
-  react-native-appearance: ff12122b6456efc29b3a22a3731eb54f7c291e69
+  react-native-appearance: fc2014516054585d531e07aa0b40ab0de1d2be85
   react-native-safari-view: 955d7160d159241b8e9395d12d10ea0ef863dcdd
   react-native-safe-area-context: 8260e5157617df4b72865f44006797f895b2ada7
   React-RCTActionSheet: 600b4d10e3aea0913b5a92256d2719c0cdd26d76
@@ -385,11 +385,11 @@ SPEC CHECKSUMS:
   React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
   ReactNativeLocalization: 9abfb1717d6c6f2e3a4e444c4402d52acbf784cc
-  RNCMaskedView: 5dfec94d82b2789c4ae452e15655ae2913cd7491
-  RNDeviceInfo: 59d3d9a0ac50adfc3a2d3c27bbbb4efc7ae8984c
+  RNCMaskedView: f5c7d14d6847b7b44853f7acb6284c1da30a3459
+  RNDeviceInfo: 498ccbf8b1361fe858581e3c1193ecee1a031e62
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
-  RNReanimated: 4e102df74a9674fa943e05f97f3362b6e44d0b48
-  RNScreens: b5c0e1b2b04512919e78bd3898e144a157ce2363
+  RNReanimated: 955cf4068714003d2f1a6e2bae3fb1118f359aff
+  RNScreens: cf198f915f8a2bf163de94ca9f5bfc8d326c3706
   RNSVG: 8ba35cbeb385a52fd960fd28db9d7d18b4c2974f
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 

@@ -6,21 +6,23 @@ import {ContentArea} from "../../core/components/layouts/content-area.component"
 import {StyleSheet} from "react-native";
 import {CommonStyle} from "../../core/theme/styles/common.styles";
 
-export const ProfileScreen = (props): React.ReactElement => {
+
+export const NotificationsScreen = (props): React.ReactElement => {
     return (
     <SafeAreaLayout
         style={styles.safeArea}
         insets={'top'}
     >
         <HeaderNavigation
-            title={'Мой профиль'}
+            title={'Что нового'}
         />
         <ContentArea>
-            <Text>Мой профиль</Text>
+            <Text>Что нового</Text>
         </ContentArea>
     </SafeAreaLayout>
     )
 }
+
 
 const styles = StyleSheet.create({
     safeArea: {

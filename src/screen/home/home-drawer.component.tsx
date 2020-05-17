@@ -24,8 +24,6 @@ const DATA: MenuItemType[] = [
   { title: 'Documentation', icon: BookIcon },
 ];
 
-const version: string = AppInfoService.getVersion();
-
 export const HomeDrawer = ({ navigation }): DrawerElement => {
 
   const onItemSelect = (index: number): void => {
