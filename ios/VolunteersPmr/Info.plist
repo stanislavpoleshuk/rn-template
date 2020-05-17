@@ -57,6 +57,15 @@
 	<array>
 		<string>opensans-regular.ttf</string>
 		<string>roboto-regular.ttf</string>
+		<string>opensans-bold-italic.ttf</string>
+		<string>opensans-bold.ttf</string>
+		<string>opensans-extra-bold-italic.ttf</string>
+		<string>opensans-extra-bold.ttf</string>
+		<string>opensans-italic.ttf</string>
+		<string>opensans-light.ttf</string>
+		<string>opensans-lignt-italic.ttf</string>
+		<string>opensans-semibold-italic.ttf</string>
+		<string>opensans-semibold.ttf</string>
 	</array>
 </dict>
 </plist>
