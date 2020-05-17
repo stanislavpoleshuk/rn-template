@@ -1,490 +1,324 @@
 import React from 'react';
-import {
-  ImageProps,
-  ImageStyle, ImageURISource,
-  StyleProp,
-} from 'react-native';
-import {
-  AssetIcon,
-  AssetIconElement,
-  IconSource,
-  RemoteIcon,
-} from './icon.component';
-import {Icon, IconElement} from "@ui-kitten/components";
-
-export const ArrowHeadDownIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='arrowhead-down'/>
-  );
-};
-
-export const ArrowHeadUpIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='arrowhead-up'/>
-  );
-};
-
-export const AttachIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='attach-2-outline'/>
-  );
-};
-
-export const AttachIconOutline= (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='attach-outline'/>
-  );
-};
-
-export const LogOutIconOutline= (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-      <Icon {...style} name='log-out-outline'/>
-  );
-};
-
-
-export const AlertCircleIconOutline= (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-      <Icon {...style} name='alert-circle-outline'/>
-  );
-};
-
-
-
-
-
-export const ArrowIosBackFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='arrow-ios-back'/>
-  );
-};
-
-export const ArrowIosDownwardOutlet = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='arrow-ios-downward-outline'/>
-  );
-};
-
-export const ArrowDownFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='arrow-down'/>
-  );
-};
-
-
-export const ArrowIosUpOutlet = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='chevron-up-outline'/>
-  );
-};
-
-
-export const AwardFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='award'/>
-  );
-};
-
-export const ArchiveOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='archive-outline'/>
-  );
-};
-
-export const BulbIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='bulb'/>
-  );
-};
-
-export const CameraIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='camera'/>
-  );
-};
-
-export const CameraIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='camera-outline'/>
-  );
-};
-
-
-export const CartIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='shopping-cart-outline'/>
-  );
-};
-
-export const CartIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='shopping-cart'/>
-  );
-};
-
-export const ClockIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='clock-outline'/>
-  );
-};
-
-export const CalendarIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='calendar-outline'/>
-  );
-};
-
-export const ClipboardIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='clipboard-outline'/>
-  );
-};
-
-export const CheckMarkIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='checkmark-outline'/>
-  );
-};
-
-export const MenuIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-      <Icon {...style} name='menu-outline'/>
-  );
-};
-
-
-
-
-export const BellIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='bell-outline'/>
-  );
-};
-
-export const EmailIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='email'/>
-  );
-};
-
-export const EyeOffIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='eye-off'/>
-  );
-};
-
-export const EyeIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='eye'/>
-  );
-};
-
-
-export const EyeOffIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='eye-off-outline'/>
-  );
-};
-
-export const EyeIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='eye-outline'/>
-  );
-};
-
-export const ColorPaletteIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='color-palette-outline'/>
-  );
-};
-
-export const ArrowForwardIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='arrow-forward-outline'/>
-  );
-};
-
-export const ArrowIosForwardIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='arrow-ios-forward-outline'/>
-  );
-};
-
-export const LinkedinIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='linkedin-outline'/>
-  );
-};
-
-export const GridIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='grid-outline'/>
-  );
-};
-
-export const InfoIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='info'/>
-  );
-};
-
-export const HeartIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='heart'/>
-  );
-};
-
-export const LayoutIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='layout-outline'/>
-  );
-};
-
-export const LockIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='lock'/>
-  );
-};
-
-export const MessageCircleIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='message-circle'/>
-  );
-};
-
-export const MessageCircleIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='message-circle-outline'/>
-  );
-};
-
-export const MoreHorizontalIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='more-horizontal'/>
-  );
-};
-
-export const PersonIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='person'/>
-  );
-};
-
-export const PersonIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='person-outline'/>
-  );
-};
-
-export const PhoneIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='phone'/>
-  );
-};
-
-export const PhoneIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='phone-outline'/>
-  );
-};
-
-
-export const PersonAddIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='person-add'/>
-  );
-};
-
-export const PinIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='pin'/>
-  );
-};
-
-export const PinIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='pin-outline'/>
-  );
-};
-
-export const PlusIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='plus'/>
-  );
-};
-
-export const MinusIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='minus'/>
-  );
-};
-
-export const SearchIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='search-outline'/>
-  );
-};
-
-export const ImageIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-      <Icon {...style} name='image-outline'/>
-  );
-};
-
-
-export const StarIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='star'/>
-  );
-};
-
-export const StarIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='star-outline'/>
-  );
-};
-
-export const FlashIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='flash-outline'/>
-  );
-};
-
-export const DoneAllIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='done-all-outline'/>
-  );
-};
-
-export const MoreVerticalIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='more-vertical'/>
-  );
-};
-
-export const CreditCardIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='credit-card'/>
-  );
-};
-
-export const CloseIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='close-outline'/>
-  );
-};
-
-export const CloseCircleIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='close-circle-outline'/>
-  );
-};
-
-export const MicIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='mic'/>
-  );
-};
-
-export const MinusIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='minus-outline'/>
-  );
-};
-
-export const PlusIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='plus-outline'/>
-  );
-};
-
-
-export const PaperPlaneIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='paper-plane'/>
-  );
-};
-
-export const ImageIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='image'/>
-  );
-};
-
-export const FileTextIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='file-text'/>
-  );
-};
-
-export const FileTextIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='file-text-outline'/>
-  );
-};
-
-export const MapIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='map'/>
-  );
-};
-
-export const PeopleIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='people'/>
-  );
-};
-
-export const PlayCircleIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='play-circle'/>
-  );
-};
-
-export const ShareIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='share-outline'/>
-  );
-};
-
-export const ListIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='list'/>
-  );
-};
-
-export const GoogleIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='google'/>
-  );
-};
-
-export const GlobeIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='globe'/>
-  );
-};
-
-export const FacebookIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='facebook'/>
-  );
-};
-
-export const TwitterIconFill = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='twitter'/>
-  );
-};
-
-export const SettingsIconOutline = (style: ImageStyle): IconElement<ImageProps> => {
-  return (
-    <Icon {...style} name='settings-outline'/>
-  );
-};
-
-
-export {
-  AssetIcon,
-  RemoteIcon,
-} from './icon.component';
+import { ImageStyle } from 'react-native';
+import { Icon, IconElement } from '@ui-kitten/components';
+
+export const ArrowIosBackIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='arrow-ios-back'/>
+);
+
+export const ArrowIosForwardIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='arrow-ios-forward'/>
+);
+
+export const BookIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='book'/>
+);
+
+export const BookmarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='bookmark'/>
+);
+
+export const BookmarkOutlineIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='bookmark-outline'/>
+);
+
+export const ColorPaletteIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='color-palette-outline'/>
+);
+
+export const CloseIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='close'/>
+);
+
+export const GithubIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='github'/>
+);
+
+export const GridIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='grid-outline'/>
+);
+
+export const LayoutIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='layout-outline'/>
+);
+
+export const ListIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='list'/>
+);
+
+export const MenuIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='menu'/>
+);
+
+export const MoreVerticalIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='more-vertical'/>
+);
+
+export const SearchIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='search'/>
+);
+
+export const SettingsIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='settings'/>
+);
+
+export const StarIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='star'/>
+);
+
+export const StarOutlineIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='star-outline'/>
+);
+
+export const TrashIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} name='trash'/>
+);
+
+export const AssetAuthIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='auth'/>
+);
+
+export const AssetAuthDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='auth-dark'/>
+);
+
+export const AssetSocialIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='social'/>
+);
+
+export const AssetSocialDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='social-dark'/>
+);
+
+export const AssetArticlesIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='articles'/>
+);
+
+export const AssetArticlesDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='articles-dark'/>
+);
+
+export const AssetMessagingIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='messaging'/>
+);
+
+export const AssetMessagingDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='messaging-dark'/>
+);
+
+export const AssetDashboardsIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='dashboards'/>
+);
+
+export const AssetDashboardsDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='dashboards-dark'/>
+);
+
+export const AssetEcommerceIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='ecommerce'/>
+);
+
+export const AssetEcommerceDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='ecommerce-dark'/>
+);
+
+export const AssetAutocompleteIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='autocomplete'/>
+);
+
+export const AssetAutocompleteDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='autocomplete-dark'/>
+);
+
+export const AssetAvatarIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='avatar'/>
+);
+
+export const AssetAvatarDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='avatar-dark'/>
+);
+
+export const AssetBottomNavigationIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='bottom-navigation'/>
+);
+
+export const AssetBottomNavigationDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='bottom-navigation-dark'/>
+);
+
+export const AssetButtonIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='button'/>
+);
+
+export const AssetButtonDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='button-dark'/>
+);
+
+export const AssetButtonGroupIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='button-group'/>
+);
+
+export const AssetButtonGroupDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='button-group-dark'/>
+);
+
+export const AssetCalendarIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='calendar'/>
+);
+
+export const AssetCalendarDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='calendar-dark'/>
+);
+
+export const AssetCardIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='card'/>
+);
+
+export const AssetCardDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='card-dark'/>
+);
+
+export const AssetCheckBoxIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='check-box'/>
+);
+
+export const AssetCheckBoxDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='check-box-dark'/>
+);
+
+export const AssetDatepickerIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='datepicker'/>
+);
+
+export const AssetDatepickerDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='datepicker-dark'/>
+);
+
+export const AssetDrawerIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='drawer'/>
+);
+
+export const AssetDrawerDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='drawer-dark'/>
+);
+
+export const AssetIconIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='icon'/>
+);
+
+export const AssetIconDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='icon-dark'/>
+);
+
+export const AssetInputIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='input'/>
+);
+
+export const AssetInputDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='input-dark'/>
+);
+
+export const AssetListIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='list'/>
+);
+
+export const AssetListDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='list-dark'/>
+);
+
+export const AssetMenuIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='menu'/>
+);
+
+export const AssetMenuDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='menu-dark'/>
+);
+
+export const AssetModalIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='modal'/>
+);
+
+export const AssetModalDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='modal-dark'/>
+);
+
+export const AssetOverflowMenuIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='overflow-menu'/>
+);
+
+export const AssetOverflowMenuDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='overflow-menu-dark'/>
+);
+
+export const AssetPopoverIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='popover'/>
+);
+
+export const AssetPopoverDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='popover-dark'/>
+);
+
+export const AssetRadioIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='radio'/>
+);
+
+export const AssetRadioDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='radio-dark'/>
+);
+
+export const AssetSelectIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='select'/>
+);
+
+export const AssetSelectDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='select-dark'/>
+);
+
+export const AssetSpinnerIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='spinner'/>
+);
+
+export const AssetSpinnerDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='spinner-dark'/>
+);
+
+export const AssetTabViewIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='tab-view'/>
+);
+
+export const AssetTabViewDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='tab-view-dark'/>
+);
+
+export const AssetTextIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='text'/>
+);
+
+export const AssetTextDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='text-dark'/>
+);
+
+export const AssetToggleIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='toggle'/>
+);
+
+export const AssetToggleDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='toggle-dark'/>
+);
+
+export const AssetTooltipIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='tooltip'/>
+);
+
+export const AssetTooltipDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='tooltip-dark'/>
+);
+
+export const AssetTopNavigationIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='top-navigation'/>
+);
+
+export const AssetTopNavigationDarkIcon = (style: ImageStyle): IconElement => (
+  <Icon {...style} pack='app' name='top-navigation-dark'/>
+);
+

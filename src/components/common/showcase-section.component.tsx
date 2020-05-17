@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, ViewProps } from 'react-native';
 import { Text, TextElement, TextProps } from '@ui-kitten/components';
 import { ShowcaseItem, ShowcaseItemProps } from './showcase-item.component';
-import { ComponentShowcaseItem, ComponentShowcaseSection } from '../model/showcase.model';
+import {ComponentShowcaseItem, ComponentShowcaseSection} from "../../core/models/layout/showcase.model";
 
 export interface ShowcaseSectionProps extends ViewProps {
   section: ComponentShowcaseSection;

@@ -7,10 +7,10 @@ import {
   OverflowMenu,
   OverflowMenuItemType,
 } from '@ui-kitten/components';
-import { ColorPaletteIcon, SettingsIcon, TrashIcon } from './icons';
-import { ComponentShowcaseSetting } from '../model/showcase.model';
-import { Theme } from '../services/theme.service';
-import { AppReloadService } from '../services/app-reload.service';
+import { ColorPaletteIcon, SettingsIcon, TrashIcon } from '../../resources/icons';
+import { Theme } from '../../core/services/theme.service';
+import { AppReloadService } from '../../core/services/app-reload.service';
+import {ComponentShowcaseSetting} from "../../core/models/layout/showcase.model";
 
 export interface ShowcaseSettingsProps extends ViewProps {
   themes?: Theme[];

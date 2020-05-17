@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dimensions, ListRenderItemInfo, StyleSheet } from 'react-native';
 import { Card, List, ListElement, ListItemElement, ListProps, Text } from '@ui-kitten/components';
-import { MenuItem } from '../model/menu-item.model';
+import {MenuItem} from "../../core/models/layout/menu.model";
 
 export interface MenuGridListProps extends Omit<ListProps, 'renderItem'> {
   data: MenuItem[];

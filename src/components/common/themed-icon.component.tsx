@@ -1,7 +1,7 @@
 import React from 'react';
 import { ImageStyle } from 'react-native';
 import { IconElement, IconProps } from '@ui-kitten/components';
-import { ThemeContextValue, Theming } from '../services/theme.service';
+import { ThemeContextValue, Theming } from '../../core/services/theme.service';
 
 export interface ThemedIconProps extends Omit<IconProps, 'name'> {
   light: (style: ImageStyle) => IconElement;

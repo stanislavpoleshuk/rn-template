@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, ViewProps } from 'react-native';
 import { Text, TextElement } from '@ui-kitten/components';
-import { ComponentShowcaseItem } from '../model/showcase.model';
+import {ComponentShowcaseItem} from "../../core/models/layout/showcase.model";
 
 export interface ShowcaseItemProps extends ViewProps {
   item: ComponentShowcaseItem;

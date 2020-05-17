@@ -12,10 +12,10 @@ import {
   MenuItemType,
   Text,
 } from '@ui-kitten/components';
-import {BookIcon, GithubIcon} from "../../core/components/common/icons";
+import {BookIcon, GithubIcon} from "../../resources/icons";
 import {AppInfoService} from "../../core/services/app-info.service";
 import {WebBrowserService} from "../../core/services/web-browser.service";
-import {SafeAreaLayout} from "../../core/components/layouts/safe-area-layout.component";
+import {SafeAreaLayout} from "../../components/layouts/safe-area-layout.component";
 import {ImageResources} from "../../resources/images/imageResources";
 
 

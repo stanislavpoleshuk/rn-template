@@ -8,7 +8,7 @@ import {AppIconsPack} from './app-icons-pack';
 import {AppStorage} from "../core/services/app-storage.service";
 import {Mapping, Theme, Theming} from "../core/services/theme.service";
 import {StatusBar} from "react-native";
-import {SplashImage} from "../core/components/common/splash-image.component";
+import {SplashImage} from "../components/common/splash-image.component";
 import {AppearanceProvider} from "react-native-appearance";
 import {AppNavigator} from "../core/navigation/app.navigator";
 import {ImageResources} from "../resources/images/imageResources";

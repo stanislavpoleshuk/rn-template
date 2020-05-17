@@ -1,7 +1,7 @@
 import React from "react";
 import {StyleSheet, View, ViewProps} from "react-native";
 import {StyledComponentProps} from "@ui-kitten/components";
-import {CommonStyle} from "../../theme/styles/common.styles";
+import {CommonStyle} from "../../core/theme/styles/common.styles";
 
 
 export interface ContentAreaProps extends ViewProps, StyledComponentProps {

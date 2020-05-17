@@ -1,11 +1,11 @@
 import React from "react";
-import {SafeAreaLayout} from "../../core/components/layouts/safe-area-layout.component";
+import {SafeAreaLayout} from "../../components/layouts/safe-area-layout.component";
 import {Text, TopNavigationAction} from "@ui-kitten/components";
 import {HeaderNavigation} from "../../core/navigation/components/header-navigation.component";
-import {ContentArea} from "../../core/components/layouts/content-area.component";
-import {StyleSheet} from "react-native";
+import {ContentArea} from "../../components/layouts/content-area.component";
+import {StyleSheet, View} from "react-native";
 import {CommonStyle} from "../../core/theme/styles/common.styles";
-import {MenuIcon} from "../../core/components/common/icons";
+import {MenuIcon} from "../../resources/icons";
 
 export const ProfileScreen = (props): React.ReactElement => {
 
@@ -16,6 +16,14 @@ export const ProfileScreen = (props): React.ReactElement => {
         />
     );
 
+    const notifications = (): React.ReactElement => (
+        <View>
+            <Text>
+                1
+            </Text>
+        </View>
+    )
+
     return (
     <SafeAreaLayout
         style={styles.safeArea}
@@ -24,6 +32,7 @@ export const ProfileScreen = (props): React.ReactElement => {
         <HeaderNavigation
             title={'Мой профиль'}
             leftControl={renderDrawerAction()}
+            rightControls={notifications()}
         />
         <ContentArea>
             <Text>Мой профиль</Text>

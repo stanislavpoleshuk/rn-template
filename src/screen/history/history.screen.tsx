@@ -1,11 +1,11 @@
 import React from "react";
 import {StyleSheet} from "react-native";
-import {SafeAreaLayout} from "../../core/components/layouts/safe-area-layout.component";
+import {SafeAreaLayout} from "../../components/layouts/safe-area-layout.component";
 import {Text, TopNavigationAction} from "@ui-kitten/components";
 import {CommonStyle} from "../../core/theme/styles/common.styles";
-import {ContentArea} from "../../core/components/layouts/content-area.component";
+import {ContentArea} from "../../components/layouts/content-area.component";
 import {HeaderNavigation} from "../../core/navigation/components/header-navigation.component";
-import {MenuIcon} from "../../core/components/common/icons";
+import {MenuIcon} from "../../resources/icons";
 
 
 export const HistoryScreen = (props): React.ReactElement => {

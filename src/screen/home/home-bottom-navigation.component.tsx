@@ -1,8 +1,8 @@
 import React from 'react';
 import {BottomNavigationTab, Divider} from '@ui-kitten/components';
-import {BrandBottomNavigation} from "../../core/components/common/brand-bottom-navigation.component";
-import {SafeAreaLayout} from "../../core/components/layouts/safe-area-layout.component";
-import {ColorPaletteIcon, LayoutIcon, StarOutlineIcon} from "../../core/components/common/icons";
+import {BrandBottomNavigation} from "../../components/common/brand-bottom-navigation.component";
+import {SafeAreaLayout} from "../../components/layouts/safe-area-layout.component";
+import {ColorPaletteIcon, LayoutIcon, StarOutlineIcon} from "../../resources/icons";
 import {localization} from "../../core/localization";
 
 

@@ -1,11 +1,11 @@
 import React from "react";
-import {SafeAreaLayout} from "../../core/components/layouts/safe-area-layout.component";
+import {SafeAreaLayout} from "../../components/layouts/safe-area-layout.component";
 import {Text, TopNavigationAction} from "@ui-kitten/components";
 import {HeaderNavigation} from "../../core/navigation/components/header-navigation.component";
-import {ContentArea} from "../../core/components/layouts/content-area.component";
+import {ContentArea} from "../../components/layouts/content-area.component";
 import {StyleSheet} from "react-native";
 import {CommonStyle} from "../../core/theme/styles/common.styles";
-import {MenuIcon} from "../../core/components/common/icons";
+import {MenuIcon} from "../../resources/icons";
 
 
 export const OrdersScreen = (props): React.ReactElement => {

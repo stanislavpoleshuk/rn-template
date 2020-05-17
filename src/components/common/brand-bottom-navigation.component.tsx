@@ -1,6 +1,6 @@
 import React from 'react';
 import { BottomNavigation, BottomNavigationProps, ThemeProvider } from '@ui-kitten/components';
-import {Theming} from "../../services/theme.service";
+import {Theming} from "../../core/services/theme.service";
 
 export const BrandBottomNavigation = (props: BottomNavigationProps): React.ReactElement => {
 
