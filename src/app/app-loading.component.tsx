@@ -83,7 +83,8 @@ export const AppLoading = (props: ApplicationLoaderProps): React.ReactElement =>
   };
 
   return (
-    <React.Fragment>
+    <React.Fragment
+    >
       {!loading && props.children(loadingResult)}
       {props.placeholder && props.placeholder({ loading })}
     </React.Fragment>

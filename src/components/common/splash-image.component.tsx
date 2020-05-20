@@ -1,18 +1,14 @@
 import React from 'react';
-import { ImageProps, NativeModules } from 'react-native';
+import { ImageProps} from 'react-native';
+import SplashScreen from "react-native-splash-screen";
 
 export interface LoadingAnimationProps extends ImageProps {
-  loading: boolean;
+    loading: boolean;
 }
 
 export const SplashImage = (props: LoadingAnimationProps): React.ReactElement | null => {
-
-  // if (!props.loading) {
-  //   NativeModules.SplashScreen.close({
-  //     animationType: 2,
-  //     duration: 500,
-  //   });
-  // }
-
-  return null;
+    if (!props.loading) {
+        SplashScreen.hide();
+    }
+    return null;
 };
