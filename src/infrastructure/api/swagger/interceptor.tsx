@@ -96,10 +96,10 @@ export class Interceptor {
                     });
                 });
                 const self = this;
-                let isAlreadyFetchingAccessToken = await await AsyncStorage.getItem(IS_ALREADY_FETCHING_ACCESS_TOKEN);
+                let isAlreadyFetchingAccessToken = await AsyncStorage.getItem(IS_ALREADY_FETCHING_ACCESS_TOKEN);
                 if (!isAlreadyFetchingAccessToken) {
                     isAlreadyFetchingAccessToken = "Error";
-                    await await AsyncStorage.setItem(IS_ALREADY_FETCHING_ACCESS_TOKEN, isAlreadyFetchingAccessToken);
+                    await AsyncStorage.setItem(IS_ALREADY_FETCHING_ACCESS_TOKEN, isAlreadyFetchingAccessToken);
 
                     const apiClient = new RequestRepository();
                     let newToken = null;
@@ -113,7 +113,7 @@ export class Interceptor {
                                 newToken = response.accessToken.token as string;
                                 await saveTokens(response.accessToken.token as string, response.refreshToken as string);
                                 error.response.config.headers['Authorization'] = 'Bearer ' + response.accessToken.token;
-                                await await AsyncStorage.removeItem(IS_ALREADY_FETCHING_ACCESS_TOKEN);
+                                await AsyncStorage.removeItem(IS_ALREADY_FETCHING_ACCESS_TOKEN);
                                 self.onAccessTokenFetched(newToken);
                             }
                         })
@@ -122,7 +122,7 @@ export class Interceptor {
                         });
                 } else {
                     await logOut();
-                    await await AsyncStorage.removeItem(IS_ALREADY_FETCHING_ACCESS_TOKEN);
+                    await AsyncStorage.removeItem(IS_ALREADY_FETCHING_ACCESS_TOKEN);
                 }
                 return retryOriginalRequest;
 
@@ -130,7 +130,7 @@ export class Interceptor {
 
         } catch (err) {
             await logOut();
-            await await AsyncStorage.removeItem(IS_ALREADY_FETCHING_ACCESS_TOKEN);
+            await AsyncStorage.removeItem(IS_ALREADY_FETCHING_ACCESS_TOKEN);
             return Promise.reject(err);
         }
     };
