@@ -7,7 +7,6 @@ import {StyleSheet} from "react-native";
 import {CommonStyle} from "../../core/theme/styles/common.styles";
 import {MenuIcon} from "../../resources/icons";
 
-
 export const OrdersScreen = (props): React.ReactElement => {
 
     const renderDrawerAction = (): React.ReactElement => (
@@ -16,7 +15,6 @@ export const OrdersScreen = (props): React.ReactElement => {
             onPress={props.navigation.toggleDrawer}
         />
     );
-
     return (
         <SafeAreaLayout
             style={styles.safeArea}
