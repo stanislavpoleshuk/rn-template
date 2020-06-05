@@ -22,6 +22,7 @@ export const OrdersScreen = (props): React.ReactElement => {
         >
             <HeaderNavigation
                 title={'Мои заказы'}
+                subtitle={'Automated Trading'}
                 leftControl={renderDrawerAction()}
             />
             <ContentArea>
@@ -34,6 +35,6 @@ export const OrdersScreen = (props): React.ReactElement => {
 
 const styles = StyleSheet.create({
     safeArea: {
-        ...CommonStyle.lightSafeArea
+        ...CommonStyle.safeArea
     }
 })

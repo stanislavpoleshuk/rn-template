@@ -21,7 +21,7 @@ const loadingTasks: Task[] = [
 
 const defaultConfig: { mapping: Mapping, theme: Theme } = {
     mapping: 'eva',
-    theme: 'light',
+    theme: 'dark',
 };
 
 // @ts-ignore

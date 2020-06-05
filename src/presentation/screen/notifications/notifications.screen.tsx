@@ -35,6 +35,6 @@ export const NotificationsScreen = (props): React.ReactElement => {
 
 const styles = StyleSheet.create({
     safeArea: {
-        ...CommonStyle.lightSafeArea
+        ...CommonStyle.safeArea
     }
 })

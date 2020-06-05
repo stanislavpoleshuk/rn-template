@@ -3,7 +3,6 @@ import {StyleSheet, View, ViewProps} from "react-native";
 import {CommonStyle} from "../../theme/styles/common.styles";
 import {TopNavigation, TopNavigationProps} from "@ui-kitten/components/ui/topNavigation/topNavigation.component";
 import {Divider} from "@ui-kitten/components";
-import {textStyle} from "../../theme/text-style.theme";
 
 
 export interface HeaderNavigationProps extends TopNavigationProps {

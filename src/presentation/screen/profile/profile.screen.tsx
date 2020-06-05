@@ -43,6 +43,6 @@ export const ProfileScreen = (props): React.ReactElement => {
 
 const styles = StyleSheet.create({
     safeArea: {
-        ...CommonStyle.lightSafeArea
+        ...CommonStyle.safeArea
     }
 })

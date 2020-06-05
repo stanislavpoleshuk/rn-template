@@ -35,6 +35,6 @@ export const HistoryScreen = (props): React.ReactElement => {
 
 const styles = StyleSheet.create({
     safeArea: {
-        ...CommonStyle.lightSafeArea
+        ...CommonStyle.safeArea
     }
 })
