@@ -20,14 +20,11 @@
     "paths": {
       "services/*": ["./application/services/*"],
       "domain/*": ["./domain/*"],
-      "hooks/*": ["./application/hooks/*"],
-      "config/*": ["./infrastructure/config/*"],
+      "localization/*": ["./infrastructure/localization/*"],
       "repositories/*": ["./infrastructure/repositories/*"],
-      "libs/*": ["./infrastructure/libs/*"],
       "components/*": ["./presentation/components/*"],
       "resources/*": ["./presentation/resources/*"],
       "screens/*": ["./presentation/screens/*"],
-      "localization/*": ["./presentation/core/localization/*"],
       "core/*": ["./presentation/core/*"]
     }
   },
