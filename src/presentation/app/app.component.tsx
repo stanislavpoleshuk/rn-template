@@ -5,13 +5,13 @@ import {EvaIconsPack} from '@ui-kitten/eva-icons';
 import {AppLoading, Task} from './app-loading.component';
 import {appMappings, appThemes} from './app-theming';
 import {AppIconsPack} from './app-icons-pack';
-import {AppStorage} from "../core/services/app-storage.service";
-import {Mapping, Theme, Theming} from "../core/services/theme.service";
+import {AppStorage} from "services/app-storage.service";
+import {Mapping, Theme, Theming} from "services/theme.service";
 import {StatusBar} from "react-native";
-import {SplashImage} from "../components/common/splash-image.component";
+import {SplashImage} from "components/common/splash-image.component";
 import {AppearanceProvider} from "react-native-appearance";
-import {AppNavigator} from "../core/navigation/app.navigator";
-import {ImageResources} from "../resources/images/imageResources";
+import {AppNavigator} from "core/navigation/app.navigator";
+import {ImageResources} from "resources/images/imageResources";
 
 
 const loadingTasks: Task[] = [
@@ -65,3 +65,4 @@ export default (): React.ReactElement => (
         {props => <App {...props}/>}
     </AppLoading>
 );
+

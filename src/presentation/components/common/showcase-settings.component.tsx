@@ -8,8 +8,8 @@ import {
   OverflowMenuItemType,
 } from '@ui-kitten/components';
 import { ColorPaletteIcon, SettingsIcon, TrashIcon } from '../../resources/icons';
-import { Theme } from '../../core/services/theme.service';
-import { AppReloadService } from '../../core/services/app-reload.service';
+import { Theme } from 'services/theme.service';
+import { AppReloadService } from 'services/app-reload.service';
 import {ComponentShowcaseSetting} from "../../core/models/layout/showcase.model";
 
 export interface ShowcaseSettingsProps extends ViewProps {

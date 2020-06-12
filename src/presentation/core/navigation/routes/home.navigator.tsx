@@ -1,48 +1,45 @@
 import React from 'react';
-import {RouteProp} from '@react-navigation/core';
 import {
-    BottomTabNavigationOptions,
     createBottomTabNavigator,
 } from '@react-navigation/bottom-tabs';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {HomeBottomNavigation} from "../../../screen/home/home-bottom-navigation.component";
-import {HomeDrawer} from "../../../screen/home/home-drawer.component";
-import {ProfileNavigation} from "./profile.navigation";
-import {HistoryNavigation} from "./history.navigation";
-import {MyOrdersNavigation} from "./my-orders.navigation";
-import {NotificationsScreen} from "../../../screen/notifications/notifications.screen";
+import {HomeBottomNavigation} from "screens/home/home-bottom-navigation.component";
+import {HomeDrawer} from "screens/home/home-drawer.component";
+import {SearchRobotsNavigation} from "./search-robots.navigation";
+import {createStackNavigator} from "@react-navigation/stack";
+import {RobotsScreen} from "screens/robots/robots.screen";
+import {SignalsScreen} from "screens/signals/signals.screen";
+import {NotificationsScreen} from "screens/notifications/notifications.screen";
+import {ProfileScreen} from "screens/profile/profile.screen";
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
+const Stack = createStackNavigator();
 
-const initialTabRoute: string = 'MyOrders';
-
-const ROOT_ROUTES: string[] = ['Home', 'MyOrders', 'History', 'Profile'];
-
-const isOneOfRootRoutes = (currentRoute: RouteProp<any, any>): boolean => {
-    return ROOT_ROUTES.find(route => currentRoute.name === route) !== undefined;
-};
-
-const TabBarVisibleOnRootScreenOptions = ({route}): BottomTabNavigationOptions => {
-    const currentRoute = route.state && route.state.routes[route.state.index];
-    return {tabBarVisible: currentRoute && isOneOfRootRoutes(currentRoute)};
-};
+const initialTabRoute: string = 'Home';
 
 const HomeTabsNavigator = (): React.ReactElement => (
     <BottomTab.Navigator
-        screenOptions={TabBarVisibleOnRootScreenOptions}
         initialRouteName={initialTabRoute}
         tabBar={props => <HomeBottomNavigation {...props} />}>
-        <BottomTab.Screen name='MyOrders' component={MyOrdersNavigation}/>
-        <BottomTab.Screen name='History' component={HistoryNavigation}/>
-        <BottomTab.Screen name='Profile' component={ProfileNavigation}/>
+        <BottomTab.Screen name='Robots' component={RobotsScreen}/>
+        <BottomTab.Screen name='Signals' component={SignalsScreen}/>
+        <BottomTab.Screen name='Notifications' component={NotificationsScreen}/>
+        <BottomTab.Screen name='Profile' component={ProfileScreen}/>
     </BottomTab.Navigator>
 );
 
-export const HomeNavigator = (): React.ReactElement => (
+export const HomeDrawerNavigator  = (): React.ReactElement => (
     <Drawer.Navigator
         screenOptions={{gestureEnabled: true}}
         drawerContent={props => <HomeDrawer {...props}/>}>
         <Drawer.Screen name='Home' component={HomeTabsNavigator}/>
     </Drawer.Navigator>
 );
+
+export const HomeNavigator = (): React.ReactElement => (
+    <Stack.Navigator headerMode={'none'}>
+        <Stack.Screen name="Home" component={HomeDrawerNavigator}/>
+        <Stack.Screen name='SearchRobots' component={SearchRobotsNavigation}/>
+    </Stack.Navigator>
+)

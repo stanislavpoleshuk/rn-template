@@ -1,6 +1,5 @@
 import React from "react";
 import {StyleSheet, Animated} from "react-native";
-import {CommonStyle} from "../../theme/styles/common.styles";
 
 interface BigTitleProps {
     y: number;

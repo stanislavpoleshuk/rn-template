@@ -254,6 +254,10 @@ export const AssetPopoverIcon = (style: ImageStyle): IconElement => (
   <Icon {...style} pack='app' name='popover'/>
 );
 
+export const AssetPlusIcon = (style: ImageStyle): IconElement => (
+    <Icon {...style} name='plus-outline'/>
+);
+
 export const AssetPopoverDarkIcon = (style: ImageStyle): IconElement => (
   <Icon {...style} pack='app' name='popover-dark'/>
 );
@@ -321,4 +325,19 @@ export const AssetTopNavigationIcon = (style: ImageStyle): IconElement => (
 export const AssetTopNavigationDarkIcon = (style: ImageStyle): IconElement => (
   <Icon {...style} pack='app' name='top-navigation-dark'/>
 );
+
+export const AssetTrendingUpIcon = (style: ImageStyle): IconElement => (
+    <Icon {...style} name='trending-up-outline'/>
+);
+
+export const AssetBellIcon = (style: ImageStyle): IconElement => (
+    <Icon {...style} name='bell-outline'/>
+);
+
+export const AssetPersonIcon = (style: ImageStyle): IconElement => (
+    <Icon {...style} name='person-outline'/>
+);
+
+
+
 

@@ -1,4 +1,4 @@
-import {styleSheetCreate, styleSheetFlatten} from "../../utilities/style-sheet.utility";
+import {styleSheetCreate, styleSheetFlatten} from "core/utilities/style-sheet.utility";
 
 export const CommonStyle = styleSheetCreate({
     safeArea: {
