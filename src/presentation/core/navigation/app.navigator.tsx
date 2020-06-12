@@ -2,9 +2,7 @@ import React from 'react';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { HomeNavigator } from './routes/home.navigator';
 
-/*
- * Navigation theming: https://reactnavigation.org/docs/en/next/themes.html
- */
+
 const navigatorTheme = {
   ...DefaultTheme,
   colors: {

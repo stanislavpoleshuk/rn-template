@@ -3,7 +3,7 @@ import {FlatList, StyleSheet} from "react-native";
 import {SignalDto} from "domain/robots/signal.dto";
 import {RobotItem} from "components/ui/robots-items/robot-item";
 import {EmptyData} from "components/content/empty-data.container";
-import {localization} from "core/../../../../infrastructure/localization";
+import {localization} from "localization/index";
 
 type Props = {
     data: any;

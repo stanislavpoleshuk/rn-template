@@ -5,7 +5,6 @@ import {
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {HomeBottomNavigation} from "screens/home/home-bottom-navigation.component";
 import {HomeDrawer} from "screens/home/home-drawer.component";
-import {SearchRobotsNavigation} from "./search-robots.navigation";
 import {createStackNavigator} from "@react-navigation/stack";
 import {RobotsScreen} from "screens/robots/robots.screen";
 import {SignalsScreen} from "screens/signals/signals.screen";
@@ -40,6 +39,6 @@ export const HomeDrawerNavigator  = (): React.ReactElement => (
 export const HomeNavigator = (): React.ReactElement => (
     <Stack.Navigator headerMode={'none'}>
         <Stack.Screen name="Home" component={HomeDrawerNavigator}/>
-        <Stack.Screen name='SearchRobots' component={SearchRobotsNavigation}/>
+        {/*<Stack.Screen name='SearchRobots' component={SearchRobotsNavigation}/>*/}
     </Stack.Navigator>
 )

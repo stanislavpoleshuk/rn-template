@@ -1,6 +1,6 @@
 import React from "react";
 import {StyleSheet, View} from "react-native";
-import {SignalDto} from "../../../../domain/robots/signal.dto";
+import {SignalDto} from "domain/robots/signal.dto";
 
 type Props = {
     item: SignalDto;

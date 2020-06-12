@@ -10,7 +10,7 @@ import {
 import { ColorPaletteIcon, SettingsIcon, TrashIcon } from '../../resources/icons';
 import { Theme } from 'services/theme.service';
 import { AppReloadService } from 'services/app-reload.service';
-import {ComponentShowcaseSetting} from "../../core/models/layout/showcase.model";
+import {ComponentShowcaseSetting} from "core/models/layout/showcase.model";
 
 export interface ShowcaseSettingsProps extends ViewProps {
   themes?: Theme[];

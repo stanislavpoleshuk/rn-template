@@ -9,8 +9,8 @@ import {RouteProp} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
 import {RobotsStackParamList} from "core/navigation/routes/search-robots.navigation";
 import {DrawerActionProps} from "core/navigation/types/navigation-props";
-import {localization} from "core/../../../infrastructure/localization";
 import {AssetPlusIcon, MenuIcon} from "resources/icons";
+import {localization} from "localization/index";
 
 type RobotsScreenRouteProp = RouteProp<RobotsStackParamList, 'Robots'>;
 type RobotsScreenNavigationProp = StackNavigationProp<
@@ -35,7 +35,7 @@ export const RobotsScreen = (props: Props): React.ReactElement => {
     const renderAddRobotAction = (): React.ReactElement => (
         <TopNavigationAction
             icon={AssetPlusIcon}
-            onPress={() => props.navigation.navigate("SearchRobots")}
+            // onPress={() => props.navigation.navigate("SearchRobots")}
         />
     );
 

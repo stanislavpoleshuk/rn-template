@@ -6,7 +6,7 @@ import {ContentArea} from "components/layouts/content-area.component";
 import {StyleSheet} from "react-native";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {MenuIcon} from "resources/icons";
-import {localization} from "core/../../../infrastructure/localization";
+import {localization} from "localization/index";
 
 export const ProfileScreen = (props): React.ReactElement => {
 

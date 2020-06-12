@@ -6,7 +6,7 @@ import {CommonStyle} from "core/theme/styles/common.styles";
 import {ContentArea} from "components/layouts/content-area.component";
 import {HeaderNavigation} from "core/navigation/components/header-navigation.component";
 import {MenuIcon} from "resources/icons";
-import {localization} from "core/../../../infrastructure/localization";
+import {localization} from "localization/index";
 
 
 export const SignalsScreen = (props): React.ReactElement => {

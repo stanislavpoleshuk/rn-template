@@ -5,8 +5,8 @@ import { SafeAreaLayout, SafeAreaLayoutProps } from '../layouts/safe-area-layout
 import { Showcase } from './showcase.component';
 import { ShowcaseSettings } from './showcase-settings.component';
 import { Theme, ThemeContextValue, Theming } from 'services/theme.service';
-import { ArrowIosBackIcon } from '../../resources/icons';
-import {ComponentShowcase, ComponentShowcaseSetting} from "../../core/models/layout/showcase.model";
+import { ArrowIosBackIcon } from 'resources/icons';
+import {ComponentShowcase, ComponentShowcaseSetting} from "core/models/layout/showcase.model";
 
 interface ShowcaseContainerProps extends SafeAreaLayoutProps {
   showcase: ComponentShowcase;
