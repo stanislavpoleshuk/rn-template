@@ -339,5 +339,10 @@ export const AssetPersonIcon = (style: ImageStyle): IconElement => (
 );
 
 
+export const AssetMonIcon = (style: ImageStyle): IconElement => (
+    <Icon {...style} name='moon-outline'/>
+);
+
+
 
 
