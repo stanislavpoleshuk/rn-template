@@ -1,5 +1,5 @@
-import {styleSheetCreate} from "core/utilities/style-sheet.utility";
 import {TextStyle} from "react-native";
+import {styleSheetCreate} from "../../../../infrastructure/utilities/style-sheet.utility";
 
 export const FontSize = styleSheetCreate({
     ultraSmall: {

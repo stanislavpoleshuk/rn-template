@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, TouchableOpacity, View} from 'react-native';
+import {Platform, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {
     Avatar,
     Divider,
@@ -19,6 +19,7 @@ import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
 import {ImageResources} from "resources/images/imageResources";
 import {FontSize} from "core/theme/styles/font.styles";
 import {ThemesChanger} from "screens/home/themes/themes-changer.component";
+import {Devices} from "../../../infrastructure/utilities/devices";
 
 
 const DATA: MenuItemType[] = [
@@ -109,11 +110,19 @@ const styles = StyleSheet.create({
         marginHorizontal: 16,
     },
     footer: {
+        paddingHorizontal: 16,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
+        ...Platform.select(
+            {
+                ios: {
+                    paddingBottom: Devices.isIphoneX() ? 25 : 10
+                }
+            }
+        )
     },
     versionText: {
-        ...FontSize.small,
+        ...FontSize.medium,
     }
 });

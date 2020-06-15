@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* VolunteersPmrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VolunteersPmrTests.m */; };
+		057113FBF7004996BD1E0A0E /* opensans-lignt-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2262ED755A6B4357A70341A9 /* opensans-lignt-italic.ttf */; };
+		0BE298793F6A469C91652FF5 /* opensans-extra-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA82D2A95596450CAF85CEB7 /* opensans-extra-bold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -19,29 +21,16 @@
 		459089494F0BF74B742556A2 /* libPods-VolunteersPmr-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C53ED6BD441D6D2C7B13C2E3 /* libPods-VolunteersPmr-tvOS.a */; };
 		62F425D752C4140AC5AC4995 /* libPods-VolunteersPmrTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D867F2E7747894ADD2F24A18 /* libPods-VolunteersPmrTests.a */; };
 		6EE984507217552571CA073F /* libPods-VolunteersPmr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4967DECE8412253E8BBF3F65 /* libPods-VolunteersPmr.a */; };
+		83D0D5C3C6A34963BBD2EB68 /* roboto-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5755EB044B54ACD33EF2 /* roboto-regular.ttf */; };
 		881FAFB2865AB456AFABF3E8 /* libPods-VolunteersPmr-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 983EB0E579222D563FE3A80D /* libPods-VolunteersPmr-tvOSTests.a */; };
-		9A91BD02E6DD4BA8B98719CE /* roboto-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D49B14F7F9254BCB86C2AC2B /* roboto-regular.ttf */; };
-		B17251A85F704AB69D4664AA /* opensans-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7B1F94453BE4BCD9C034024 /* opensans-regular.ttf */; };
-		1B6F20C2E98B4DED852E666C /* opensans-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C3ED5A1907E44D797CE826F /* opensans-bold-italic.ttf */; };
-		D3CC58055ED34722A655E740 /* opensans-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76B819CDC188401985C18ABC /* opensans-bold.ttf */; };
-		A0F8A1944499489283F03DB1 /* opensans-extra-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00070A637FE249B9BF164AE7 /* opensans-extra-bold-italic.ttf */; };
-		F82235274CF941E1A69C2C9A /* opensans-extra-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91791B61EF564273A953DDDC /* opensans-extra-bold.ttf */; };
-		3E1C42FB103B41C79D4C824B /* opensans-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12EB85F3CFD8443C838269B4 /* opensans-italic.ttf */; };
-		196E843DBB714FCAAA8EDC5D /* opensans-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D38BA407E27406F99117FF7 /* opensans-light.ttf */; };
-		3401EFB16EED45FCB783511D /* opensans-lignt-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 678F0FBD03A94992BFA13C22 /* opensans-lignt-italic.ttf */; };
-		88060BCE5BBF4F898812AAA5 /* opensans-semibold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C514521586C4F25AC666C29 /* opensans-semibold-italic.ttf */; };
-		BD3A1AFCBF9346D6BEEB9CB2 /* opensans-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5F8B715558844C984C2CC58 /* opensans-semibold.ttf */; };
-		B65B8289A6E444F0B7B27625 /* opensans-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD468A25659F4E5894269C0A /* opensans-bold-italic.ttf */; };
-		D415A6E81987402E9B00AD2E /* opensans-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A82BF451743542A5BF9F20AE /* opensans-bold.ttf */; };
-		D48D5AA1E6734B91BB510AB0 /* opensans-extra-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AB94A7262184723B3B307D1 /* opensans-extra-bold-italic.ttf */; };
-		B5426A05E9F34DBBA9761128 /* opensans-extra-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28E5D65B83E14EC79DB9DA46 /* opensans-extra-bold.ttf */; };
-		22F4C46BC9A241B99702BE17 /* opensans-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB769B6CB2145839234DD3B /* opensans-italic.ttf */; };
-		BEE43605FD7A419E92E7A38F /* opensans-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B65A84E76F4A46993CB300 /* opensans-light.ttf */; };
-		4816812F5E2A4C0585FE0591 /* opensans-lignt-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BD510947A384E6D89978648 /* opensans-lignt-italic.ttf */; };
-		EB1699DE046F4AFCAFA24D67 /* opensans-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21810AAC28C347958B8CA28D /* opensans-regular.ttf */; };
-		62AF5E102AB74E32A5FBFFB4 /* opensans-semibold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C43F52866D3147BF8EBC8DFA /* opensans-semibold-italic.ttf */; };
-		9C6DF788EC4C4027A2FC9AC2 /* opensans-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E46EEF4E76E44CBC86CF817C /* opensans-semibold.ttf */; };
-		90FAB5E4B475473F83B7079C /* roboto-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74A028647FE2423984D9E154 /* roboto-regular.ttf */; };
+		978B092D3B3C41D29AEF7792 /* opensans-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DECFE367DF44628BFABA055 /* opensans-bold.ttf */; };
+		A35F78DB439C4F98A165C85B /* opensans-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F377F315B56442C19A0D8623 /* opensans-semibold.ttf */; };
+		B9C2454E793842D083B63087 /* opensans-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00F23540AD3F4CCD899FF7FE /* opensans-italic.ttf */; };
+		C3104AC4551F4D59823AC3E8 /* opensans-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFDBB58C512F4E9C93A3DB9B /* opensans-bold-italic.ttf */; };
+		D602779DA24748EC9914D844 /* opensans-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E5D86CA34C845AAACE72D7F /* opensans-light.ttf */; };
+		D92D7EB712A3450A9AF3F4F0 /* opensans-extra-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC163A3A84904DA395769772 /* opensans-extra-bold-italic.ttf */; };
+		E895F51C41124E2089F7CDAD /* opensans-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A8DDA81319E49DEBD5552FA /* opensans-regular.ttf */; };
+		F8B65F4589204B1D9A3392DB /* opensans-semibold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB3D874E5B9145CABB0FD9C5 /* opensans-semibold-italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +55,7 @@
 		00E356EE1AD99517003FC87E /* VolunteersPmrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolunteersPmrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* VolunteersPmrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolunteersPmrTests.m; sourceTree = "<group>"; };
+		00F23540AD3F4CCD899FF7FE /* opensans-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-italic.ttf"; sourceTree = "<group>"; };
 		10733AF67FCBDCD09BCF7235 /* Pods-VolunteersPmr-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmr-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-VolunteersPmr-tvOSTests/Pods-VolunteersPmr-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* VolunteersPmr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolunteersPmr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = VolunteersPmr/AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +64,8 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = VolunteersPmr/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = VolunteersPmr/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = VolunteersPmr/main.m; sourceTree = "<group>"; };
+		1F5D5755EB044B54ACD33EF2 /* roboto-regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "roboto-regular.ttf"; path = "../src/presentation/resources/fonts/roboto-regular.ttf"; sourceTree = "<group>"; };
+		2262ED755A6B4357A70341A9 /* opensans-lignt-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-lignt-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-lignt-italic.ttf"; sourceTree = "<group>"; };
 		293D306E1A97D0E6A63461E7 /* Pods-VolunteersPmr-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmr-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-VolunteersPmr-tvOS/Pods-VolunteersPmr-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* VolunteersPmr-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VolunteersPmr-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* VolunteersPmr-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VolunteersPmr-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,36 +73,22 @@
 		4967DECE8412253E8BBF3F65 /* libPods-VolunteersPmr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolunteersPmr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		583CEEF8A926FBC1A554C84E /* Pods-VolunteersPmrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmrTests.debug.xcconfig"; path = "Target Support Files/Pods-VolunteersPmrTests/Pods-VolunteersPmrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E091078AF3AAB9B62DF08C0 /* Pods-VolunteersPmr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmr.release.xcconfig"; path = "Target Support Files/Pods-VolunteersPmr/Pods-VolunteersPmr.release.xcconfig"; sourceTree = "<group>"; };
+		7A8DDA81319E49DEBD5552FA /* opensans-regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-regular.ttf"; path = "../src/presentation/resources/fonts/opensans-regular.ttf"; sourceTree = "<group>"; };
 		7D7BD9BBCCBA0E9D6C5CB88E /* Pods-VolunteersPmrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmrTests.release.xcconfig"; path = "Target Support Files/Pods-VolunteersPmrTests/Pods-VolunteersPmrTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DECFE367DF44628BFABA055 /* opensans-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-bold.ttf"; path = "../src/presentation/resources/fonts/opensans-bold.ttf"; sourceTree = "<group>"; };
 		80E1AC771A718CAB7F566DCD /* Pods-VolunteersPmr-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmr-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-VolunteersPmr-tvOSTests/Pods-VolunteersPmr-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E5D86CA34C845AAACE72D7F /* opensans-light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-light.ttf"; path = "../src/presentation/resources/fonts/opensans-light.ttf"; sourceTree = "<group>"; };
 		983EB0E579222D563FE3A80D /* libPods-VolunteersPmr-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolunteersPmr-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D657105C690E676F277F79 /* Pods-VolunteersPmr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmr.debug.xcconfig"; path = "Target Support Files/Pods-VolunteersPmr/Pods-VolunteersPmr.debug.xcconfig"; sourceTree = "<group>"; };
-		B7B1F94453BE4BCD9C034024 /* opensans-regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-regular.ttf"; path = "../src/resources/fonts/opensans-regular.ttf"; sourceTree = "<group>"; };
 		C53ED6BD441D6D2C7B13C2E3 /* libPods-VolunteersPmr-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolunteersPmr-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D49B14F7F9254BCB86C2AC2B /* roboto-regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "roboto-regular.ttf"; path = "../src/resources/fonts/roboto-regular.ttf"; sourceTree = "<group>"; };
+		CC163A3A84904DA395769772 /* opensans-extra-bold-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-extra-bold-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-extra-bold-italic.ttf"; sourceTree = "<group>"; };
 		D867F2E7747894ADD2F24A18 /* libPods-VolunteersPmrTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolunteersPmrTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA82D2A95596450CAF85CEB7 /* opensans-extra-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-extra-bold.ttf"; path = "../src/presentation/resources/fonts/opensans-extra-bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		6C3ED5A1907E44D797CE826F /* opensans-bold-italic.ttf */ = {isa = PBXFileReference; name = "opensans-bold-italic.ttf"; path = "../src/resources/fonts/opensans-bold-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		76B819CDC188401985C18ABC /* opensans-bold.ttf */ = {isa = PBXFileReference; name = "opensans-bold.ttf"; path = "../src/resources/fonts/opensans-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		00070A637FE249B9BF164AE7 /* opensans-extra-bold-italic.ttf */ = {isa = PBXFileReference; name = "opensans-extra-bold-italic.ttf"; path = "../src/resources/fonts/opensans-extra-bold-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		91791B61EF564273A953DDDC /* opensans-extra-bold.ttf */ = {isa = PBXFileReference; name = "opensans-extra-bold.ttf"; path = "../src/resources/fonts/opensans-extra-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		12EB85F3CFD8443C838269B4 /* opensans-italic.ttf */ = {isa = PBXFileReference; name = "opensans-italic.ttf"; path = "../src/resources/fonts/opensans-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2D38BA407E27406F99117FF7 /* opensans-light.ttf */ = {isa = PBXFileReference; name = "opensans-light.ttf"; path = "../src/resources/fonts/opensans-light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		678F0FBD03A94992BFA13C22 /* opensans-lignt-italic.ttf */ = {isa = PBXFileReference; name = "opensans-lignt-italic.ttf"; path = "../src/resources/fonts/opensans-lignt-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7C514521586C4F25AC666C29 /* opensans-semibold-italic.ttf */ = {isa = PBXFileReference; name = "opensans-semibold-italic.ttf"; path = "../src/resources/fonts/opensans-semibold-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F5F8B715558844C984C2CC58 /* opensans-semibold.ttf */ = {isa = PBXFileReference; name = "opensans-semibold.ttf"; path = "../src/resources/fonts/opensans-semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FD468A25659F4E5894269C0A /* opensans-bold-italic.ttf */ = {isa = PBXFileReference; name = "opensans-bold-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-bold-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A82BF451743542A5BF9F20AE /* opensans-bold.ttf */ = {isa = PBXFileReference; name = "opensans-bold.ttf"; path = "../src/presentation/resources/fonts/opensans-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0AB94A7262184723B3B307D1 /* opensans-extra-bold-italic.ttf */ = {isa = PBXFileReference; name = "opensans-extra-bold-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-extra-bold-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		28E5D65B83E14EC79DB9DA46 /* opensans-extra-bold.ttf */ = {isa = PBXFileReference; name = "opensans-extra-bold.ttf"; path = "../src/presentation/resources/fonts/opensans-extra-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CAB769B6CB2145839234DD3B /* opensans-italic.ttf */ = {isa = PBXFileReference; name = "opensans-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A6B65A84E76F4A46993CB300 /* opensans-light.ttf */ = {isa = PBXFileReference; name = "opensans-light.ttf"; path = "../src/presentation/resources/fonts/opensans-light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4BD510947A384E6D89978648 /* opensans-lignt-italic.ttf */ = {isa = PBXFileReference; name = "opensans-lignt-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-lignt-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		21810AAC28C347958B8CA28D /* opensans-regular.ttf */ = {isa = PBXFileReference; name = "opensans-regular.ttf"; path = "../src/presentation/resources/fonts/opensans-regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C43F52866D3147BF8EBC8DFA /* opensans-semibold-italic.ttf */ = {isa = PBXFileReference; name = "opensans-semibold-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-semibold-italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E46EEF4E76E44CBC86CF817C /* opensans-semibold.ttf */ = {isa = PBXFileReference; name = "opensans-semibold.ttf"; path = "../src/presentation/resources/fonts/opensans-semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		74A028647FE2423984D9E154 /* roboto-regular.ttf */ = {isa = PBXFileReference; name = "roboto-regular.ttf"; path = "../src/presentation/resources/fonts/roboto-regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F377F315B56442C19A0D8623 /* opensans-semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-semibold.ttf"; path = "../src/presentation/resources/fonts/opensans-semibold.ttf"; sourceTree = "<group>"; };
+		FB3D874E5B9145CABB0FD9C5 /* opensans-semibold-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-semibold-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-semibold-italic.ttf"; sourceTree = "<group>"; };
+		FFDBB58C512F4E9C93A3DB9B /* opensans-bold-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-bold-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-bold-italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +170,6 @@
 				583CEEF8A926FBC1A554C84E /* Pods-VolunteersPmrTests.debug.xcconfig */,
 				7D7BD9BBCCBA0E9D6C5CB88E /* Pods-VolunteersPmrTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,31 +189,19 @@
 		6A4B96EFDB884BF2981CB4D7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B7B1F94453BE4BCD9C034024 /* opensans-regular.ttf */,
-				D49B14F7F9254BCB86C2AC2B /* roboto-regular.ttf */,
-				6C3ED5A1907E44D797CE826F /* opensans-bold-italic.ttf */,
-				76B819CDC188401985C18ABC /* opensans-bold.ttf */,
-				00070A637FE249B9BF164AE7 /* opensans-extra-bold-italic.ttf */,
-				91791B61EF564273A953DDDC /* opensans-extra-bold.ttf */,
-				12EB85F3CFD8443C838269B4 /* opensans-italic.ttf */,
-				2D38BA407E27406F99117FF7 /* opensans-light.ttf */,
-				678F0FBD03A94992BFA13C22 /* opensans-lignt-italic.ttf */,
-				7C514521586C4F25AC666C29 /* opensans-semibold-italic.ttf */,
-				F5F8B715558844C984C2CC58 /* opensans-semibold.ttf */,
-				FD468A25659F4E5894269C0A /* opensans-bold-italic.ttf */,
-				A82BF451743542A5BF9F20AE /* opensans-bold.ttf */,
-				0AB94A7262184723B3B307D1 /* opensans-extra-bold-italic.ttf */,
-				28E5D65B83E14EC79DB9DA46 /* opensans-extra-bold.ttf */,
-				CAB769B6CB2145839234DD3B /* opensans-italic.ttf */,
-				A6B65A84E76F4A46993CB300 /* opensans-light.ttf */,
-				4BD510947A384E6D89978648 /* opensans-lignt-italic.ttf */,
-				21810AAC28C347958B8CA28D /* opensans-regular.ttf */,
-				C43F52866D3147BF8EBC8DFA /* opensans-semibold-italic.ttf */,
-				E46EEF4E76E44CBC86CF817C /* opensans-semibold.ttf */,
-				74A028647FE2423984D9E154 /* roboto-regular.ttf */,
+				FFDBB58C512F4E9C93A3DB9B /* opensans-bold-italic.ttf */,
+				7DECFE367DF44628BFABA055 /* opensans-bold.ttf */,
+				CC163A3A84904DA395769772 /* opensans-extra-bold-italic.ttf */,
+				DA82D2A95596450CAF85CEB7 /* opensans-extra-bold.ttf */,
+				00F23540AD3F4CCD899FF7FE /* opensans-italic.ttf */,
+				8E5D86CA34C845AAACE72D7F /* opensans-light.ttf */,
+				2262ED755A6B4357A70341A9 /* opensans-lignt-italic.ttf */,
+				7A8DDA81319E49DEBD5552FA /* opensans-regular.ttf */,
+				FB3D874E5B9145CABB0FD9C5 /* opensans-semibold-italic.ttf */,
+				F377F315B56442C19A0D8623 /* opensans-semibold.ttf */,
+				1F5D5755EB044B54ACD33EF2 /* roboto-regular.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -365,7 +330,13 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Q69PP6V889;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = Q69PP6V889;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -383,6 +354,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -413,28 +385,17 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				B17251A85F704AB69D4664AA /* opensans-regular.ttf in Resources */,
-				9A91BD02E6DD4BA8B98719CE /* roboto-regular.ttf in Resources */,
-				1B6F20C2E98B4DED852E666C /* opensans-bold-italic.ttf in Resources */,
-				D3CC58055ED34722A655E740 /* opensans-bold.ttf in Resources */,
-				A0F8A1944499489283F03DB1 /* opensans-extra-bold-italic.ttf in Resources */,
-				F82235274CF941E1A69C2C9A /* opensans-extra-bold.ttf in Resources */,
-				3E1C42FB103B41C79D4C824B /* opensans-italic.ttf in Resources */,
-				196E843DBB714FCAAA8EDC5D /* opensans-light.ttf in Resources */,
-				3401EFB16EED45FCB783511D /* opensans-lignt-italic.ttf in Resources */,
-				88060BCE5BBF4F898812AAA5 /* opensans-semibold-italic.ttf in Resources */,
-				BD3A1AFCBF9346D6BEEB9CB2 /* opensans-semibold.ttf in Resources */,
-				B65B8289A6E444F0B7B27625 /* opensans-bold-italic.ttf in Resources */,
-				D415A6E81987402E9B00AD2E /* opensans-bold.ttf in Resources */,
-				D48D5AA1E6734B91BB510AB0 /* opensans-extra-bold-italic.ttf in Resources */,
-				B5426A05E9F34DBBA9761128 /* opensans-extra-bold.ttf in Resources */,
-				22F4C46BC9A241B99702BE17 /* opensans-italic.ttf in Resources */,
-				BEE43605FD7A419E92E7A38F /* opensans-light.ttf in Resources */,
-				4816812F5E2A4C0585FE0591 /* opensans-lignt-italic.ttf in Resources */,
-				EB1699DE046F4AFCAFA24D67 /* opensans-regular.ttf in Resources */,
-				62AF5E102AB74E32A5FBFFB4 /* opensans-semibold-italic.ttf in Resources */,
-				9C6DF788EC4C4027A2FC9AC2 /* opensans-semibold.ttf in Resources */,
-				90FAB5E4B475473F83B7079C /* roboto-regular.ttf in Resources */,
+				C3104AC4551F4D59823AC3E8 /* opensans-bold-italic.ttf in Resources */,
+				978B092D3B3C41D29AEF7792 /* opensans-bold.ttf in Resources */,
+				D92D7EB712A3450A9AF3F4F0 /* opensans-extra-bold-italic.ttf in Resources */,
+				0BE298793F6A469C91652FF5 /* opensans-extra-bold.ttf in Resources */,
+				B9C2454E793842D083B63087 /* opensans-italic.ttf in Resources */,
+				D602779DA24748EC9914D844 /* opensans-light.ttf in Resources */,
+				057113FBF7004996BD1E0A0E /* opensans-lignt-italic.ttf in Resources */,
+				E895F51C41124E2089F7CDAD /* opensans-regular.ttf in Resources */,
+				F8B65F4589204B1D9A3392DB /* opensans-semibold-italic.ttf in Resources */,
+				A35F78DB439C4F98A165C85B /* opensans-semibold.ttf in Resources */,
+				83D0D5C3C6A34963BBD2EB68 /* roboto-regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +641,10 @@
 			baseConfigurationReference = 583CEEF8A926FBC1A554C84E /* Pods-VolunteersPmrTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q69PP6V889;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -694,6 +659,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolunteersPmr.app/VolunteersPmr";
 			};
 			name = Debug;
@@ -703,7 +670,9 @@
 			baseConfigurationReference = 7D7BD9BBCCBA0E9D6C5CB88E /* Pods-VolunteersPmrTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Q69PP6V889;
 				INFOPLIST_FILE = VolunteersPmrTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -713,7 +682,10 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolunteersPmr.app/VolunteersPmr";
 			};
 			name = Release;
@@ -723,8 +695,11 @@
 			baseConfigurationReference = A5D657105C690E676F277F79 /* Pods-VolunteersPmr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = Q69PP6V889;
 				INFOPLIST_FILE = VolunteersPmr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -732,8 +707,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Volunteers999;
 				PRODUCT_NAME = VolunteersPmr;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -743,7 +719,10 @@
 			baseConfigurationReference = 5E091078AF3AAB9B62DF08C0 /* Pods-VolunteersPmr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q69PP6V889;
 				INFOPLIST_FILE = VolunteersPmr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -751,8 +730,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Volunteers999;
 				PRODUCT_NAME = VolunteersPmr;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
