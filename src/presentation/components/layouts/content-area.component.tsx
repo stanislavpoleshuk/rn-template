@@ -8,10 +8,10 @@ export interface ContentAreaProps extends ViewProps, StyledComponentProps {
     children?: React.ReactNode;
 }
 
-export class ContentArea  extends React.Component<ContentAreaProps> {
+export class ContentArea extends React.Component<ContentAreaProps> {
 
-    public render(){
-        const {...viewProps } = this.props;
+    public render() {
+        const {...viewProps} = this.props;
         return (
             <View
                 {...viewProps}
@@ -22,6 +22,7 @@ export class ContentArea  extends React.Component<ContentAreaProps> {
 
 const styles = StyleSheet.create({
     content: {
-        ...CommonStyle.content
+        ...CommonStyle.content,
+        flex: 1,
     }
 })

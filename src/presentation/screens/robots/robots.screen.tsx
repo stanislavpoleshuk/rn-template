@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
 import {Text, TopNavigationAction} from "@ui-kitten/components";
 import {HeaderNavigation} from "core/navigation/components/header-navigation.component";
 import {ContentArea} from "components/layouts/content-area.component";
-import {StyleSheet} from "react-native";
+import {StyleSheet, View} from "react-native";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {RouteProp} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
@@ -11,6 +11,8 @@ import {RobotsStackParamList} from "core/navigation/routes/search-robots.navigat
 import {DrawerActionProps} from "core/navigation/types/navigation-props";
 import {AssetPlusIcon, MenuIcon} from "resources/icons";
 import {localization} from "localization/index";
+import {RobotsContainer} from "screens/robots/robots.container";
+import {Backdrop} from "components/backdrop/backdrop";
 
 type RobotsScreenRouteProp = RouteProp<RobotsStackParamList, 'Robots'>;
 type RobotsScreenNavigationProp = StackNavigationProp<
@@ -39,6 +41,8 @@ export const RobotsScreen = (props: Props): React.ReactElement => {
         />
     );
 
+
+
     return (
         <SafeAreaLayout
             style={styles.safeArea}
@@ -50,9 +54,8 @@ export const RobotsScreen = (props: Props): React.ReactElement => {
                 leftControl={renderDrawerAction()}
                 rightControls={renderAddRobotAction()}
             />
-            <ContentArea>
-                <Text>Мои заказы</Text>
-            </ContentArea>
+            <RobotsContainer
+            />
         </SafeAreaLayout>
     )
 }
