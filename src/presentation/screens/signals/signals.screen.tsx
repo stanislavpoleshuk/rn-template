@@ -7,6 +7,7 @@ import {ContentArea} from "components/layouts/content-area.component";
 import {HeaderNavigation} from "core/navigation/components/header-navigation.component";
 import {MenuIcon} from "resources/icons";
 import {localization} from "localization/index";
+import MapView from "react-native-yandex-mapkit";
 
 
 export const SignalsScreen = (props): React.ReactElement => {
@@ -16,7 +17,6 @@ export const SignalsScreen = (props): React.ReactElement => {
             onPress={props.navigation.toggleDrawer}
         />
     );
-
 
     return (
         <SafeAreaLayout
@@ -30,6 +30,9 @@ export const SignalsScreen = (props): React.ReactElement => {
             />
             <ContentArea>
                 <Text>Profile</Text>
+                <MapView
+
+                />
             </ContentArea>
         </SafeAreaLayout>
     );
