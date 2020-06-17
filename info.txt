@@ -1,59 +1,5 @@
-Unable to resolve module `next/head` from `node_modules/next-with-apollo/lib/withApollo.js`: next/head could not be found within the project.
 
-If you are sure the module exists, try these steps:
  1. Clear watchman watches: watchman watch-del-all
  2. Delete node_modules: rm -rf node_modules and run yarn install
  3. Reset Metro's cache: yarn start --reset-cache
  4. Remove the cache: rm -rf /tmp/metro-*
-
-RCTFatal
-__28-[RCTCxxBridge handleError:]_block_invoke
-_dispatch_call_block_and_release
-_dispatch_client_callout
-_dispatch_main_queue_callback_4CF
-__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
-__CFRunLoopRun
-CFRunLoopRunSpecific
--[NSRunLoop(NSRunLoop) runMode:beforeDate:]
--[NSRunLoop(NSRunLoop) runUntilDate:]
-+[RNSplashScreen show]
--[AppDelegate application:didFinishLaunchingWithOptions:]
--[UIApplication _handleDelegateCallbacksWithOptions:isSuspended:restoreState:]
--[UIApplication _callInitializationDelegatesWithActions:forCanvas:payload:fromOriginatingProcess:]
--[UIApplication _runWithMainScene:transitionContext:completion:]
--[_UISceneLifecycleMultiplexer completeApplicationLaunchWithFBSScene:transitionContext:]
-_UIScenePerformActionsWithLifecycleActionMask
-__101-[_UISceneLifecycleMultiplexer _evalTransitionToSettings:fromSettings:forceExit:withTransitionStore:]_block_invoke
--[_UISceneLifecycleMultiplexer _performBlock:withApplicationOfDeactivationReasons:fromReasons:]
--[_UISceneLifecycleMultiplexer _evalTransitionToSettings:fromSettings:forceExit:withTransitionStore:]
--[_UISceneLifecycleMultiplexer uiScene:transitionedFromState:withTransitionContext:]
-__186-[_UIWindowSceneFBSSceneTransitionContextDrivenLifecycleSettingsDiffAction _performActionsForUIScene:withUpdatedFBSScene:settingsDiff:fromSettings:transitionContext:lifecycleActionType:]_block_invoke_2
-+[BSAnimationSettings(UIKit) tryAnimatingWithSettings:actions:completion:]
-_UISceneSettingsDiffActionPerformChangesWithTransitionContext
-__186-[_UIWindowSceneFBSSceneTransitionContextDrivenLifecycleSettingsDiffAction _performActionsForUIScene:withUpdatedFBSScene:settingsDiff:fromSettings:transitionContext:lifecycleActionType:]_block_invoke
-_UISceneSettingsDiffActionPerformActionsWithDelayForTransitionContext
--[_UIWindowSceneFBSSceneTransitionContextDrivenLifecycleSettingsDiffAction _performActionsForUIScene:withUpdatedFBSScene:settingsDiff:fromSettings:transitionContext:lifecycleActionType:]
-__64-[UIScene scene:didUpdateWithDiff:transitionContext:completion:]_block_invoke
--[UIScene _emitSceneSettingsUpdateResponseForCompletion:afterSceneUpdateWork:]
--[UIScene scene:didUpdateWithDiff:transitionContext:completion:]
--[UIApplication workspace:didCreateScene:withTransitionContext:completion:]
--[UIApplicationSceneClientAgent scene:didInitializeWithEvent:completion:]
--[FBSSceneImpl _callOutQueue_agent_didCreateWithTransitionContext:completion:]
-__86-[FBSWorkspaceScenesClient sceneID:createWithParameters:transitionContext:completion:]_block_invoke.154
--[FBSWorkspace _calloutQueue_executeCalloutFromSource:withBlock:]
-__86-[FBSWorkspaceScenesClient sceneID:createWithParameters:transitionContext:completion:]_block_invoke
-_dispatch_client_callout
-_dispatch_block_invoke_direct
-__FBSSERIALQUEUE_IS_CALLING_OUT_TO_A_BLOCK__
--[FBSSerialQueue _queue_performNextIfPossible]
--[FBSSerialQueue _performNextFromRunLoopSource]
-__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-__CFRunLoopDoSource0
-__CFRunLoopDoSources0
-__CFRunLoopRun
-CFRunLoopRunSpecific
-GSEventRunModal
-UIApplicationMain
-main
-start
-0x0

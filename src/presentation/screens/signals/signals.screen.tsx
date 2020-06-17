@@ -30,9 +30,9 @@ export const SignalsScreen = (props): React.ReactElement => {
             />
             <ContentArea>
                 <Text>Profile</Text>
-                <MapView
+                {/*<MapView*/}
 
-                />
+                {/*/>*/}
             </ContentArea>
         </SafeAreaLayout>
     );
