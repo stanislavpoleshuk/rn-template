@@ -45,7 +45,6 @@
     "react-native-yandex-mapkit": "git+https://github.com/svbutko/react-native-yandex-mapkit.git",
     "react-navigation-stack": "^2.5.0",
     "react-particles-js": "^2.7.0",
-    "reanimated-bottom-sheet": "^1.0.0-alpha.20",
     "recompose": "^0.30.0",
     "subscriptions-transport-ws": "^0.9.16"
   },
