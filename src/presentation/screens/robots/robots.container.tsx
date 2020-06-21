@@ -1,24 +1,46 @@
-import React from "react";
-import {Text} from "@ui-kitten/components";
 import {ContentArea} from "components/layouts/content-area.component";
-import {StyleSheet, View} from "react-native";
+import {Text} from "@ui-kitten/components";
+import {StyleSheet, TouchableOpacity} from "react-native";
+import React, {useRef} from "react";
+import {Portal} from "react-native-portalize";
+import {SearchAddressModal} from "screens/search-address/search-address.modal";
+import {Modalize} from "react-native-modalize";
+import {SearchAddressContainer} from "screens/search-address/search-address.container";
 
-type Props = {};
+type Props = {}
 
-export class RobotsContainer extends React.Component<Props> {
-    render(): React.ReactElement {
-        return (
-            <ContentArea style={styles.content}>
-                <Text>Мои заказы</Text>
+export const RobotsContainer = (props: Props): React.ReactElement => {
+    const modalizeRef = useRef<Modalize>(null);
 
-            </ContentArea>
-        )
-    }
+
+    const onOpen = () => {
+        console.log(modalizeRef, 'modalizeRef')
+        modalizeRef.current?.open();
+    };
+
+
+    return (
+        <ContentArea style={styles.content}>
+            <Text>Мои заказы</Text>
+
+            <TouchableOpacity onPress={onOpen}>
+                <Text>Open the modal</Text>
+            </TouchableOpacity>
+
+
+            <Portal>
+                <SearchAddressContainer
+                    ref={modalizeRef}
+                />
+            </Portal>
+
+        </ContentArea>
+    )
 }
 
 
 const styles = StyleSheet.create({
     content: {
-        flex: 1
+        // flex: 1
     },
 })

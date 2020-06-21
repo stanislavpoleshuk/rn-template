@@ -12,6 +12,7 @@ import {SplashImage} from "components/common/splash-image.component";
 import {AppearanceProvider} from "react-native-appearance";
 import {AppNavigator} from "core/navigation/app.navigator";
 import {ImageResources} from "resources/images/imageResources";
+import {Host} from 'react-native-portalize';
 
 
 const loadingTasks: Task[] = [
@@ -40,7 +41,9 @@ const App = ({mapping, theme}): React.ReactElement => {
                         <Theming.ThemeContext.Provider value={themeContext}>
                             <SafeAreaProvider>
                                 <StatusBar/>
-                                <AppNavigator/>
+                                <Host>
+                                    <AppNavigator/>
+                                </Host>
                             </SafeAreaProvider>
                         </Theming.ThemeContext.Provider>
                     </Theming.MappingContext.Provider>
@@ -49,6 +52,7 @@ const App = ({mapping, theme}): React.ReactElement => {
         </React.Fragment>
     );
 };
+
 
 const Splash = ({loading}: { loading: boolean }): React.ReactElement => (
     <SplashImage
