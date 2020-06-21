@@ -11,11 +11,11 @@ export interface ContentAreaProps extends ViewProps, StyledComponentProps {
 export class ContentArea extends React.Component<ContentAreaProps> {
 
     public render() {
-        const {...viewProps} = this.props;
+        const {style, ...viewProps} = this.props;
         return (
             <View
                 {...viewProps}
-                style={styles.content}/>
+                style={[styles.content, style]}/>
         )
     }
 }

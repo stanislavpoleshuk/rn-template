@@ -1,9 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
-import {Text, TopNavigationAction} from "@ui-kitten/components";
+import {TopNavigationAction} from "@ui-kitten/components";
 import {HeaderNavigation} from "core/navigation/components/header-navigation.component";
-import {ContentArea} from "components/layouts/content-area.component";
-import {StyleSheet, View} from "react-native";
+import {StyleSheet} from "react-native";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {RouteProp} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
@@ -12,7 +11,6 @@ import {DrawerActionProps} from "core/navigation/types/navigation-props";
 import {AssetPlusIcon, MenuIcon} from "resources/icons";
 import {localization} from "localization/index";
 import {RobotsContainer} from "screens/robots/robots.container";
-import {BottomSheet} from "components/bottom-sheet/bottom-sheet";
 
 type RobotsScreenRouteProp = RouteProp<RobotsStackParamList, 'Robots'>;
 type RobotsScreenNavigationProp = StackNavigationProp<
