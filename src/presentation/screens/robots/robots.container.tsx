@@ -1,19 +1,23 @@
 import {ContentArea} from "components/layouts/content-area.component";
-import {TouchableOpacity} from "react-native";
-import {Modalize} from "react-native-modalize";
 import {Text} from "@ui-kitten/components";
-import {StyleSheet} from "react-native";
+import {StyleSheet, TouchableOpacity} from "react-native";
 import React, {useRef} from "react";
+import {Portal} from "react-native-portalize";
+import {SearchAddressModal} from "screens/search-address/search-address.modal";
+import {Modalize} from "react-native-modalize";
+import {SearchAddressContainer} from "screens/search-address/search-address.container";
 
 type Props = {}
 
 export const RobotsContainer = (props: Props): React.ReactElement => {
-
     const modalizeRef = useRef<Modalize>(null);
 
+
     const onOpen = () => {
+        console.log(modalizeRef, 'modalizeRef')
         modalizeRef.current?.open();
     };
+
 
     return (
         <ContentArea style={styles.content}>
@@ -23,12 +27,12 @@ export const RobotsContainer = (props: Props): React.ReactElement => {
                 <Text>Open the modal</Text>
             </TouchableOpacity>
 
-            <Modalize
-                ref={modalizeRef}
-                snapPoint={350}
-            >
-                <Text>...your content</Text>
-            </Modalize>
+
+            <Portal>
+                <SearchAddressContainer
+                    ref={modalizeRef}
+                />
+            </Portal>
 
         </ContentArea>
     )
