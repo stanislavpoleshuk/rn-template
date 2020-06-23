@@ -7,7 +7,7 @@ import {ContentArea} from "components/layouts/content-area.component";
 import {HeaderNavigation} from "core/navigation/components/header-navigation.component";
 import {MenuIcon} from "resources/icons";
 import {localization} from "localization/index";
-import MapView from "react-native-yandex-mapkit";
+import {SignalsContainer} from "screens/signals/signals.container";
 
 
 export const SignalsScreen = (props): React.ReactElement => {
@@ -29,10 +29,7 @@ export const SignalsScreen = (props): React.ReactElement => {
                 leftControl={renderDrawerAction()}
             />
             <ContentArea>
-                <Text>Profile</Text>
-                {/*<MapView*/}
-
-                {/*/>*/}
+                <SignalsContainer/>
             </ContentArea>
         </SafeAreaLayout>
     );
