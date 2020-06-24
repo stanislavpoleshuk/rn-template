@@ -1,6 +1,5 @@
 import React from "react";
 import {ContentArea} from "components/layouts/content-area.component";
-import {Text} from "@ui-kitten/components";
 import {StyleSheet} from "react-native";
 import MapView from "react-native-yandex-mapkit";
 
@@ -12,9 +11,7 @@ export const SignalsContainer = (props: Props): React.ReactElement => {
 
     return (
         <ContentArea style={styles.content}>
-            <Text>Мои заказы</Text>
             <MapView style={styles.mapContainer}/>
-
         </ContentArea>
     )
 }
@@ -22,9 +19,10 @@ export const SignalsContainer = (props: Props): React.ReactElement => {
 
 const styles = StyleSheet.create({
     content: {
-        // flex: 1
+        paddingHorizontal: 0,
+        paddingVertical: 0
     },
     mapContainer: {
-
+        flex: 1
     }
 })

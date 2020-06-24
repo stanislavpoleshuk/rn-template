@@ -28,9 +28,7 @@ export const SignalsScreen = (props): React.ReactElement => {
                 subtitle={`Manual Trading`}
                 leftControl={renderDrawerAction()}
             />
-            <ContentArea>
-                <SignalsContainer/>
-            </ContentArea>
+            <SignalsContainer/>
         </SafeAreaLayout>
     );
 }
