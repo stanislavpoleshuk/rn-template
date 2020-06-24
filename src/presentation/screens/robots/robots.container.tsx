@@ -3,18 +3,15 @@ import {Text} from "@ui-kitten/components";
 import {StyleSheet, TouchableOpacity} from "react-native";
 import React, {useRef} from "react";
 import {Portal} from "react-native-portalize";
-import {SearchAddressModal} from "screens/search-address/search-address.modal";
 import {Modalize} from "react-native-modalize";
-import {SearchAddressContainer} from "screens/search-address/search-address.container";
+import {ExampleModalizeCustomize} from "components/modalize/components/examples/example-modalize-customize";
 
 type Props = {}
 
 export const RobotsContainer = (props: Props): React.ReactElement => {
     const modalizeRef = useRef<Modalize>(null);
 
-
     const onOpen = () => {
-        console.log(modalizeRef, 'modalizeRef')
         modalizeRef.current?.open();
     };
 
@@ -29,7 +26,7 @@ export const RobotsContainer = (props: Props): React.ReactElement => {
 
 
             <Portal>
-                <SearchAddressContainer
+                <ExampleModalizeCustomize
                     ref={modalizeRef}
                 />
             </Portal>

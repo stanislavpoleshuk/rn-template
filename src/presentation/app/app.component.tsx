@@ -13,7 +13,8 @@ import {AppearanceProvider} from "react-native-appearance";
 import {AppNavigator} from "core/navigation/app.navigator";
 import {ImageResources} from "resources/images/imageResources";
 import {Host} from 'react-native-portalize';
-
+import MapView from "react-native-yandex-mapkit";
+import { YANDEX_MAP_KIT_KEY } from 'react-native-dotenv';
 
 const loadingTasks: Task[] = [
     () => AppStorage.getMapping(defaultConfig.mapping).then(result => ['mapping', result]),
@@ -70,3 +71,4 @@ export default (): React.ReactElement => (
     </AppLoading>
 );
 
+MapView.setApiKey(YANDEX_MAP_KIT_KEY);

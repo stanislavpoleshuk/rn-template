@@ -24,6 +24,7 @@ module.exports = {
                     domain: './src/domain',
                     localization: './src/infrastructure/localization',
                     repositories: './src/infrastructure/repositories',
+                    infrastructure: './src/infrastructure',
                     components: './src/presentation/components',
                     resources: './src/presentation/resources',
                     screens: './src/presentation/screens',

@@ -22,6 +22,7 @@
       "domain/*": ["./domain/*"],
       "localization/*": ["./infrastructure/localization/*"],
       "repositories/*": ["./infrastructure/repositories/*"],
+      "infrastructure": ["./infrastructure/*"],
       "components/*": ["./presentation/components/*"],
       "resources/*": ["./presentation/resources/*"],
       "screens/*": ["./presentation/screens/*"],

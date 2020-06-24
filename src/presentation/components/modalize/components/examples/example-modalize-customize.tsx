@@ -1,15 +1,16 @@
 import {ContentArea} from "components/layouts/content-area.component";
-import {TouchableOpacity, View, Image} from "react-native";
-import {Modalize} from "react-native-modalize";
+import {View, Image} from "react-native";
 import {Button, Text, } from "@ui-kitten/components";
 import {StyleSheet} from "react-native";
-import React, {forwardRef, useEffect, useRef, useState} from "react";
+import React, {forwardRef, useRef} from "react";
 import faker from 'faker';
-import {useCombinedRefs} from "../../../infrastructure/utilities/use-combined-refs";
+import {Modalize} from "react-native-modalize";
+import {ModalizeTheme} from "components/modalize/extra/modalize-theme";
+import {useCombinedRefs} from "infrastructure/utilities/use-combined-refs";
 
 type Props = {}
 
-export const SearchAddressContainer = forwardRef((_, ref) => {
+export const ExampleModalizeCustomize = forwardRef((_, ref) => {
     const modalizeRef = useRef(null);
     const contentRef = useRef(null);
     const combinedRef = useCombinedRefs(ref, modalizeRef);
@@ -60,6 +61,7 @@ export const SearchAddressContainer = forwardRef((_, ref) => {
             contentRef={contentRef}
             HeaderComponent={renderHeader}
             snapPoint={350}
+            modalStyle={ModalizeTheme.getModalStyle()}
         >
             {renderContent()}
         </Modalize>
@@ -68,7 +70,6 @@ export const SearchAddressContainer = forwardRef((_, ref) => {
 
 const styles = StyleSheet.create({
     content: {
-        // flex: 1
     },
     modal__header: {
         paddingVertical: 15,
