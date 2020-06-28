@@ -243,7 +243,7 @@ PODS:
     - React
   - RNReanimated (1.9.0):
     - React
-  - RNScreens (2.8.0):
+  - RNScreens (2.9.0):
     - React
   - RNSVG (9.13.6):
     - React
@@ -424,7 +424,7 @@ SPEC CHECKSUMS:
   RNDeviceInfo: ab2ab4ca9e7f2bc4f35d62ab6ce2b66f2cbf1e7a
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
-  RNScreens: 62211832af51e0aebcf6e8c36bcf7dd65592f244
+  RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da
   RNSVG: 8ba35cbeb385a52fd960fd28db9d7d18b4c2974f
   YandexMapKit: 99644ba65a665b9e6985a1f6dccb8e305408a10c
   YandexMapKitDirections: e0dd847710a7a3153f92b526c7d10bf08601dfe7
