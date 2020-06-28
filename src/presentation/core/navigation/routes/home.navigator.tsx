@@ -38,6 +38,9 @@ export const HomeDrawerNavigator  = (): React.ReactElement => (
 
 export const HomeNavigator = (): React.ReactElement => (
     <Stack.Navigator headerMode={'none'}>
+        {/*<Stack.Screen name="Home" component={RobotsScreen}/>*/}
+
+
         <Stack.Screen name="Home" component={HomeDrawerNavigator}/>
         {/*<Stack.Screen name='SearchRobots' component={SearchRobotsNavigation}/>*/}
     </Stack.Navigator>

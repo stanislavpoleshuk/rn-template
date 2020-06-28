@@ -1,18 +1,14 @@
 import React from 'react';
-import {Platform, StyleSheet, TouchableOpacity, View} from 'react-native';
+import {Platform, StyleSheet, View} from 'react-native';
 import {
     Avatar,
     Divider,
     Drawer,
     DrawerElement,
-    DrawerHeaderElement,
-    DrawerHeaderFooter,
-    DrawerHeaderFooterElement,
     Layout,
-    MenuItemType,
     Text,
 } from '@ui-kitten/components';
-import {AssetMonIcon, BookIcon, GithubIcon} from "../../resources/icons";
+import {BookIcon, GithubIcon} from "../../resources/icons";
 import {AppInfoService} from "services/app-info.service";
 import {WebBrowserService} from "services/web-browser.service";
 import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
@@ -22,7 +18,7 @@ import {ThemesChanger} from "screens/home/themes/themes-changer.component";
 import {Devices} from "../../../infrastructure/utilities/devices";
 
 
-const DATA: MenuItemType[] = [
+const DATA = [
     {title: 'Libraries', icon: GithubIcon},
     {title: 'Documentation', icon: BookIcon},
 ];
@@ -44,7 +40,7 @@ export const HomeDrawer = ({navigation}): DrawerElement => {
         }
     };
 
-    const renderHeader = (): DrawerHeaderElement => (
+    const renderHeader = () => (
         <Layout
             style={styles.header}
             level='2'>
@@ -66,28 +62,24 @@ export const HomeDrawer = ({navigation}): DrawerElement => {
         <Text style={styles.versionText} appearance='hint'>{`Version ${AppInfoService.getVersion()}`}</Text>
     );
 
-    const renderFooter = (): DrawerHeaderFooterElement => (
+    const renderFooter = () => (
         <React.Fragment>
             <Divider/>
-            <DrawerHeaderFooter
-                disabled={true}
+            <View
                 style={styles.footer}
             >
                 <Version/>
                 <ThemesChanger/>
-            </DrawerHeaderFooter>
+            </View>
         </React.Fragment>
     );
 
     return (
         <SafeAreaLayout
-            style={styles.safeArea}
-            insets='top'>
+        >
             <Drawer
                 header={renderHeader}
                 footer={renderFooter}
-                data={DATA}
-                onSelect={onItemSelect}
             />
         </SafeAreaLayout>
     );

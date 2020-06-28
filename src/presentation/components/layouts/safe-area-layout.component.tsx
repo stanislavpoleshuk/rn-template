@@ -1,63 +1,52 @@
 import React from 'react';
-import { FlexStyle, View, ViewProps } from 'react-native';
-import { EdgeInsets, SafeAreaConsumer } from 'react-native-safe-area-context';
-import { styled, StyledComponentProps } from '@ui-kitten/components';
-
-interface InsetProvider {
-  toStyle: (insets: EdgeInsets, styles) => FlexStyle;
-}
-
-const INSETS: Record<string, InsetProvider> = {
-  top: {
-    toStyle: (insets: EdgeInsets, styles): FlexStyle => ({
-      ...styles,
-      paddingTop: insets.top,
-    }),
-  },
-  bottom: {
-    toStyle: (insets: EdgeInsets, styles): FlexStyle => ({
-      ...styles,
-      paddingBottom: insets.bottom,
-    }),
-  },
-};
+import {FlexStyle, SafeAreaView, StyleSheet, View, ViewStyle} from 'react-native';
+import {EdgeInsets, useSafeAreaInsets} from "react-native-safe-area-context";
+import {TopNavigationAction} from "@ui-kitten/components";
+import {MenuIcon} from "resources/icons";
 
 type Inset = 'top' | 'bottom';
 
-export interface SafeAreaLayoutProps extends ViewProps, StyledComponentProps {
-  insets?: Inset;
-  children?: React.ReactNode;
+type Props = {
+    children: React.ReactNode;
+    style?: ViewStyle;
+    insets?: Inset;
+};
+
+
+
+const insetsStyle = (insets?: Inset) => {
+    const INSETS = useSafeAreaInsets();
+    if (!insets) return {}
+    switch (insets) {
+        case "top":
+            return {
+                paddingTop: INSETS.top,
+            }
+        case "bottom":
+            return {
+                paddingBottom: INSETS.bottom,
+            }
+    }
 }
 
-export class SafeAreaLayoutComponent extends React.Component<SafeAreaLayoutProps> {
+export const SafeAreaLayout = ({children, insets}: Props): React.ReactElement => {
+    console.log(insetsStyle(insets), 'insetsStyle(insets)')
 
-  static styledComponentName: string = 'SafeAreaLayout';
 
-  public render(): React.ReactElement<ViewProps> {
-    return (
-      <SafeAreaConsumer>
-        {this.renderComponent}
-      </SafeAreaConsumer>
-    );
-  }
-
-  private createInsets = (insets: Inset | Inset[],
-                          safeAreaInsets: EdgeInsets,
-                          style): FlexStyle[] => {
-    return React.Children.map(insets, inset => INSETS[inset].toStyle(safeAreaInsets, style));
-  };
-
-  private renderComponent = (safeAreaInsets: EdgeInsets): React.ReactElement<ViewProps> => {
-    const { style, insets, themedStyle, ...viewProps } = this.props;
 
     return (
-      <View
-        {...viewProps}
-        style={[this.createInsets(insets, safeAreaInsets, themedStyle), style]}
-      />
+        <SafeAreaView
+            style={[styles.container, insetsStyle(insets)]}
+        >
+            {children}
+        </SafeAreaView>
     );
-  };
 }
 
-export const SafeAreaLayout = styled(SafeAreaLayoutComponent);
 
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: "space-between"
+    },
+})

@@ -9,14 +9,12 @@ import {StackNavigationProp} from "@react-navigation/stack";
 import {RobotsStackParamList} from "core/navigation/routes/search-robots.navigation";
 import {DrawerActionProps} from "core/navigation/types/navigation-props";
 import {AssetPlusIcon, MenuIcon} from "resources/icons";
-import {localization} from "localization/index";
 import {RobotsContainer} from "screens/robots/robots.container";
+import {localization} from "localization/index";
 
 type RobotsScreenRouteProp = RouteProp<RobotsStackParamList, 'Robots'>;
-type RobotsScreenNavigationProp = StackNavigationProp<
-    RobotsStackParamList,
-    'Robots'
-    >;
+type RobotsScreenNavigationProp = StackNavigationProp<RobotsStackParamList,
+    'Robots'>;
 
 type Props = {
     route: RobotsScreenRouteProp;
@@ -25,14 +23,15 @@ type Props = {
 
 export const RobotsScreen = (props: Props): React.ReactElement => {
 
-    const renderDrawerAction = (): React.ReactElement => (
+    const DrawerAction = () => (
         <TopNavigationAction
             icon={MenuIcon}
             onPress={props.navigation.toggleDrawer}
         />
     );
 
-    const renderAddRobotAction = (): React.ReactElement => (
+
+    const AddRobotAction = (): React.ReactElement => (
         <TopNavigationAction
             icon={AssetPlusIcon}
             // onPress={() => props.navigation.navigate("SearchRobots")}
@@ -40,17 +39,15 @@ export const RobotsScreen = (props: Props): React.ReactElement => {
     );
 
 
-
     return (
         <SafeAreaLayout
-            style={styles.safeArea}
-            insets={'top'}
+            insets={"top"}
         >
             <HeaderNavigation
                 title={localization.tabs.robots}
                 subtitle={'Automated Trading'}
-                leftControl={renderDrawerAction()}
-                rightControls={renderAddRobotAction()}
+                accessoryLeft={DrawerAction}
+                accessoryRight={AddRobotAction}
             />
             <RobotsContainer
             />
