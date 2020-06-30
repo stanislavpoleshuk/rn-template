@@ -45,7 +45,6 @@ const App = ({mapping, theme}): React.ReactElement => {
                                 <StatusBar/>
                                 <Host>
                                     <AppNavigator/>
-                                    {/*<RobotsScreen/>*/}
                                 </Host>
                             </SafeAreaProvider>
                         </Theming.ThemeContext.Provider>

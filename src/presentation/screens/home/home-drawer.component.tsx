@@ -76,6 +76,7 @@ export const HomeDrawer = ({navigation}): DrawerElement => {
 
     return (
         <SafeAreaLayout
+            style={styles.safeArea}
             insets={"top"}
         >
             <Drawer
@@ -104,16 +105,10 @@ const styles = StyleSheet.create({
     },
     footer: {
         paddingHorizontal: 16,
+        paddingVertical: 16,
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        ...Platform.select(
-            {
-                ios: {
-                    paddingBottom: Devices.isIphoneX() ? 25 : 10
-                }
-            }
-        )
+        justifyContent: 'space-between'
     },
     versionText: {
         ...FontSize.medium,

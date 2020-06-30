@@ -1,6 +1,6 @@
 import {StyleService, useStyleSheet} from "@ui-kitten/components";
-import React, {useState} from "react";
-import {ListRenderItemInfo, TouchableOpacity} from "react-native";
+import React from "react";
+import {TouchableOpacity} from "react-native";
 import {AssetMonIcon} from "resources/icons";
 import {appThemes} from "../../../app/app-theming";
 import {MappingContextValue, ThemeContextValue, Theming} from "services/theme.service";

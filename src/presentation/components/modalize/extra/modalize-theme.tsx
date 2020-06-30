@@ -10,7 +10,7 @@ export class ModalizeTheme {
         return {
             ...styles.modal,
             ...(
-                themeContext.currentTheme == 'dark' ?
+                themeContext.isDarkMode() ?
                     styles.dark : styles.light
             )
         };
