@@ -1,8 +1,6 @@
 import React from 'react';
-import {FlexStyle, SafeAreaView, StyleSheet, View, ViewStyle} from 'react-native';
-import {EdgeInsets, useSafeAreaInsets} from "react-native-safe-area-context";
-import {TopNavigationAction} from "@ui-kitten/components";
-import {MenuIcon} from "resources/icons";
+import {SafeAreaView, ViewStyle} from 'react-native';
+import {useSafeAreaInsets} from "react-native-safe-area-context";
 
 type Inset = 'top' | 'bottom';
 
@@ -11,8 +9,6 @@ type Props = {
     style?: ViewStyle;
     insets?: Inset;
 };
-
-
 
 const insetsStyle = (insets?: Inset) => {
     const INSETS = useSafeAreaInsets();
@@ -29,24 +25,12 @@ const insetsStyle = (insets?: Inset) => {
     }
 }
 
-export const SafeAreaLayout = ({children, insets}: Props): React.ReactElement => {
-    console.log(insetsStyle(insets), 'insetsStyle(insets)')
-
-
-
+export const SafeAreaLayout = ({children, insets, style}: Props): React.ReactElement => {
     return (
         <SafeAreaView
-            style={[styles.container, insetsStyle(insets)]}
+            style={[insetsStyle(insets), style]}
         >
             {children}
         </SafeAreaView>
     );
 }
-
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "space-between"
-    },
-})

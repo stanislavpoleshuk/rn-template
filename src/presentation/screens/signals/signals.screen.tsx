@@ -5,18 +5,20 @@ import {Text, TopNavigationAction} from "@ui-kitten/components";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {ContentArea} from "components/layouts/content-area.component";
 import {HeaderNavigation} from "core/navigation/components/header-navigation.component";
-import {MenuIcon} from "resources/icons";
+import {AssetPlusIcon, MenuIcon} from "resources/icons";
 import {localization} from "localization/index";
 import {SignalsContainer} from "screens/signals/signals.container";
 
 
 export const SignalsScreen = (props): React.ReactElement => {
-    const renderDrawerAction = (): React.ReactElement => (
+
+    const DrawerAction = () => (
         <TopNavigationAction
             icon={MenuIcon}
             onPress={props.navigation.toggleDrawer}
         />
     );
+
 
     return (
         <SafeAreaLayout
@@ -26,7 +28,7 @@ export const SignalsScreen = (props): React.ReactElement => {
             <HeaderNavigation
                 title={localization.tabs.signals}
                 subtitle={`Manual Trading`}
-                leftControl={renderDrawerAction()}
+                accessoryLeft={DrawerAction}
             />
             <SignalsContainer/>
         </SafeAreaLayout>

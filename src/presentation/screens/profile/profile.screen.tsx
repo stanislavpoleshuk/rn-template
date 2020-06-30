@@ -9,28 +9,19 @@ import {MenuIcon} from "resources/icons";
 import {localization} from "localization/index";
 
 export const ProfileScreen = (props): React.ReactElement => {
-
-    const renderDrawerAction = (): React.ReactElement => (
-        <TopNavigationAction
-            icon={MenuIcon}
-            onPress={props.navigation.toggleDrawer}
-        />
-    );
-
     return (
-    <SafeAreaLayout
-        style={styles.safeArea}
-        insets={'top'}
-    >
-        <HeaderNavigation
-            title={localization.tabs.profile}
-            subtitle={`Settings`}
-            leftControl={renderDrawerAction()}
-        />
-        <ContentArea>
-            <Text>Мой профиль</Text>
-        </ContentArea>
-    </SafeAreaLayout>
+        <SafeAreaLayout
+            style={styles.safeArea}
+            insets={'top'}
+        >
+            <HeaderNavigation
+                title={localization.tabs.profile}
+                subtitle={`Settings`}
+            />
+            <ContentArea>
+                <Text>Мой профиль</Text>
+            </ContentArea>
+        </SafeAreaLayout>
     )
 }
 
