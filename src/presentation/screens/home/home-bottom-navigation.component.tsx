@@ -9,15 +9,15 @@ import {
     StarOutlineIcon
 } from "../../resources/icons";
 
-
 export const HomeBottomNavigation = (props): React.ReactElement => {
 
     const onSelect = (index: number): void => {
         props.navigation.navigate(props.state.routeNames[index]);
     };
 
+
     return (
-        <SafeAreaLayout insets='bottom'>
+        <SafeAreaLayout insets='bottom' >
             <Divider/>
             <BrandBottomNavigation
                 appearance='noIndicator'

@@ -34,8 +34,8 @@ export const ThemesChanger = (): React.ReactElement => {
 
 const themedStyles = StyleService.create({
     moonIcon: {
-        width: 24,
-        height: 24,
+        width: 22,
+        height: 22,
         tintColor: 'color-basic-500'
     }
 })
