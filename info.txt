@@ -6,7 +6,7 @@
 
 
 Invariant Violation: Objects are not valid as a React child (found: object with keys {$$typeof, render, displayName, style, insets, children}). If you meant to render a collection of children, use an array instead.
-    in Unknown (at robots.screen.tsx:45)
+    in Unknown (at auth.modal.tsx:45)
     in RobotsScreen (at app.component.tsx:48)
     in RCTView
     in Unknown (at app.component.tsx:46)
@@ -30,7 +30,7 @@ Invariant Violation: Objects are not valid as a React child (found: object with 
     in AppContainer (at renderApplication.js:39)
 
 This error is located at:
-    in Unknown (at robots.screen.tsx:45)
+    in Unknown (at auth.modal.tsx:45)
     in RobotsScreen (at app.component.tsx:48)
     in RCTView
     in Unknown (at app.component.tsx:46)

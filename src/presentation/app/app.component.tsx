@@ -15,7 +15,6 @@ import {ImageResources} from "resources/images/imageResources";
 import {Host} from 'react-native-portalize';
 import MapView from "react-native-yandex-mapkit";
 import { YANDEX_MAP_KIT_KEY } from 'react-native-dotenv';
-import {RobotsScreen} from "screens/robots/robots.screen";
 
 const loadingTasks: Task[] = [
     () => AppStorage.getMapping(defaultConfig.mapping).then(result => ['mapping', result]),

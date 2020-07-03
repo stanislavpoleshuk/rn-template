@@ -1,14 +1,21 @@
 import React from 'react';
-import { BottomNavigation, BottomNavigationProps, ThemeProvider } from '@ui-kitten/components';
 import {Theming} from "services/theme.service";
+import {BottomNavigation, BottomNavigationProps, ThemeProvider} from "@ui-kitten/components";
+import {ViewStyle} from "react-native";
 
-export const BrandBottomNavigation = (props: BottomNavigationProps): React.ReactElement => {
+type ComponentStyle =  {
+    containerStyle?: ViewStyle;
+}
+
+type Type = BottomNavigationProps & ComponentStyle;
+
+export const BrandBottomNavigation = ({containerStyle, style, ...restProps}: Type): React.ReactElement => {
 
   const brandTheme = Theming.useTheme('brand');
 
   return (
     <ThemeProvider theme={brandTheme}>
-      <BottomNavigation {...props}/>
+      <BottomNavigation style={[containerStyle, style]} {...restProps}/>
     </ThemeProvider>
   );
 };

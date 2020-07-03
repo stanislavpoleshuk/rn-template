@@ -1,4 +1,4 @@
-import {ImageStyle, ImageURISource, StyleProp} from 'react-native';
+import {ImageURISource} from 'react-native';
 
 export class ImageResources {
   static readonly logo: ImageURISource = require('./source/logo.png');

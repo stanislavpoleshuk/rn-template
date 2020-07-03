@@ -1,13 +1,15 @@
 import React from 'react';
-import {BottomNavigationTab, Divider} from '@ui-kitten/components';
 import {BrandBottomNavigation} from "components/common/brand-bottom-navigation.component";
-import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
+import {InsetsStyle, SafeAreaLayout} from "components/layouts/safe-area-layout.component";
 import {
     AssetBellIcon,
     AssetPersonIcon,
     AssetTrendingUpIcon,
     StarOutlineIcon
 } from "../../resources/icons";
+import {StyleSheet} from "react-native";
+import {Colors} from "core/theme/colors.theme";
+import {BottomNavigationTab, Divider} from "@ui-kitten/components";
 
 export const HomeBottomNavigation = (props): React.ReactElement => {
 
@@ -17,11 +19,12 @@ export const HomeBottomNavigation = (props): React.ReactElement => {
 
 
     return (
-        <SafeAreaLayout insets='bottom' >
+        <React.Fragment>
             <Divider/>
             <BrandBottomNavigation
                 appearance='noIndicator'
                 selectedIndex={props.state.index}
+                containerStyle={InsetsStyle('bottom-outside')}
                 onSelect={onSelect}>
                 <BottomNavigationTab
                     icon={StarOutlineIcon}
@@ -36,6 +39,12 @@ export const HomeBottomNavigation = (props): React.ReactElement => {
                     icon={AssetPersonIcon}
                 />
             </BrandBottomNavigation>
-        </SafeAreaLayout>
+        </React.Fragment>
     );
 };
+
+
+const styles = StyleSheet.create({
+    bottomNavigation: {
+    },
+})

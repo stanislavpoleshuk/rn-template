@@ -46,7 +46,6 @@
     "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "^9.13.3",
     "react-native-yandex-mapkit": "git+https://github.com/svbutko/react-native-yandex-mapkit.git",
-    "react-navigation-stack": "^2.5.0",
     "react-particles-js": "^2.7.0",
     "recompose": "^0.30.0",
     "subscriptions-transport-ws": "^0.9.16"

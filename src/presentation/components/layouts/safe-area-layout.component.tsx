@@ -4,7 +4,7 @@ import {useSafeAreaInsets} from "react-native-safe-area-context";
 import {ThemeContextValue, Theming} from "services/theme.service";
 import {Colors} from "core/theme/colors.theme";
 
-type Inset = 'top' | 'bottom';
+type Inset = 'top' | 'bottom' | 'bottom-outside';
 
 type Props = {
     children: React.ReactNode;
@@ -12,7 +12,7 @@ type Props = {
     insets?: Inset;
 };
 
-const insetsStyle = (insets?: Inset) => {
+export const InsetsStyle = (insets?: Inset) => {
     const INSETS = useSafeAreaInsets();
     if (!insets) return {}
     switch (insets) {
@@ -23,6 +23,10 @@ const insetsStyle = (insets?: Inset) => {
         case "bottom":
             return {
                 paddingBottom: INSETS.bottom,
+            }
+        case "bottom-outside":
+            return {
+                marginBottom: INSETS.bottom,
             }
     }
 }
@@ -37,9 +41,10 @@ export const SafeAreaLayout = ({children, insets, style}: Props): React.ReactEle
         )
     } as FlexStyle;
 
+
     return (
         <SafeAreaView
-            style={[insetsStyle(insets), themes, style]}
+            style={[InsetsStyle(insets), themes, style]}
         >
             {children}
         </SafeAreaView>

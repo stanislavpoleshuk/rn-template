@@ -6,7 +6,7 @@ import {StyleSheet} from "react-native";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {RouteProp} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
-import {RobotsStackParamList} from "core/navigation/routes/search-robots.navigation";
+import {RobotsStackParamList} from "core/navigation/routes/robots.navigation";
 import {DrawerActionProps} from "core/navigation/types/navigation-props";
 import {AssetPlusIcon, MenuIcon} from "resources/icons";
 import {RobotsContainer} from "screens/robots/robots.container";
@@ -34,7 +34,7 @@ export const RobotsScreen = (props: Props): React.ReactElement => {
     const AddRobotAction = (): React.ReactElement => (
         <TopNavigationAction
             icon={AssetPlusIcon}
-            // onPress={() => props.navigation.navigate("SearchRobots")}
+            onPress={() => props.navigation.navigate("Auth")}
         />
     );
 

@@ -9,7 +9,6 @@ export interface LoadingAnimationProps extends ImageProps {
 export class SplashImage extends React.Component<LoadingAnimationProps> {
     constructor(props: LoadingAnimationProps) {
         super(props);
-        // SplashScreen.show();
     }
 
     render(): React.ReactElement | null {

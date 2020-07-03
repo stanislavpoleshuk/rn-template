@@ -10,6 +10,8 @@ import {RobotsScreen} from "screens/robots/robots.screen";
 import {SignalsScreen} from "screens/signals/signals.screen";
 import {NotificationsScreen} from "screens/notifications/notifications.screen";
 import {ProfileScreen} from "screens/profile/profile.screen";
+import {AuthNavigator} from "core/navigation/routes/auth.navigator";
+import {RobotsNavigation} from "core/navigation/routes/robots.navigation";
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -39,6 +41,6 @@ export const HomeDrawerNavigator  = (): React.ReactElement => (
 export const HomeNavigator = (): React.ReactElement => (
     <Stack.Navigator headerMode={'none'}>
         <Stack.Screen name="Home" component={HomeDrawerNavigator}/>
-        {/*<Stack.Screen name='SearchRobots' component={SearchRobotsNavigation}/>*/}
+        <Stack.Screen name='Auth' component={RobotsNavigation}/>
     </Stack.Navigator>
 )
