@@ -1,5 +1,5 @@
 import { ThemeItem } from './type';
-import {Mapping, Theme} from "services/theme.service";
+import {Mapping, Theme} from "application/app/theme.service";
 
 export class ThemesService {
 

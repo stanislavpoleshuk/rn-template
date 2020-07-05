@@ -20,7 +20,7 @@ module.exports = {
                     '.json',
                 ],
                 alias: {
-                    services: './src/application/services',
+                    application: './src/application',
                     domain: './src/domain',
                     localization: './src/infrastructure/localization',
                     repositories: './src/infrastructure/repositories',

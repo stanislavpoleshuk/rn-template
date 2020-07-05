@@ -1,4 +1,4 @@
-import {ThemeContextValue, Theming} from "services/theme.service";
+import {ThemeContextValue, Theming} from "application/app/theme.service";
 import React from "react";
 import {StyleSheet} from "react-native";
 import {Colors} from "core/theme/colors.theme";

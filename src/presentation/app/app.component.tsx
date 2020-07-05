@@ -1,20 +1,16 @@
 import React from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {ApplicationProvider, IconRegistry} from '@ui-kitten/components';
-import {EvaIconsPack} from '@ui-kitten/eva-icons';
 import {AppLoading, Task} from './app-loading.component';
-import {appMappings, appThemes} from './app-theming';
-import {AppIconsPack} from './app-icons-pack';
-import {AppStorage} from "services/app-storage.service";
-import {Mapping, Theme, Theming} from "services/theme.service";
-import {StatusBar} from "react-native";
 import {SplashImage} from "components/common/splash-image.component";
-import {AppearanceProvider} from "react-native-appearance";
 import {AppNavigator} from "core/navigation/app.navigator";
 import {ImageResources} from "resources/images/imageResources";
 import {Host} from 'react-native-portalize';
 import MapView from "react-native-yandex-mapkit";
-import { YANDEX_MAP_KIT_KEY } from 'react-native-dotenv';
+import {YANDEX_MAP_KIT_KEY} from 'react-native-dotenv';
+import {Mapping, Theme} from 'application/app/theme.service';
+import {AppStorage} from "application/app/app-storage.service";
+import {AppThemeComponent} from "./app-theme.component";
+import {StatusBar} from "components/common/status-bar.component";
 
 const loadingTasks: Task[] = [
     () => AppStorage.getMapping(defaultConfig.mapping).then(result => ['mapping', result]),
@@ -26,31 +22,19 @@ const defaultConfig: { mapping: Mapping, theme: Theme } = {
     theme: 'light',
 };
 
-// @ts-ignore
 const App = ({mapping, theme}): React.ReactElement => {
-    // @ts-ignore
-    const [mappingContext, currentMapping] = Theming.useMapping(appMappings, mapping);
-    // @ts-ignore
-    const [themeContext, currentTheme] = Theming.useTheming(appThemes, mapping, theme);
-
     return (
-        <React.Fragment>
-            <IconRegistry icons={[EvaIconsPack, AppIconsPack]}/>
-            <AppearanceProvider>
-                <ApplicationProvider {...currentMapping} theme={currentTheme}>
-                    <Theming.MappingContext.Provider value={mappingContext}>
-                        <Theming.ThemeContext.Provider value={themeContext}>
-                            <SafeAreaProvider>
-                                <StatusBar/>
-                                <Host>
-                                    <AppNavigator/>
-                                </Host>
-                            </SafeAreaProvider>
-                        </Theming.ThemeContext.Provider>
-                    </Theming.MappingContext.Provider>
-                </ApplicationProvider>
-            </AppearanceProvider>
-        </React.Fragment>
+        <AppThemeComponent
+            mapping={mapping}
+            theme={theme}
+        >
+            <SafeAreaProvider>
+                <StatusBar/>
+                <Host>
+                    <AppNavigator/>
+                </Host>
+            </SafeAreaProvider>
+        </AppThemeComponent>
     );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Theming} from "services/theme.service";
+import {Theming} from "application/app/theme.service";
 import {BottomNavigation, BottomNavigationProps, ThemeProvider} from "@ui-kitten/components";
 import {ViewStyle} from "react-native";
 

@@ -18,7 +18,7 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "services/*": ["./application/services/*"],
+      "application/*": ["./application/*"],
       "domain/*": ["./domain/*"],
       "localization/*": ["./infrastructure/localization/*"],
       "repositories/*": ["./infrastructure/repositories/*"],

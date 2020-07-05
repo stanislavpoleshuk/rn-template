@@ -3,7 +3,7 @@ import React from "react";
 import {TouchableOpacity} from "react-native";
 import {AssetMonIcon} from "resources/icons";
 import {appThemes} from "../../../app/app-theming";
-import {MappingContextValue, ThemeContextValue, Theming} from "services/theme.service";
+import {MappingContextValue, ThemeContextValue, Theming} from "application/app/theme.service";
 import {ThemeItem} from "screens/home/themes/type";
 import {ThemesService} from "screens/home/themes/themes.service";
 

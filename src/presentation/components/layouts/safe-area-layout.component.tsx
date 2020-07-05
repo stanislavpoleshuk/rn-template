@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlexStyle, SafeAreaView, StyleSheet, ViewStyle} from 'react-native';
 import {useSafeAreaInsets} from "react-native-safe-area-context";
-import {ThemeContextValue, Theming} from "services/theme.service";
+import {ThemeContextValue, Theming} from "application/app/theme.service";
 import {Colors} from "core/theme/colors.theme";
 
 type Inset = 'top' | 'bottom' | 'bottom-navigation';

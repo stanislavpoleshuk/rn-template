@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {BookIcon, GithubIcon} from "../../resources/icons";
-import {AppInfoService} from "services/app-info.service";
-import {WebBrowserService} from "services/web-browser.service";
+import {AppInfoService} from "application/app/app-info.service";
+import {WebBrowserService} from "application/app/web-browser.service";
 import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
 import {ImageResources} from "resources/images/imageResources";
 import {FontSize} from "core/theme/styles/font.styles";

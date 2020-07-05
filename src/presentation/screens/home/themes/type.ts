@@ -1,5 +1,5 @@
 import { ThemeType } from '@ui-kitten/components';
-import {Theme} from "services/theme.service";
+import {Theme} from "application/app/theme.service";
 
 export interface ThemeItem {
   mapping: string;
