@@ -1,6 +1,5 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-
 import {BookIcon, GithubIcon} from "../../resources/icons";
 import {AppInfoService} from "services/app-info.service";
 import {WebBrowserService} from "services/web-browser.service";
@@ -8,13 +7,8 @@ import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
 import {ImageResources} from "resources/images/imageResources";
 import {FontSize} from "core/theme/styles/font.styles";
 import {ThemesChanger} from "screens/home/themes/themes-changer.component";
-import {Avatar, Divider, Drawer, DrawerElement, Layout, Text} from "@ui-kitten/components";
+import {Avatar, Divider, Drawer, DrawerElement, DrawerItem, Layout, Text} from "@ui-kitten/components";
 
-
-const DATA = [
-    {title: 'Libraries', icon: GithubIcon},
-    {title: 'Documentation', icon: BookIcon},
-];
 
 export const HomeDrawer = ({navigation}): DrawerElement => {
 
@@ -75,7 +69,11 @@ export const HomeDrawer = ({navigation}): DrawerElement => {
             <Drawer
                 header={renderHeader}
                 footer={renderFooter}
-            />
+                onSelect={index => onItemSelect(index.row)}
+            >
+                <DrawerItem title='Users' accessoryLeft={BookIcon} />
+                <DrawerItem title='Orders' accessoryLeft={GithubIcon} />
+            </Drawer>
         </SafeAreaLayout>
     );
 };

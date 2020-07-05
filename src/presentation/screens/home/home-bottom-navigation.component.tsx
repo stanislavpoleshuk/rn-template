@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrandBottomNavigation} from "components/common/brand-bottom-navigation.component";
-import {InsetsStyle, SafeAreaLayout} from "components/layouts/safe-area-layout.component";
+import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
 import {
     AssetBellIcon,
     AssetPersonIcon,
@@ -8,7 +8,6 @@ import {
     StarOutlineIcon
 } from "../../resources/icons";
 import {StyleSheet} from "react-native";
-import {Colors} from "core/theme/colors.theme";
 import {BottomNavigationTab, Divider} from "@ui-kitten/components";
 
 export const HomeBottomNavigation = (props): React.ReactElement => {
@@ -42,9 +41,3 @@ export const HomeBottomNavigation = (props): React.ReactElement => {
         </SafeAreaLayout>
     );
 };
-
-
-const styles = StyleSheet.create({
-    bottomNavigation: {
-    },
-})
