@@ -1,13 +1,6 @@
 import React from 'react';
-import {Platform, StyleSheet, View} from 'react-native';
-import {
-    Avatar,
-    Divider,
-    Drawer,
-    DrawerElement,
-    Layout,
-    Text,
-} from '@ui-kitten/components';
+import {StyleSheet, View} from 'react-native';
+
 import {BookIcon, GithubIcon} from "../../resources/icons";
 import {AppInfoService} from "services/app-info.service";
 import {WebBrowserService} from "services/web-browser.service";
@@ -15,7 +8,7 @@ import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
 import {ImageResources} from "resources/images/imageResources";
 import {FontSize} from "core/theme/styles/font.styles";
 import {ThemesChanger} from "screens/home/themes/themes-changer.component";
-import {Devices} from "../../../infrastructure/utilities/devices";
+import {Avatar, Divider, Drawer, DrawerElement, Layout, Text} from "@ui-kitten/components";
 
 
 const DATA = [

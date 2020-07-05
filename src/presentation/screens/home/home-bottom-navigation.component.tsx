@@ -19,12 +19,12 @@ export const HomeBottomNavigation = (props): React.ReactElement => {
 
 
     return (
-        <React.Fragment>
+        <SafeAreaLayout insets='bottom'>
             <Divider/>
             <BrandBottomNavigation
                 appearance='noIndicator'
                 selectedIndex={props.state.index}
-                containerStyle={InsetsStyle('bottom-outside')}
+                // containerStyle={InsetsStyle('bottom-navigation')}
                 onSelect={onSelect}>
                 <BottomNavigationTab
                     icon={StarOutlineIcon}
@@ -39,7 +39,7 @@ export const HomeBottomNavigation = (props): React.ReactElement => {
                     icon={AssetPersonIcon}
                 />
             </BrandBottomNavigation>
-        </React.Fragment>
+        </SafeAreaLayout>
     );
 };
 

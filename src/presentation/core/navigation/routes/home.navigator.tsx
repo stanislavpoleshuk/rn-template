@@ -5,17 +5,18 @@ import {
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {HomeBottomNavigation} from "screens/home/home-bottom-navigation.component";
 import {HomeDrawer} from "screens/home/home-drawer.component";
-import {createStackNavigator} from "@react-navigation/stack";
+import {createStackNavigator, TransitionPresets} from "@react-navigation/stack";
 import {RobotsScreen} from "screens/robots/robots.screen";
 import {SignalsScreen} from "screens/signals/signals.screen";
 import {NotificationsScreen} from "screens/notifications/notifications.screen";
 import {ProfileScreen} from "screens/profile/profile.screen";
 import {AuthNavigator} from "core/navigation/routes/auth.navigator";
-import {RobotsNavigation} from "core/navigation/routes/robots.navigation";
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
-const Stack = createStackNavigator();
+const MainStack = createStackNavigator();
+const RootStack = createStackNavigator();
+
 
 const initialTabRoute: string = 'Home';
 
@@ -30,7 +31,7 @@ const HomeTabsNavigator = (): React.ReactElement => (
     </BottomTab.Navigator>
 );
 
-export const HomeDrawerNavigator  = (): React.ReactElement => (
+export const HomeDrawerNavigator = (): React.ReactElement => (
     <Drawer.Navigator
         screenOptions={{gestureEnabled: true}}
         drawerContent={props => <HomeDrawer {...props}/>}>
@@ -38,9 +39,36 @@ export const HomeDrawerNavigator  = (): React.ReactElement => (
     </Drawer.Navigator>
 );
 
-export const HomeNavigator = (): React.ReactElement => (
-    <Stack.Navigator headerMode={'none'}>
-        <Stack.Screen name="Home" component={HomeDrawerNavigator}/>
-        <Stack.Screen name='Auth' component={RobotsNavigation}/>
-    </Stack.Navigator>
-)
+// export const HomeNavigator = (): React.ReactElement => (
+//     <Stack.Navigator headerMode={'none'}>
+//         <Stack.Screen name="Home" component={HomeDrawerNavigator}/>
+//         <Stack.Screen name='Auth' component={RobotsNavigation}/>
+//     </Stack.Navigator>
+// )
+
+const MainStackScreen = (): React.ReactElement => {
+    return (
+        <MainStack.Navigator headerMode={'none'}>
+            <MainStack.Screen name="Home" component={HomeDrawerNavigator}/>
+        </MainStack.Navigator>
+    );
+}
+
+const modalOptions = {
+    ...TransitionPresets.ModalPresentationIOS,
+    gestureEnabled: true,
+    cardOverlayEnabled: true,
+}
+
+export const HomeNavigator = (): React.ReactElement => {
+    return (
+        <RootStack.Navigator headerMode={'none'} mode="modal" screenOptions={modalOptions}>
+            <RootStack.Screen
+                name="Main"
+                component={MainStackScreen}
+                options={{headerShown: false}}
+            />
+            <RootStack.Screen name="Auth" component={AuthNavigator}/>
+        </RootStack.Navigator>
+    );
+}

@@ -4,7 +4,7 @@ import {useSafeAreaInsets} from "react-native-safe-area-context";
 import {ThemeContextValue, Theming} from "services/theme.service";
 import {Colors} from "core/theme/colors.theme";
 
-type Inset = 'top' | 'bottom' | 'bottom-outside';
+type Inset = 'top' | 'bottom' | 'bottom-navigation';
 
 type Props = {
     children: React.ReactNode;
@@ -24,9 +24,10 @@ export const InsetsStyle = (insets?: Inset) => {
             return {
                 paddingBottom: INSETS.bottom,
             }
-        case "bottom-outside":
+        case "bottom-navigation":
             return {
-                marginBottom: INSETS.bottom,
+                paddingTop: INSETS.top-20,
+                paddingBottom: INSETS.bottom,
             }
     }
 }
