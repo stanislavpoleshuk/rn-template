@@ -3,11 +3,14 @@ import {applyMiddleware, combineReducers, createStore} from "redux";
 import thunkMiddleware from 'redux-thunk';
 import {composeWithDevTools} from "redux-devtools-extension";
 import {persistReducer} from 'redux-persist';
-
+import {UserReducer} from "./user/reducers";
+import {AuthReducer} from "./auth/reducers";
 
 const rootReducer = combineReducers({
-
+    auth: AuthReducer,
+    user: UserReducer
 });
+
 export type IAppState = ReturnType<typeof rootReducer>;
 
 export default function configureStore() {
@@ -20,7 +23,8 @@ export default function configureStore() {
         key: 'root',
         storage: AsyncStorage,
         whitelist: [
-            'system'
+            'system',
+            'auth',
         ],
     };
     const persistedReducer = persistReducer(persistConfig, rootReducer);
