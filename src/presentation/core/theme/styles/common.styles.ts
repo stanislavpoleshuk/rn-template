@@ -5,7 +5,7 @@ export const CommonStyle = styleSheetCreate({
         flex: 1,
     },
     content: {
-        paddingHorizontal: 20,
+        paddingHorizontal: 25,
         paddingVertical: 10
     }
 })

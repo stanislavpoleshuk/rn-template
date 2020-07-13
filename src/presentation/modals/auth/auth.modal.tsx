@@ -7,9 +7,9 @@ import {CommonStyle} from "core/theme/styles/common.styles";
 import {RouteProp} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
 import {CloseIcon} from "resources/icons";
-import {RobotsContainer} from "screens/robots/robots.container";
 import {localization} from "localization/index";
 import {AuthStackParamList} from "core/navigation/routes/auth.navigator";
+import {AuthContainer} from "./auth.container";
 
 type AuthScreenRouteProp = RouteProp<AuthStackParamList, 'Auth'>;
 type AuthScreenNavigationProp = StackNavigationProp<AuthStackParamList,
@@ -20,7 +20,7 @@ type Props = {
     navigation: AuthScreenNavigationProp;
 };
 
-export const RobotsModal = ({navigation}: Props): React.ReactElement => {
+export const AuthModal = ({navigation}: Props): React.ReactElement => {
 
     const CloseAction = (): React.ReactElement => (
         <TopNavigationAction
@@ -28,6 +28,18 @@ export const RobotsModal = ({navigation}: Props): React.ReactElement => {
             onPress={navigation.goBack}
         />
     );
+
+    const onSubmit = () => {
+        navigation.goBack();
+    }
+
+    const onForgotPress = () => {
+
+    }
+
+    const onSignUpPress = () => {
+
+    }
 
     return (
         <SafeAreaLayout
@@ -38,7 +50,10 @@ export const RobotsModal = ({navigation}: Props): React.ReactElement => {
                 title={localization.screens.auth.title}
                 accessoryRight={CloseAction}
             />
-            <RobotsContainer
+            <AuthContainer
+                onSubmit={onSubmit}
+                onForgotPress={onForgotPress}
+                onSignUpPress={onSignUpPress}
             />
         </SafeAreaLayout>
     )

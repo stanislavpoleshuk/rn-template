@@ -1,26 +1,56 @@
 import {ContentArea} from "components/layouts/content-area.component";
 import {Text} from "@ui-kitten/components";
-import {StyleSheet} from "react-native";
-import React from "react";
-import {Logo} from "components/ui/logo/logo.component";
+import {StyleSheet, View} from "react-native";
+import React, {useCallback} from "react";
+import {AuthForm, AuthFormProps} from "./auth.form";
+import {localization} from "localization/index";
+import {Link} from "components/content/link.component";
 
-type Props = {}
-
-export const AuthContainer = (props: Props): React.ReactElement => {
-
-    return (
-        <ContentArea style={styles.content}>
-            <Text>Мои заказы</Text>
-
-            <Logo
-            />
-        </ContentArea>
-    )
+type ComponentProps = {
+    onSignUpPress: () => void;
 }
+
+type Props = AuthFormProps & ComponentProps
+
+export const AuthContainer: React.FC<Props> =
+    ({
+         onSubmit, onForgotPress, onSignUpPress
+     }) => {
+        const onSignUpCallback = useCallback(() => onSignUpPress(), [onSignUpPress]);
+
+        const SignUpFooter = (): React.ReactElement | null => {
+            return (
+                <View style={styles.footer}>
+                    <Text appearance={'hint'}>{localization.auth.noAccount}</Text>
+                    <Link
+                        styleContainer={styles.signUpLink}
+                        text={localization.auth.signUpLink}
+                        onPress={onSignUpCallback}
+                    />
+                </View>
+            )
+        }
+
+        return (
+            <ContentArea>
+                <AuthForm
+                    onSubmit={onSubmit}
+                    onForgotPress={onForgotPress}
+                />
+                <SignUpFooter
+                />
+            </ContentArea>
+        )
+    }
 
 
 const styles = StyleSheet.create({
-    content: {
-        // flex: 1
+    footer: {
+        alignContent: 'center',
+        justifyContent: "center",
+        flexDirection: "row",
     },
+    signUpLink: {
+        paddingLeft: 6
+    }
 })

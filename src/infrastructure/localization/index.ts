@@ -5,9 +5,11 @@ import {errorsLocalization} from "./localizations/errors.localization";
 import {commonLocalization} from "./localizations/common.localization";
 import {homeLocalization} from "./localizations/home.localization";
 import {tabsLocalization} from "./localizations/tabs.localization";
+import {authLocalization} from "localization/localizations/auth.localization";
 
 
 class Localization {
+    auth = new LocalizedStrings(authLocalization);
     screens = new LocalizedStrings(screensLocalization);
     tabs = new LocalizedStrings(tabsLocalization);
     common = new LocalizedStrings(commonLocalization);
