@@ -4,6 +4,9 @@ export const screensLocalization = {
     'searchRobots': 'Search robots',
     'auth': {
       'title': 'Укажите телефон'
+    },
+    'confirmCode': {
+      'title': 'Введите код из смс'
     }
   },
 };

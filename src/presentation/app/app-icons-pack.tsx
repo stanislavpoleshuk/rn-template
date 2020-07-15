@@ -19,8 +19,8 @@ const IconProvider = (source: ImageRequireSource) => ({
 export const AppIconsPack = {
     name: 'app',
     icons: {
-        // 'auth': IconProvider(require('../assets/images/icon-auth.png')),
-        // 'auth-dark': IconProvider(require('../assets/images/icon-auth-dark.png')),
+        // 'login': IconProvider(require('../assets/images/icon-login.png')),
+        // 'login-dark': IconProvider(require('../assets/images/icon-login-dark.png')),
         // 'social': IconProvider(require('../assets/images/icon-social.png')),
         // 'social-dark': IconProvider(require('../assets/images/icon-social-dark.png')),
         // 'articles': IconProvider(require('../assets/images/icon-articles.png')),

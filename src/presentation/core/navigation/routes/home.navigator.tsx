@@ -10,7 +10,7 @@ import {RobotsScreen} from "screens/robots/robots.screen";
 import {SignalsScreen} from "screens/signals/signals.screen";
 import {NotificationsScreen} from "screens/notifications/notifications.screen";
 import {ProfileScreen} from "screens/profile/profile.screen";
-import {AuthNavigator} from "core/navigation/routes/auth.navigator";
+import {AuthNavigator, PhoneConfirmNavigator} from "core/navigation/routes/auth.navigator";
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -39,13 +39,6 @@ export const HomeDrawerNavigator = (): React.ReactElement => (
     </Drawer.Navigator>
 );
 
-// export const HomeNavigator = (): React.ReactElement => (
-//     <Stack.Navigator headerMode={'none'}>
-//         <Stack.Screen name="Home" component={HomeDrawerNavigator}/>
-//         <Stack.Screen name='Auth' component={RobotsNavigation}/>
-//     </Stack.Navigator>
-// )
-
 const MainStackScreen = (): React.ReactElement => {
     return (
         <MainStack.Navigator headerMode={'none'}>
@@ -68,7 +61,8 @@ export const HomeNavigator = (): React.ReactElement => {
                 component={MainStackScreen}
                 options={{headerShown: false}}
             />
-            <RootStack.Screen name="Auth" component={AuthNavigator}/>
+            <RootStack.Screen name="Login" component={AuthNavigator}/>
+            <MainStack.Screen name="PhoneConfirm" component={PhoneConfirmNavigator}/>
         </RootStack.Navigator>
     );
 }

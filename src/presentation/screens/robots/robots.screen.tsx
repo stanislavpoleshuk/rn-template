@@ -34,7 +34,7 @@ export const RobotsScreen = (props: Props): React.ReactElement => {
     const AddRobotAction = (): React.ReactElement => (
         <TopNavigationAction
             icon={AssetPlusIcon}
-            onPress={() => props.navigation.navigate("Auth")}
+            onPress={() => props.navigation.navigate("Login")}
         />
     );
 

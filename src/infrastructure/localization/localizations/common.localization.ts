@@ -13,5 +13,6 @@ export const commonLocalization = {
     'search': 'Поиск',
     'reset': 'Сбросить',
     'listEmpty': 'Список пуст',
+    'seconds': 'сек.'
   },
 };

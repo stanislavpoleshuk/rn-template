@@ -7,6 +7,9 @@ export const authLocalization = {
         'submit': 'Войти',
         'forgot': 'Забыли пароль?',
         'noAccount': 'У Вас нет аккаунта?',
-        'signUpLink': 'Зарегистрироваться'
+        'signUpLink': 'Зарегистрироваться',
+        'confirmCode': 'Код подтверждения',
+        'resendConfirmCode': 'Отправить ещё раз',
+        'resendConfirmCodeTimer': 'Отправить ещё раз через',
     },
 };
