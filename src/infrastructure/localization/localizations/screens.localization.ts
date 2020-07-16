@@ -7,6 +7,12 @@ export const screensLocalization = {
     },
     'confirmCode': {
       'title': 'Введите код из смс'
-    }
+    },
+    'checkin': {
+      'title': 'Регистрация'
+    },
+    'restorePassword': {
+      'title': 'Восстановление пароля'
+    },
   },
 };

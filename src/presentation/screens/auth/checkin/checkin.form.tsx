@@ -7,30 +7,33 @@ import {Form} from "components/forms/form";
 import {FormField} from "components/forms/form-field.component";
 import {FormFooter} from "components/forms/form-footer.component";
 import {Logo} from "components/ui/logo/logo.component";
-import {Link} from "components/content/link.component";
 import {StringFormatter} from "../../../../infrastructure/utilities/formatter/string.formatter";
 
-export type LoginFormProps = {
+export type CheckinFormProps = {
     onSubmit: () => void;
-    onForgotPress: () => void;
 }
 
-type Props = LoginFormProps;
+type Props = CheckinFormProps;
 
 
-export const LoginForm: React.FC<Props> =
+export const CheckinForm: React.FC<Props> =
     ({
-         onSubmit, onForgotPress
+         onSubmit
      }) => {
-
+        const [name, setName] = React.useState('');
         const [phone, setPhone] = React.useState<string>(StringFormatter.CountryCode);
         const [password, setPassword] = React.useState('');
+        const [passwordConfirm, setPasswordConfirm] = React.useState('');
         const [secureTextEntry, setSecureTextEntry] = React.useState(true);
         const [isValid, changeValidation] = React.useState<boolean>(false);
         const onSubmitCallback = useCallback(() => onSubmit(), [onSubmit]);
-        const onForgotCallback = useCallback(() => onForgotPress(), [onForgotPress]);
 
         const onValidationForm = () => {
+
+            if (!name || name.length < 3) {
+                changeValidation(false);
+                return;
+            }
             if (!phone || phone.length != 17) {
                 changeValidation(false);
                 return;
@@ -39,12 +42,22 @@ export const LoginForm: React.FC<Props> =
                 changeValidation(false);
                 return;
             }
+            if (!passwordConfirm || passwordConfirm.length < 8) {
+                changeValidation(false);
+                return;
+            }
+            if (password !== passwordConfirm) {
+                changeValidation(false);
+                return;
+            }
+
             changeValidation(true);
         }
 
+
         React.useEffect(() => {
             onValidationForm();
-        }, [password, phone]);
+        }, [name, password, phone]);
 
 
         const onPhoneChange = (value: string | undefined) => {
@@ -54,6 +67,10 @@ export const LoginForm: React.FC<Props> =
 
         const onPasswordChange = (value: string | undefined) => {
             setPassword(value);
+        }
+
+        const onPasswordConfirmChange = (value: string | undefined) => {
+            setPasswordConfirm(value);
         }
 
         const toggleSecureEntry = () => {
@@ -66,16 +83,28 @@ export const LoginForm: React.FC<Props> =
             </TouchableWithoutFeedback>
         );
 
+        const onNameChange = (value: string | undefined) => {
+            setName(value);
+        }
+
         return (
             <Form>
                 <Logo styleContainer={styles.logoContainer}/>
 
                 <FormField>
                     <Input
+                        value={name}
+                        label={localization.auth.name}
+                        placeholder={localization.auth.namePlh}
+                        onChangeText={onNameChange}
+                    />
+                </FormField>
+
+                <FormField>
+                    <Input
                         value={phone}
                         label={localization.auth.phone}
                         onChangeText={onPhoneChange}
-                        // accessoryLeft={PhoneIcon}
                     />
                 </FormField>
 
@@ -92,11 +121,16 @@ export const LoginForm: React.FC<Props> =
                     />
                 </FormField>
 
-                <FormField style={styles.forgotContainer}>
-                    <Link
-                        appearance={"hint"}
-                        text={localization.auth.forgot}
-                        onPress={onForgotCallback}
+                <FormField>
+                    <Input
+                        value={password}
+                        label={localization.auth.resendConfirmCode}
+                        placeholder={localization.auth.passwordPlh}
+                        caption={localization.auth.passwordCaption}
+                        accessoryRight={PasswordIcon}
+                        captionIcon={AlertIcon}
+                        secureTextEntry={secureTextEntry}
+                        onChangeText={onPasswordConfirmChange}
                     />
                 </FormField>
 
@@ -118,9 +152,5 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         flexDirection: "row",
         padding: 25
-    },
-    forgotContainer: {
-        justifyContent: "center",
-        flexDirection: "row",
     }
 })
