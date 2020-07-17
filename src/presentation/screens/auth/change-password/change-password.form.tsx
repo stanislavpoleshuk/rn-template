@@ -7,21 +7,19 @@ import {Form} from "components/forms/form";
 import {FormField} from "components/forms/form-field.component";
 import {FormFooter} from "components/forms/form-footer.component";
 import {Logo} from "components/ui/logo/logo.component";
-import {StringFormatter} from "../../../../infrastructure/utilities/formatter/string.formatter";
 
-export type CheckinFormProps = {
+export type ChangePasswordFormProps = {
     onSubmit: () => void;
 }
 
-type Props = CheckinFormProps;
+type Props = ChangePasswordFormProps;
 
 
-export const CheckinForm: React.FC<Props> =
+export const ChangePasswordForm: React.FC<Props> =
     ({
          onSubmit
      }) => {
-        const [name, setName] = React.useState('');
-        const [phone, setPhone] = React.useState<string>(StringFormatter.CountryCode);
+
         const [password, setPassword] = React.useState('');
         const [passwordConfirm, setPasswordConfirm] = React.useState('');
         const [secureTextEntry, setSecureTextEntry] = React.useState(true);
@@ -29,15 +27,6 @@ export const CheckinForm: React.FC<Props> =
         const onSubmitCallback = useCallback(() => onSubmit(), [onSubmit]);
 
         const onValidationForm = () => {
-
-            if (!name || name.length < 3) {
-                changeValidation(false);
-                return;
-            }
-            if (!phone || phone.length != 17) {
-                changeValidation(false);
-                return;
-            }
             if (!password || password.length < 8) {
                 changeValidation(false);
                 return;
@@ -50,20 +39,12 @@ export const CheckinForm: React.FC<Props> =
                 changeValidation(false);
                 return;
             }
-
             changeValidation(true);
         }
 
-
         React.useEffect(() => {
             onValidationForm();
-        }, [name, password, passwordConfirm, phone]);
-
-
-        const onPhoneChange = (value: string | undefined) => {
-            value = StringFormatter.ToPhone(value);
-            setPhone(value);
-        }
+        }, [password, passwordConfirm]);
 
         const onPasswordChange = (value: string | undefined) => {
             setPassword(value);
@@ -83,30 +64,9 @@ export const CheckinForm: React.FC<Props> =
             </TouchableWithoutFeedback>
         );
 
-        const onNameChange = (value: string | undefined) => {
-            setName(value);
-        }
-
         return (
             <Form>
                 <Logo styleContainer={styles.logoContainer}/>
-
-                <FormField>
-                    <Input
-                        value={name}
-                        label={localization.auth.name}
-                        placeholder={localization.auth.namePlh}
-                        onChangeText={onNameChange}
-                    />
-                </FormField>
-
-                <FormField>
-                    <Input
-                        value={phone}
-                        label={localization.auth.phone}
-                        onChangeText={onPhoneChange}
-                    />
-                </FormField>
 
                 <FormField>
                     <Input
@@ -120,6 +80,7 @@ export const CheckinForm: React.FC<Props> =
                         onChangeText={onPasswordChange}
                     />
                 </FormField>
+
 
                 <FormField>
                     <Input
@@ -139,7 +100,7 @@ export const CheckinForm: React.FC<Props> =
                         disabled={isValid == false}
                         onPress={onSubmitCallback}
                     >
-                        {localization.auth.submit}
+                        {localization.auth.edit}
                     </Button>
                 </FormFooter>
             </Form>
@@ -152,5 +113,9 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         flexDirection: "row",
         padding: 25
+    },
+    forgotContainer: {
+        justifyContent: "center",
+        flexDirection: "row",
     }
 })
