@@ -75,7 +75,8 @@ export const LoginForm: React.FC<Props> =
                         value={phone}
                         label={localization.auth.phone}
                         onChangeText={onPhoneChange}
-                        // accessoryLeft={PhoneIcon}
+                        keyboardType={'phone-pad'}
+                        autoCompleteType={'tel'}
                     />
                 </FormField>
 
@@ -89,6 +90,7 @@ export const LoginForm: React.FC<Props> =
                         captionIcon={AlertIcon}
                         secureTextEntry={secureTextEntry}
                         onChangeText={onPasswordChange}
+                        autoCompleteType={'password'}
                     />
                 </FormField>
 

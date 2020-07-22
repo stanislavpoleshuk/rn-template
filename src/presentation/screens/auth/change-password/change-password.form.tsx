@@ -78,6 +78,7 @@ export const ChangePasswordForm: React.FC<Props> =
                         captionIcon={AlertIcon}
                         secureTextEntry={secureTextEntry}
                         onChangeText={onPasswordChange}
+                        autoCompleteType={'password'}
                     />
                 </FormField>
 
@@ -92,6 +93,7 @@ export const ChangePasswordForm: React.FC<Props> =
                         captionIcon={AlertIcon}
                         secureTextEntry={secureTextEntry}
                         onChangeText={onPasswordConfirmChange}
+                        autoCompleteType={'password'}
                     />
                 </FormField>
 

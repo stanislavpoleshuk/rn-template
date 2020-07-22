@@ -93,10 +93,12 @@ export const CheckinForm: React.FC<Props> =
 
                 <FormField>
                     <Input
+                        autoFocus={true}
                         value={name}
                         label={localization.auth.name}
                         placeholder={localization.auth.namePlh}
                         onChangeText={onNameChange}
+                        autoCompleteType={'username'}
                     />
                 </FormField>
 
@@ -105,6 +107,8 @@ export const CheckinForm: React.FC<Props> =
                         value={phone}
                         label={localization.auth.phone}
                         onChangeText={onPhoneChange}
+                        keyboardType={'phone-pad'}
+                        autoCompleteType={'tel'}
                     />
                 </FormField>
 
@@ -118,19 +122,21 @@ export const CheckinForm: React.FC<Props> =
                         captionIcon={AlertIcon}
                         secureTextEntry={secureTextEntry}
                         onChangeText={onPasswordChange}
+                        autoCompleteType={'password'}
                     />
                 </FormField>
 
                 <FormField>
                     <Input
-                        value={password}
-                        label={localization.auth.resendConfirmCode}
+                        value={passwordConfirm}
+                        label={localization.auth.passwordConfirm}
                         placeholder={localization.auth.passwordPlh}
                         caption={localization.auth.passwordCaption}
                         accessoryRight={PasswordIcon}
                         captionIcon={AlertIcon}
                         secureTextEntry={secureTextEntry}
                         onChangeText={onPasswordConfirmChange}
+                        autoCompleteType={'password'}
                     />
                 </FormField>
 
@@ -139,7 +145,7 @@ export const CheckinForm: React.FC<Props> =
                         disabled={isValid == false}
                         onPress={onSubmitCallback}
                     >
-                        {localization.auth.submit}
+                        {localization.auth.signUpSubmit}
                     </Button>
                 </FormFooter>
             </Form>

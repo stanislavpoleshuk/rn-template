@@ -69,9 +69,12 @@ export const PhoneConfirmForm: React.FC<Props> =
 
                 <FormField>
                     <Input
+                        autoFocus={true}
                         value={code}
+                        keyboardType={'numeric'}
                         label={localization.auth.confirmCode}
                         onChangeText={onCodeChange}
+                        autoCompleteType={'cc-number'}
                     />
                 </FormField>
 

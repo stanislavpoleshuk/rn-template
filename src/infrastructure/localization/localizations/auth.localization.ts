@@ -11,6 +11,7 @@ export const authLocalization = {
         'forgot': 'Забыли пароль?',
         'noAccount': 'У Вас нет аккаунта?',
         'signUpLink': 'Зарегистрироваться',
+        'signUpSubmit': 'Зарегистрироваться',
         'confirmCode': 'Код подтверждения',
         'resendConfirmCode': 'Отправить ещё раз',
         'resendConfirmCodeTimer': 'Отправить ещё раз через',

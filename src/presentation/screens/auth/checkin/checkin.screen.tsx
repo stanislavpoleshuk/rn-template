@@ -6,10 +6,10 @@ import {StyleSheet} from "react-native";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {RouteProp} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
-import {CloseIcon} from "resources/icons";
+import {ArrowIosBackIcon, CloseIcon} from "resources/icons";
 import {localization} from "localization/index";
 import {AuthStackParamList} from "core/navigation/routes/auth.navigator";
-import {CheckinContainer} from "./Checkin.container";
+import {CheckinContainer} from "./checkin.container";
 
 type AuthScreenRouteProp = RouteProp<AuthStackParamList, 'Checkin'>;
 type AuthScreenNavigationProp = StackNavigationProp<AuthStackParamList, 'Checkin'>;
@@ -21,9 +21,9 @@ type Props = {
 
 export const CheckinScreen = ({navigation}: Props): React.ReactElement => {
 
-    const CloseAction = (): React.ReactElement => (
+    const BackAction = (): React.ReactElement => (
         <TopNavigationAction
-            icon={CloseIcon}
+            icon={ArrowIosBackIcon}
             onPress={navigation.goBack}
         />
     );
@@ -43,11 +43,10 @@ export const CheckinScreen = ({navigation}: Props): React.ReactElement => {
         >
             <HeaderNavigation
                 title={localization.screens.checkin.title}
-                accessoryRight={CloseAction}
+                accessoryLeft={BackAction}
             />
             <CheckinContainer
                 onSubmit={onSubmit}
-                onSignInPress={onSignInPress}
             />
         </SafeAreaLayout>
     )

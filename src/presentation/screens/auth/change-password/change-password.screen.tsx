@@ -6,7 +6,7 @@ import {StyleSheet} from "react-native";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {RouteProp} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
-import {CloseIcon} from "resources/icons";
+import {ArrowIosBackIcon} from "resources/icons";
 import {localization} from "localization/index";
 import {AuthStackParamList} from "core/navigation/routes/auth.navigator";
 import {ChangePasswordContainer} from "./change-password.container";
@@ -21,9 +21,9 @@ type Props = {
 
 export const ChangePasswordScreen = ({navigation}: Props): React.ReactElement => {
 
-    const CloseAction = (): React.ReactElement => (
+    const BackAction = (): React.ReactElement => (
         <TopNavigationAction
-            icon={CloseIcon}
+            icon={ArrowIosBackIcon}
             onPress={navigation.goBack}
         />
     );
@@ -39,7 +39,7 @@ export const ChangePasswordScreen = ({navigation}: Props): React.ReactElement =>
         >
             <HeaderNavigation
                 title={localization.screens.auth.title}
-                accessoryRight={CloseAction}
+                accessoryLeft={BackAction}
             />
             <ChangePasswordContainer
                 onSubmit={onSubmit}

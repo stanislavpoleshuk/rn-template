@@ -33,11 +33,11 @@ export const LoginScreen = ({navigation}: Props): React.ReactElement => {
     }
 
     const onForgotPress = () => {
-        navigation.navigate('PhoneConfirm')
+        navigation.navigate('RestorePassword');
     }
 
     const onSignUpPress = () => {
-
+        navigation.navigate('Checkin');
     }
 
     return (

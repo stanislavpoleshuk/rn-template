@@ -49,9 +49,12 @@ export const RestorePasswordForm: React.FC<Props> =
 
                 <FormField>
                     <Input
+                        autoFocus={true}
                         value={phone}
                         label={localization.auth.phone}
                         onChangeText={onPhoneChange}
+                        keyboardType={'phone-pad'}
+                        autoCompleteType={'tel'}
                     />
                 </FormField>
 

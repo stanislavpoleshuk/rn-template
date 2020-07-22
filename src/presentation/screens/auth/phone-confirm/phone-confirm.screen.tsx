@@ -6,7 +6,7 @@ import {StyleSheet} from "react-native";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {RouteProp} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
-import {CloseIcon} from "resources/icons";
+import {ArrowIosBackIcon} from "resources/icons";
 import {localization} from "localization/index";
 import {AuthStackParamList} from "core/navigation/routes/auth.navigator";
 import {PhoneConfirmContainer} from "./phone-confirm.container";
@@ -22,9 +22,10 @@ type Props = {
 
 export const PhoneConfirmScreen = ({navigation}: Props): React.ReactElement => {
 
-    const CloseAction = (): React.ReactElement => (
+
+    const BackAction = (): React.ReactElement => (
         <TopNavigationAction
-            icon={CloseIcon}
+            icon={ArrowIosBackIcon}
             onPress={navigation.goBack}
         />
     );
@@ -43,7 +44,7 @@ export const PhoneConfirmScreen = ({navigation}: Props): React.ReactElement => {
         >
             <HeaderNavigation
                 title={localization.screens.confirmCode.title}
-                accessoryRight={CloseAction}
+                accessoryLeft={BackAction}
             />
             <PhoneConfirmContainer
                 onSubmit={onSubmit}
