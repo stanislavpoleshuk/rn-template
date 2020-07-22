@@ -64,7 +64,6 @@ export const HomeDrawer = ({navigation}): DrawerElement => {
     return (
         <SafeAreaLayout
             style={styles.safeArea}
-            insets={"top"}
         >
             <Drawer
                 header={renderHeader}

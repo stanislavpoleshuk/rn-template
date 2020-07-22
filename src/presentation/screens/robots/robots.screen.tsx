@@ -42,7 +42,6 @@ export const RobotsScreen = (props: Props): React.ReactElement => {
     return (
         <SafeAreaLayout
             style={styles.safeArea}
-            insets={"top"}
         >
             <HeaderNavigation
                 title={localization.tabs.robots}

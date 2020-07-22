@@ -43,7 +43,7 @@ export const LoginScreen = ({navigation}: Props): React.ReactElement => {
     return (
         <SafeAreaLayout
             style={styles.safeArea}
-            insets={"top"}
+            insets={"bottom"}
         >
             <HeaderNavigation
                 title={localization.screens.auth.title}

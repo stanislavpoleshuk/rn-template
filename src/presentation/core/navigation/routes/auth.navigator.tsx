@@ -1,6 +1,6 @@
 import React from "react";
 import {LoginScreen} from "screens/auth/login/login.screen";
-import {createStackNavigator, TransitionPresets} from "@react-navigation/stack";
+import {createStackNavigator} from "@react-navigation/stack";
 import {PhoneConfirmScreen} from "screens/auth/phone-confirm/phone-confirm.screen";
 import {CheckinScreen} from "screens/auth/checkin/checkin.screen";
 import {RestorePasswordScreen} from "screens/auth/restore-password/restore-password.screen";

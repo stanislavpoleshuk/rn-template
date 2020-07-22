@@ -35,7 +35,7 @@ export const RestorePasswordScreen = ({navigation}: Props): React.ReactElement =
     return (
         <SafeAreaLayout
             style={styles.safeArea}
-            insets={"top"}
+            insets={"bottom"}
         >
             <HeaderNavigation
                 title={localization.screens.restorePassword.title}

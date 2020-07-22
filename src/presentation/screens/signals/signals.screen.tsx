@@ -22,8 +22,8 @@ export const SignalsScreen = (props): React.ReactElement => {
 
     return (
         <SafeAreaLayout
-            style={styles.safeArea}
             insets={'top'}
+            style={styles.safeArea}
         >
             <HeaderNavigation
                 title={localization.tabs.signals}

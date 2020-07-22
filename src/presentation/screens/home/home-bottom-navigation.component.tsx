@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrandBottomNavigation} from "components/common/brand-bottom-navigation.component";
-import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
 import {
     AssetBellIcon,
     AssetPersonIcon,
@@ -8,16 +7,17 @@ import {
     StarOutlineIcon
 } from "../../resources/icons";
 import {BottomNavigationTab, Divider} from "@ui-kitten/components";
+import {SafeAreaView} from "react-native-safe-area-context";
 
 export const HomeBottomNavigation = (props): React.ReactElement => {
-
     const onSelect = (index: number): void => {
         props.navigation.navigate(props.state.routeNames[index]);
     };
 
-
     return (
-        <SafeAreaLayout insets='bottom'>
+        <SafeAreaView
+            edges={['bottom']}
+        >
             <Divider/>
             <BrandBottomNavigation
                 appearance='noIndicator'
@@ -36,6 +36,6 @@ export const HomeBottomNavigation = (props): React.ReactElement => {
                     icon={AssetPersonIcon}
                 />
             </BrandBottomNavigation>
-        </SafeAreaLayout>
+        </SafeAreaView>
     );
 };
