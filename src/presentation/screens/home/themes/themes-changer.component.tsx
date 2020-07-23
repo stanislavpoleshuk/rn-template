@@ -1,11 +1,12 @@
-import {StyleService, useStyleSheet} from "@ui-kitten/components";
+import {Drawer, DrawerItem, StyleService, useStyleSheet} from "@ui-kitten/components";
 import React from "react";
 import {TouchableOpacity} from "react-native";
-import {AssetMonIcon} from "resources/icons";
+import {AssetMonIcon, GithubIcon} from "resources/icons";
 import {appThemes} from "../../../app/app-theming";
 import {MappingContextValue, ThemeContextValue, Theming} from "application/app/theme.service";
 import {ThemeItem} from "screens/home/themes/type";
 import {ThemesService} from "screens/home/themes/themes.service";
+import {Colors} from "core/theme/colors.theme";
 
 export const ThemesChanger = (): React.ReactElement => {
     const styles = useStyleSheet(themedStyles);
@@ -25,17 +26,26 @@ export const ThemesChanger = (): React.ReactElement => {
     };
 
     return (
+        <DrawerItem onPress={onItemPress} style={styles.container} accessoryLeft={AssetMonIcon} />
+
+    )
+
+    return (
             <TouchableOpacity activeOpacity={0.8} onPress={onItemPress}>
                 {AssetMonIcon(styles.moonIcon)}
             </TouchableOpacity>
+
      )
 }
 
 
 const themedStyles = StyleService.create({
+    container: {
+        backgroundColor: Colors.transparent
+    },
     moonIcon: {
         width: 22,
         height: 22,
         tintColor: 'color-basic-500'
-    }
+    },
 })

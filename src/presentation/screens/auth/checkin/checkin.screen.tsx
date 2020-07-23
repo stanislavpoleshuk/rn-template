@@ -1,6 +1,5 @@
 import React from "react";
 import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
-import {TopNavigationAction} from "@ui-kitten/components";
 import {HeaderNavigation} from "core/navigation/components/header-navigation.component";
 import {StyleSheet} from "react-native";
 import {CommonStyle} from "core/theme/styles/common.styles";
@@ -10,6 +9,7 @@ import {ArrowIosBackIcon, CloseIcon} from "resources/icons";
 import {localization} from "localization/index";
 import {AuthStackParamList} from "core/navigation/routes/auth.navigator";
 import {CheckinContainer} from "./checkin.container";
+import {NavigationAction} from "core/navigation/components/navigation-action.component";
 
 type AuthScreenRouteProp = RouteProp<AuthStackParamList, 'Checkin'>;
 type AuthScreenNavigationProp = StackNavigationProp<AuthStackParamList, 'Checkin'>;
@@ -22,7 +22,7 @@ type Props = {
 export const CheckinScreen = ({navigation}: Props): React.ReactElement => {
 
     const BackAction = (): React.ReactElement => (
-        <TopNavigationAction
+        <NavigationAction
             icon={ArrowIosBackIcon}
             onPress={navigation.goBack}
         />

@@ -10,6 +10,7 @@ import {ArrowIosBackIcon} from "resources/icons";
 import {localization} from "localization/index";
 import {AuthStackParamList} from "core/navigation/routes/auth.navigator";
 import {RestorePasswordContainer} from "./restore-password.container";
+import {NavigationAction} from "core/navigation/components/navigation-action.component";
 
 type AuthScreenRouteProp = RouteProp<AuthStackParamList, 'RestorePassword'>;
 type AuthScreenNavigationProp = StackNavigationProp<AuthStackParamList, 'RestorePassword'>;
@@ -22,7 +23,7 @@ type Props = {
 export const RestorePasswordScreen = ({navigation}: Props): React.ReactElement => {
 
     const BackAction = (): React.ReactElement => (
-        <TopNavigationAction
+        <NavigationAction
             icon={ArrowIosBackIcon}
             onPress={navigation.goBack}
         />

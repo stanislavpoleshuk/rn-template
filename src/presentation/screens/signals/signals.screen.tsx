@@ -1,19 +1,19 @@
 import React from "react";
-import {StyleSheet, View} from "react-native";
+import {StyleSheet} from "react-native";
 import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
-import {Text, TopNavigationAction} from "@ui-kitten/components";
+import {TopNavigationAction} from "@ui-kitten/components";
 import {CommonStyle} from "core/theme/styles/common.styles";
-import {ContentArea} from "components/layouts/content-area.component";
 import {HeaderNavigation} from "core/navigation/components/header-navigation.component";
-import {AssetPlusIcon, MenuIcon} from "resources/icons";
+import {MenuIcon} from "resources/icons";
 import {localization} from "localization/index";
 import {SignalsContainer} from "screens/signals/signals.container";
+import {NavigationAction} from "core/navigation/components/navigation-action.component";
 
 
 export const SignalsScreen = (props): React.ReactElement => {
 
     const DrawerAction = () => (
-        <TopNavigationAction
+        <NavigationAction
             icon={MenuIcon}
             onPress={props.navigation.toggleDrawer}
         />

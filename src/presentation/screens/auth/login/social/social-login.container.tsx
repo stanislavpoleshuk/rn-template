@@ -48,7 +48,7 @@ export const SocialLoginContainer: React.FC<Props> =
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 30,
+        marginTop: 10,
         position: "relative"
     },
     orSignInWIth: {
@@ -58,6 +58,6 @@ const styles = StyleSheet.create({
     buttonsContainer: {
         flexDirection: "row",
         justifyContent: "center",
-        paddingTop: 30
+        paddingTop: 10
     }
 })

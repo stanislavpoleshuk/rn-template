@@ -11,6 +11,7 @@ import {DrawerActionProps} from "core/navigation/types/navigation-props";
 import {AssetPlusIcon, MenuIcon} from "resources/icons";
 import {RobotsContainer} from "screens/robots/robots.container";
 import {localization} from "localization/index";
+import {NavigationAction} from "core/navigation/components/navigation-action.component";
 
 type RobotsScreenRouteProp = RouteProp<RobotsStackParamList, 'Robots'>;
 type RobotsScreenNavigationProp = StackNavigationProp<RobotsStackParamList,
@@ -24,7 +25,7 @@ type Props = {
 export const RobotsScreen = (props: Props): React.ReactElement => {
 
     const DrawerAction = () => (
-        <TopNavigationAction
+        <NavigationAction
             icon={MenuIcon}
             onPress={props.navigation.toggleDrawer}
         />
@@ -32,7 +33,7 @@ export const RobotsScreen = (props: Props): React.ReactElement => {
 
 
     const AddRobotAction = (): React.ReactElement => (
-        <TopNavigationAction
+        <NavigationAction
             icon={AssetPlusIcon}
             onPress={() => props.navigation.navigate("Login")}
         />

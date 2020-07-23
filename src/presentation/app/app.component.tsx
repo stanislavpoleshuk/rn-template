@@ -11,6 +11,7 @@ import {Mapping, Theme} from 'application/app/theme.service';
 import {AppStorage} from "application/app/app-storage.service";
 import {AppThemeComponent} from "./app-theme.component";
 import {StatusBar} from "components/common/status-bar.component";
+import {NotificationProvider} from "core/notification/notification.provider";
 
 const loadingTasks: Task[] = [
     () => AppStorage.getMapping(defaultConfig.mapping).then(result => ['mapping', result]),
@@ -28,12 +29,14 @@ const App = ({mapping, theme}): React.ReactElement => {
             mapping={mapping}
             theme={theme}
         >
-            <SafeAreaProvider>
-                <StatusBar/>
-                <Host>
-                    <AppNavigator/>
-                </Host>
-            </SafeAreaProvider>
+            <NotificationProvider>
+                <SafeAreaProvider>
+                    <StatusBar/>
+                    <Host>
+                        <AppNavigator/>
+                    </Host>
+                </SafeAreaProvider>
+            </NotificationProvider>
         </AppThemeComponent>
     );
 };

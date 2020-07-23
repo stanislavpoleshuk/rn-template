@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     },
     footer: {
         paddingHorizontal: 16,
-        paddingVertical: 16,
+        paddingVertical: 6,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between'

@@ -18,7 +18,7 @@ export const SocialButton: React.FC<Props> =
         return (
             <Button
                 appearance='outline'
-                size='giant'
+                // size='giant'
                 accessoryLeft={icon}
                 style={styles.button}
             />
