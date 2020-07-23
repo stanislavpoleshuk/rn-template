@@ -1,6 +1,6 @@
 import React from "react";
 import {TabProps} from "@ui-kitten/components";
-import {ScrollView, StyleSheet} from "react-native";
+import {StyleSheet, View} from "react-native";
 
 
 type Props = {
@@ -11,18 +11,18 @@ export const Form: React.FC<Props> =
     ({
          children
      }) => {
+
         return (
-            <ScrollView
-                contentContainerStyle={styles.contentContainerStyle}
-                keyboardShouldPersistTaps='handled'
+            <View
+                style={styles.container}
             >
                 {children}
-            </ScrollView>
+            </View>
         )
     }
 
 const styles = StyleSheet.create({
-    contentContainerStyle: {
-        flexGrow: 1
-    },
+    container: {
+        flex: 1
+    }
 })

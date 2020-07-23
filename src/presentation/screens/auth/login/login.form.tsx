@@ -9,6 +9,7 @@ import {FormFooter} from "components/forms/form-footer.component";
 import {Logo} from "components/ui/logo/logo.component";
 import {Link} from "components/content/link.component";
 import {StringFormatter} from "../../../../infrastructure/utilities/formatter/string.formatter";
+import {SocialLoginContainer} from "screens/auth/login/social/social-login.container";
 
 export type LoginFormProps = {
     onSubmit: () => void;
@@ -109,6 +110,10 @@ export const LoginForm: React.FC<Props> =
                     >
                         {localization.auth.submit}
                     </Button>
+                </FormFooter>
+
+                <FormFooter>
+                    <SocialLoginContainer/>
                 </FormFooter>
             </Form>
         )

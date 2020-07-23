@@ -2,7 +2,7 @@ import React from 'react';
 import {ApplicationProvider, IconRegistry} from '@ui-kitten/components';
 import {EvaIconsPack} from '@ui-kitten/eva-icons';
 import {appMappings, appThemes} from './app-theming';
-import {AppIconsPack} from './app-icons-pack';
+import {AppIconsPack} from 'resources/icons/app-icons-pack';
 import {AppearanceProvider} from "react-native-appearance";
 import { Theming } from 'application/app/theme.service';
 

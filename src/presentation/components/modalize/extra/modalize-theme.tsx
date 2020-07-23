@@ -18,7 +18,8 @@ export class ModalizeTheme {
 }
 
 const styles = StyleSheet.create({
-    modal: {},
+    modal: {
+    },
     light: {
         backgroundColor: Colors.light
     },

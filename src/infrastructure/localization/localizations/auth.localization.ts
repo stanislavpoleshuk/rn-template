@@ -16,6 +16,7 @@ export const authLocalization = {
         'resendConfirmCode': 'Отправить ещё раз',
         'resendConfirmCodeTimer': 'Отправить ещё раз через',
         'restore': 'Восстановить',
-        'edit': 'Изменить'
+        'edit': 'Изменить',
+        'orSignInWIth': 'Или через соцсети'
     },
 };

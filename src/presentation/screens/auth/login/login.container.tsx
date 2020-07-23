@@ -37,8 +37,7 @@ export const LoginContainer: React.FC<Props> =
                     onSubmit={onSubmit}
                     onForgotPress={onForgotPress}
                 />
-                <SignUpFooter
-                />
+                <SignUpFooter/>
             </ContentArea>
         )
     }
@@ -49,8 +48,9 @@ const styles = StyleSheet.create({
         alignContent: 'center',
         justifyContent: "center",
         flexDirection: "row",
+        marginBottom: 10
     },
     signUpLink: {
-        paddingLeft: 6
+        paddingLeft: 6,
     }
 })
