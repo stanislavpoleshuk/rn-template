@@ -1,4 +1,9 @@
 PODS:
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.61.5)
@@ -73,6 +78,10 @@ PODS:
     - nanopb (~> 1.30905.0)
   - GoogleDataTransport (7.0.0):
     - nanopb (~> 1.30905.0)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleUtilities/AppDelegateSwizzler (6.7.1):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -92,6 +101,14 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.7.1):
     - GoogleUtilities/Logger
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
   - nanopb (1.30905.0):
     - nanopb/decode (= 1.30905.0)
     - nanopb/encode (= 1.30905.0)
@@ -264,6 +281,8 @@ PODS:
   - React-jsinspector (0.61.5)
   - react-native-appearance (0.3.4):
     - React
+  - react-native-in-app-message (1.0.32):
+    - React
   - react-native-safari-view (1.0.0):
     - React
   - react-native-safe-area-context (3.1.1):
@@ -329,6 +348,9 @@ PODS:
     - RNFBApp
   - RNGestureHandler (1.6.1):
     - React
+  - RNGoogleSignin (4.0.3):
+    - GoogleSignIn (~> 5.0.0)
+    - React
   - RNReanimated (1.9.0):
     - React
   - RNScreens (2.9.0):
@@ -364,6 +386,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - react-native-appearance (from `../node_modules/react-native-appearance`)
+  - react-native-in-app-message (from `../node_modules/react-native-in-app-message`)
   - react-native-safari-view (from `../node_modules/react-native-safari-view`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
@@ -386,6 +409,7 @@ DEPENDENCIES:
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBMessaging (from `../node_modules/@react-native-firebase/messaging`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - "RNGoogleSignin (from `../node_modules/@react-native-community/google-signin`)"
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
@@ -393,6 +417,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AppAuth
     - boost-for-react-native
     - Firebase
     - FirebaseAnalytics
@@ -403,7 +428,10 @@ SPEC REPOS:
     - FirebaseMessaging
     - GoogleAppMeasurement
     - GoogleDataTransport
+    - GoogleSignIn
     - GoogleUtilities
+    - GTMAppAuth
+    - GTMSessionFetcher
     - nanopb
     - PromisesObjC
     - Protobuf
@@ -443,6 +471,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-appearance:
     :path: "../node_modules/react-native-appearance"
+  react-native-in-app-message:
+    :path: "../node_modules/react-native-in-app-message"
   react-native-safari-view:
     :path: "../node_modules/react-native-safari-view"
   react-native-safe-area-context:
@@ -485,6 +515,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-firebase/messaging"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNGoogleSignin:
+    :path: "../node_modules/@react-native-community/google-signin"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -495,6 +527,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   FBLazyVector: aaeaf388755e4f29cd74acbc9e3b8da6d807c37f
@@ -510,7 +543,10 @@ SPEC CHECKSUMS:
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
   GoogleAppMeasurement: 8cd1f289d60e629cf16ab03363b9e89c776b9651
   GoogleDataTransport: 8a40cb194ad242b6f6dfe72c14fe40fc67c4dcd7
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GoogleUtilities: e121a3867449ce16b0e35ddf1797ea7a389ffdf2
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
@@ -524,6 +560,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
   react-native-appearance: fc2014516054585d531e07aa0b40ab0de1d2be85
+  react-native-in-app-message: 7a54e2fd7a490e5c33857bbbb260f855205433db
   react-native-safari-view: 955d7160d159241b8e9395d12d10ea0ef863dcdd
   react-native-safe-area-context: 4c3249e4840225c61fcd215b136af0a737bccb79
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
@@ -545,6 +582,7 @@ SPEC CHECKSUMS:
   RNFBApp: 6fd8a7e757135d4168bf033a8812c241af7363a0
   RNFBMessaging: d884c58a92ce90687ae8b5a5772cf5d3d5223dfb
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
+  RNGoogleSignin: ccf71ee4b6cfd324fd788a41e457e2043838c0d9
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da
   RNSVG: 8ba35cbeb385a52fd960fd28db9d7d18b4c2974f

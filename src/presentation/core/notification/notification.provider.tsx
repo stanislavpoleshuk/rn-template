@@ -1,6 +1,7 @@
-import React, {useEffect} from "react";
-import {Alert} from "react-native";
-import messaging from '@react-native-firebase/messaging';
+import React, {useEffect, useRef} from "react";
+import {Notification, NotificationProperties} from "react-native-in-app-message";
+import {NotificationPermissions} from "core/notification/notification.permissions";
+import {NotificationListener} from "core/notification/notification.listener";
 
 type Props = {
     children?: React.ReactNode;
@@ -10,19 +11,20 @@ export const NotificationProvider: React.FC<Props> =
     ({
          children
      }) => {
-    
-        messaging().onMessage(async remoteMessage => {
-            Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
-        });
+        const ref = useRef<Notification>(null);
+        const [notification, setNotification] = React.useState<NotificationProperties>({});
 
-        messaging().setBackgroundMessageHandler(async remoteMessage => {
-            console.log('Message handled in the background!', remoteMessage);
-        });
-
+        useEffect(() => {
+            NotificationPermissions.init().then();
+            const listener = new NotificationListener(setNotification, ref?.current);
+            return listener.listen();
+        }, []);
 
         return (
-            <React.Fragment>
+            <React.Fragment
+            >
                 {children}
+                <Notification {...notification} ref={ref}/>
             </React.Fragment>
         )
     };

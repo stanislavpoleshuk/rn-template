@@ -83,6 +83,7 @@
 		A5D657105C690E676F277F79 /* Pods-VolunteersPmr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmr.debug.xcconfig"; path = "Target Support Files/Pods-VolunteersPmr/Pods-VolunteersPmr.debug.xcconfig"; sourceTree = "<group>"; };
 		C53ED6BD441D6D2C7B13C2E3 /* libPods-VolunteersPmr-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolunteersPmr-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC163A3A84904DA395769772 /* opensans-extra-bold-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-extra-bold-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-extra-bold-italic.ttf"; sourceTree = "<group>"; };
+		D028826224CA2E2700DE8952 /* VolunteersPmr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = VolunteersPmr.entitlements; path = VolunteersPmr/VolunteersPmr.entitlements; sourceTree = "<group>"; };
 		D04C4BDE24C836A4005EC421 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D867F2E7747894ADD2F24A18 /* libPods-VolunteersPmrTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolunteersPmrTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82D2A95596450CAF85CEB7 /* opensans-extra-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-extra-bold.ttf"; path = "../src/presentation/resources/fonts/opensans-extra-bold.ttf"; sourceTree = "<group>"; };
@@ -149,6 +150,7 @@
 		13B07FAE1A68108700A75B9A /* VolunteersPmr */ = {
 			isa = PBXGroup;
 			children = (
+				D028826224CA2E2700DE8952 /* VolunteersPmr.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -524,6 +526,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VolunteersPmr/Pods-VolunteersPmr-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/YandexMapKit/YandexMapKit.framework/Versions/A/Resources/YandexMapKit.bundle",
 				"${PODS_ROOT}/YandexMapKitDirections/YandexMapKitDirections.framework/Versions/A/Resources/YandexMapKitDirections.bundle",
 				"${PODS_ROOT}/YandexMapKitSearch/YandexMapKitSearch.framework/Versions/A/Resources/YandexMapKitSearch.bundle",
@@ -531,6 +534,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKitDirections.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKitSearch.bundle",
@@ -735,6 +739,7 @@
 			baseConfigurationReference = A5D657105C690E676F277F79 /* Pods-VolunteersPmr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VolunteersPmr/VolunteersPmr.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -759,6 +764,7 @@
 			baseConfigurationReference = 5E091078AF3AAB9B62DF08C0 /* Pods-VolunteersPmr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VolunteersPmr/VolunteersPmr.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
