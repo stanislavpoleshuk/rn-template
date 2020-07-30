@@ -12,7 +12,7 @@ export const SplashImage: React.FC<LoadingAnimationProps> =
      }) => {
         useEffect(() => {
             if (!loading) {
-                setTimeout(()=>SplashScreen.hide(), 1000);
+                SplashScreen.hide()
             }
         }, [loading]);
 

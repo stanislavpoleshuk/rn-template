@@ -6,12 +6,13 @@ import {AppNavigator} from "core/navigation/app.navigator";
 import {ImageResources} from "resources/images/imageResources";
 import {Host} from 'react-native-portalize';
 import MapView from "react-native-yandex-mapkit";
-import {YANDEX_MAP_KIT_KEY} from 'react-native-dotenv';
+import {YANDEX_MAP_KIT_KEY, MAPBOX_KEY} from 'react-native-dotenv';
 import {Mapping, Theme} from 'application/app/theme.service';
 import {AppStorage} from "application/app/app-storage.service";
 import {AppThemeComponent} from "./app-theme.component";
 import {StatusBar} from "components/common/status-bar.component";
 import {NotificationProvider} from "core/notification/notification.provider";
+import MapboxGL from "@react-native-mapbox-gl/maps";
 
 const loadingTasks: Task[] = [
     () => AppStorage.getMapping(defaultConfig.mapping).then(result => ['mapping', result]),
@@ -59,3 +60,5 @@ export default (): React.ReactElement => (
 );
 
 MapView.setApiKey(YANDEX_MAP_KIT_KEY);
+
+MapboxGL.setAccessToken(MAPBOX_KEY);

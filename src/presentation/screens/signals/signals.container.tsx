@@ -2,6 +2,7 @@ import React from "react";
 import {ContentArea} from "components/layouts/content-area.component";
 import {StyleSheet} from "react-native";
 import MapView from "react-native-yandex-mapkit";
+import {MapBoxContainer} from "screens/signals/map-box.container";
 
 type Props = {}
 
@@ -9,9 +10,11 @@ export const SignalsContainer = (props: Props): React.ReactElement => {
 
     return (
         <ContentArea style={styles.content}>
-            <MapView
-                style={styles.mapContainer}
-            />
+            {/*<MapView*/}
+            {/*    style={styles.mapContainer}*/}
+            {/*/>*/}
+
+            <MapBoxContainer/>
         </ContentArea>
     )
 }
