@@ -1,9 +1,7 @@
 import React from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {AppLoading, Task} from './app-loading.component';
-import {SplashImage} from "components/common/splash-image.component";
 import {AppNavigator} from "core/navigation/app.navigator";
-import {ImageResources} from "resources/images/imageResources";
 import {Host} from 'react-native-portalize';
 import MapView from "react-native-yandex-mapkit";
 import {YANDEX_MAP_KIT_KEY, MAPBOX_KEY} from 'react-native-dotenv';
@@ -43,21 +41,27 @@ const App = ({mapping, theme}): React.ReactElement => {
 };
 
 
-const Splash = ({loading}: { loading: boolean }): React.ReactElement => (
-    <SplashImage
-        loading={loading}
-        source={ImageResources.splash}
-    />
-);
+// const Splash = ({loading}: { loading: boolean }): React.ReactElement => (
+//     <SplashImage
+//         loading={loading}
+//         source={ImageResources.splash}
+//     />
+// );
 
-export default (): React.ReactElement => (
-    <AppLoading
-        tasks={loadingTasks}
-        initialConfig={defaultConfig}
-        placeholder={Splash}>
-        {props => <App {...props}/>}
-    </AppLoading>
-);
+
+export default (): React.ReactElement => {
+    return (
+        <>
+            <AppLoading
+                tasks={loadingTasks}
+                initialConfig={defaultConfig}
+            >
+                {props => <App {...props}/>}
+            </AppLoading>
+        </>
+    );
+
+}
 
 MapView.setApiKey(YANDEX_MAP_KIT_KEY);
 

@@ -122,7 +122,6 @@ export const CheckinForm: React.FC<Props> =
                         captionIcon={AlertIcon}
                         secureTextEntry={secureTextEntry}
                         onChangeText={onPasswordChange}
-                        autoCompleteType={'password'}
                     />
                 </FormField>
 
@@ -136,7 +135,6 @@ export const CheckinForm: React.FC<Props> =
                         captionIcon={AlertIcon}
                         secureTextEntry={secureTextEntry}
                         onChangeText={onPasswordConfirmChange}
-                        autoCompleteType={'password'}
                     />
                 </FormField>
 

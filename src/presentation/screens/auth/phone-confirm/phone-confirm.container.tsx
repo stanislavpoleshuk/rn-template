@@ -2,6 +2,7 @@ import {ContentArea} from "components/layouts/content-area.component";
 import {StyleSheet} from "react-native";
 import React from "react";
 import {PhoneConfirmForm, PhoneConfirmFormProps} from "./phone-confirm.form";
+import {FormArea} from "components/layouts/form-area.component";
 
 type ComponentProps = {}
 
@@ -12,12 +13,12 @@ export const PhoneConfirmContainer: React.FC<Props> =
          onSubmit, onResendCode
      }) => {
         return (
-            <ContentArea>
+            <FormArea>
                 <PhoneConfirmForm
                     onSubmit={onSubmit}
                     onResendCode={onResendCode}
                 />
-            </ContentArea>
+            </FormArea>
         )
     }
 

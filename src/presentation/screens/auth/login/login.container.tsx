@@ -5,6 +5,7 @@ import React, {useCallback} from "react";
 import {LoginForm, LoginFormProps} from "./login.form";
 import {localization} from "localization/index";
 import {Link} from "components/content/link.component";
+import {FormArea} from "components/layouts/form-area.component";
 
 type ComponentProps = {
     onSignUpPress: () => void;
@@ -32,13 +33,13 @@ export const LoginContainer: React.FC<Props> =
         }
 
         return (
-            <ContentArea>
+            <FormArea>
                 <LoginForm
                     onSubmit={onSubmit}
                     onForgotPress={onForgotPress}
                 />
                 <SignUpFooter/>
-            </ContentArea>
+            </FormArea>
         )
     }
 

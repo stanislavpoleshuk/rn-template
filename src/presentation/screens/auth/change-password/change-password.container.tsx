@@ -1,6 +1,7 @@
 import {ContentArea} from "components/layouts/content-area.component";
 import React from "react";
 import {ChangePasswordForm, ChangePasswordFormProps} from "./change-password.form";
+import {FormArea} from "components/layouts/form-area.component";
 
 type ComponentProps = {}
 
@@ -12,10 +13,10 @@ export const ChangePasswordContainer: React.FC<Props> =
      }) => {
 
         return (
-            <ContentArea>
+            <FormArea>
                 <ChangePasswordForm
                     onSubmit={onSubmit}
                 />
-            </ContentArea>
+            </FormArea>
         )
     }
