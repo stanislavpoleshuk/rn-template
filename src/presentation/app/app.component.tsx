@@ -31,22 +31,12 @@ const App = ({mapping, theme}): React.ReactElement => {
             <NotificationProvider>
                 <SafeAreaProvider>
                     <StatusBar/>
-                    <Host>
-                        <AppNavigator/>
-                    </Host>
+                    <AppNavigator/>
                 </SafeAreaProvider>
             </NotificationProvider>
         </AppThemeComponent>
     );
 };
-
-
-// const Splash = ({loading}: { loading: boolean }): React.ReactElement => (
-//     <SplashImage
-//         loading={loading}
-//         source={ImageResources.splash}
-//     />
-// );
 
 
 export default (): React.ReactElement => {

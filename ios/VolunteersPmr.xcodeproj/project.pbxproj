@@ -813,7 +813,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C9BA6B4F3BE67D1940FD4D8 /* Pods-VolunteersPmr-VolunteersPmrTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -844,7 +844,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3485E02108738D52275E56B8 /* Pods-VolunteersPmr-VolunteersPmrTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
@@ -871,7 +871,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5D657105C690E676F277F79 /* Pods-VolunteersPmr.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = VolunteersPmr/VolunteersPmr.entitlements;
@@ -903,7 +903,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E091078AF3AAB9B62DF08C0 /* Pods-VolunteersPmr.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = VolunteersPmr/VolunteersPmr.entitlements;
