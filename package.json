@@ -42,7 +42,7 @@
     "react-native-dotenv": "^0.2.0",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-in-app-message": "^1.0.32",
-    "react-native-keyboard-aware-scroll-view": "^0.9.1",
+    "react-native-keyboard-aware-scroll-view": "^0.9.2",
     "react-native-localization": "^2.1.6",
     "react-native-modalize": "^2.0.4",
     "react-native-portalize": "^1.0.3",

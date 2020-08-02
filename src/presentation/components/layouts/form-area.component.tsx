@@ -1,25 +1,26 @@
 import React from "react";
-import {ScrollView, StyleSheet, View, ViewProps} from "react-native";
+import {KeyboardAvoidingView, StyleSheet, View, ViewProps} from "react-native";
 import {StyledComponentProps} from "@ui-kitten/components";
 import {CommonStyle} from "core/theme/styles/common.styles";
-import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view'
+// import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view'
 
 
-export interface ContentAreaProps extends ViewProps, StyledComponentProps {
+export interface FormAreaProps extends ViewProps, StyledComponentProps {
     children?: React.ReactNode;
 }
 
-export class ContentArea extends React.Component<ContentAreaProps> {
+export class FormArea extends React.Component<FormAreaProps> {
 
     public render() {
         const {style, children, ...viewProps} = this.props;
         return (
-            <ScrollView
+            <KeyboardAvoidingView
                 {...viewProps}
+                // extraHeight={160}
                 contentContainerStyle={styles.contentContainer}
                 style={[styles.content, style]}>
                 {children}
-            </ScrollView>
+            </KeyboardAvoidingView>
         )
     }
 }

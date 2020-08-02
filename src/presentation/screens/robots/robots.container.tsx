@@ -30,7 +30,6 @@ export const RobotsContainer = (props: Props): React.ReactElement => {
                     ref={modalizeRef}
                 />
             </Portal>
-
         </ContentArea>
     )
 }

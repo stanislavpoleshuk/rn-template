@@ -18,6 +18,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* VolunteersPmrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VolunteersPmrTests.m */; };
+		3A52A6F4D0DA04FAAC20E015 /* libPods-VolunteersPmr-VolunteersPmrTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC06F12B7A778CF9D0ECC29 /* libPods-VolunteersPmr-VolunteersPmrTests.a */; };
 		459089494F0BF74B742556A2 /* libPods-VolunteersPmr-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C53ED6BD441D6D2C7B13C2E3 /* libPods-VolunteersPmr-tvOS.a */; };
 		62F425D752C4140AC5AC4995 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		6EE984507217552571CA073F /* libPods-VolunteersPmr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4967DECE8412253E8BBF3F65 /* libPods-VolunteersPmr.a */; };
@@ -70,6 +71,7 @@
 		2262ED755A6B4357A70341A9 /* opensans-lignt-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "opensans-lignt-italic.ttf"; path = "../src/presentation/resources/fonts/opensans-lignt-italic.ttf"; sourceTree = "<group>"; };
 		293D306E1A97D0E6A63461E7 /* Pods-VolunteersPmr-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmr-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-VolunteersPmr-tvOS/Pods-VolunteersPmr-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2C9BA6B4F3BE67D1940FD4D8 /* Pods-VolunteersPmr-VolunteersPmrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmr-VolunteersPmrTests.debug.xcconfig"; path = "Target Support Files/Pods-VolunteersPmr-VolunteersPmrTests/Pods-VolunteersPmr-VolunteersPmrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CC06F12B7A778CF9D0ECC29 /* libPods-VolunteersPmr-VolunteersPmrTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolunteersPmr-VolunteersPmrTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* VolunteersPmr-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VolunteersPmr-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* VolunteersPmr-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VolunteersPmr-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485E02108738D52275E56B8 /* Pods-VolunteersPmr-VolunteersPmrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteersPmr-VolunteersPmrTests.release.xcconfig"; path = "Target Support Files/Pods-VolunteersPmr-VolunteersPmrTests/Pods-VolunteersPmr-VolunteersPmrTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62F425D752C4140AC5AC4995 /* (null) in Frameworks */,
+				3A52A6F4D0DA04FAAC20E015 /* libPods-VolunteersPmr-VolunteersPmrTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +196,7 @@
 				4967DECE8412253E8BBF3F65 /* libPods-VolunteersPmr.a */,
 				C53ED6BD441D6D2C7B13C2E3 /* libPods-VolunteersPmr-tvOS.a */,
 				983EB0E579222D563FE3A80D /* libPods-VolunteersPmr-tvOSTests.a */,
+				2CC06F12B7A778CF9D0ECC29 /* libPods-VolunteersPmr-VolunteersPmrTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -815,6 +819,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q69PP6V889;
+				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -844,6 +849,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = Q69PP6V889;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VolunteersPmrTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -874,6 +880,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Q69PP6V889;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VolunteersPmr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -905,6 +912,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Q69PP6V889;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VolunteersPmr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1062,6 +1070,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1121,6 +1130,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
