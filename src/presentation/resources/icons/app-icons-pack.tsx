@@ -16,5 +16,7 @@ export const AppIconsPack = {
     icons: {
         'vk': IconProvider(require('./source/social/vk.png')),
         // 'vk-dark': IconProvider(require('../assets/images/icon-login-dark.png')),
+        'pick': IconProvider(require('./source/common/pick.png')),
+        'pick-dot': IconProvider(require('./source/common/pick_dot.png')),
     },
 };

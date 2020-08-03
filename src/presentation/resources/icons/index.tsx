@@ -114,3 +114,10 @@ export const GoogleIcon = (style: ImageStyle): IconElement => (
 export const VkIcon = (style: ImageStyle): IconElement => (
     <Icon {...style} pack='app' name='vk'/>
 );
+
+export const PickIcon = (style: ImageStyle): IconElement => (
+    <Icon {...style} pack='app' name='pick'/>
+);
+export const PickDotIcon = (style: ImageStyle): IconElement => (
+    <Icon {...style} pack='app' name='pick-dot'/>
+);
