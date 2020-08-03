@@ -2,7 +2,6 @@ import React from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {AppLoading, Task} from './app-loading.component';
 import {AppNavigator} from "core/navigation/app.navigator";
-import {Host} from 'react-native-portalize';
 import MapView from "react-native-yandex-mapkit";
 import {YANDEX_MAP_KIT_KEY, MAPBOX_KEY} from 'react-native-dotenv';
 import {Mapping, Theme} from 'application/app/theme.service';
