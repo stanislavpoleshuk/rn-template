@@ -8,7 +8,7 @@ import {FormField} from "components/forms/form-field.component";
 import {FormFooter} from "components/forms/form-footer.component";
 import {Logo} from "components/ui/logo/logo.component";
 import {Link} from "components/content/link.component";
-import {StringFormatter} from "../../../../infrastructure/utilities/formatter/string.formatter";
+import {StringFormatter} from "infrastructure/utilities/formatter/string.formatter";
 import {SocialLoginContainer} from "screens/auth/login/social/social-login.container";
 
 export type LoginFormProps = {

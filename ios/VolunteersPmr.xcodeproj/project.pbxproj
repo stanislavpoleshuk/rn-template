@@ -20,7 +20,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* VolunteersPmrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VolunteersPmrTests.m */; };
 		3A52A6F4D0DA04FAAC20E015 /* libPods-VolunteersPmr-VolunteersPmrTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC06F12B7A778CF9D0ECC29 /* libPods-VolunteersPmr-VolunteersPmrTests.a */; };
 		459089494F0BF74B742556A2 /* libPods-VolunteersPmr-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C53ED6BD441D6D2C7B13C2E3 /* libPods-VolunteersPmr-tvOS.a */; };
-		62F425D752C4140AC5AC4995 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		62F425D752C4140AC5AC4995 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		6EE984507217552571CA073F /* libPods-VolunteersPmr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4967DECE8412253E8BBF3F65 /* libPods-VolunteersPmr.a */; };
 		83D0D5C3C6A34963BBD2EB68 /* roboto-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5755EB044B54ACD33EF2 /* roboto-regular.ttf */; };
 		881FAFB2865AB456AFABF3E8 /* libPods-VolunteersPmr-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 983EB0E579222D563FE3A80D /* libPods-VolunteersPmr-tvOSTests.a */; };
@@ -105,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F425D752C4140AC5AC4995 /* (null) in Frameworks */,
+				62F425D752C4140AC5AC4995 /* BuildFile in Frameworks */,
 				3A52A6F4D0DA04FAAC20E015 /* libPods-VolunteersPmr-VolunteersPmrTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,20 +543,12 @@
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/MapboxMobileEvents/MapboxMobileEvents/Resources/logger.html",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-				"${PODS_ROOT}/YandexMapKit/YandexMapKit.framework/Versions/A/Resources/YandexMapKit.bundle",
-				"${PODS_ROOT}/YandexMapKitDirections/YandexMapKitDirections.framework/Versions/A/Resources/YandexMapKitDirections.bundle",
-				"${PODS_ROOT}/YandexMapKitSearch/YandexMapKitSearch.framework/Versions/A/Resources/YandexMapKitSearch.bundle",
-				"${PODS_ROOT}/YandexRuntime/YandexRuntime.framework/Versions/A/Resources/YandexRuntime.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/logger.html",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKit.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKitDirections.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKitSearch.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexRuntime.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -663,20 +655,12 @@
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/MapboxMobileEvents/MapboxMobileEvents/Resources/logger.html",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-				"${PODS_ROOT}/YandexMapKit/YandexMapKit.framework/Versions/A/Resources/YandexMapKit.bundle",
-				"${PODS_ROOT}/YandexMapKitDirections/YandexMapKitDirections.framework/Versions/A/Resources/YandexMapKitDirections.bundle",
-				"${PODS_ROOT}/YandexMapKitSearch/YandexMapKitSearch.framework/Versions/A/Resources/YandexMapKitSearch.bundle",
-				"${PODS_ROOT}/YandexRuntime/YandexRuntime.framework/Versions/A/Resources/YandexRuntime.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/logger.html",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKit.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKitDirections.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKitSearch.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexRuntime.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

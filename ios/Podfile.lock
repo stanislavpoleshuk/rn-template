@@ -361,12 +361,6 @@ PODS:
     - React
   - react-native-splash-screen (3.2.0):
     - React
-  - react-native-yandex-mapkit (1.0.0):
-    - React
-    - YandexMapKit (= 3.3)
-    - YandexMapKitDirections (= 3.3)
-    - YandexMapKitSearch (= 3.3)
-    - YandexRuntime (= 3.3)
   - React-RCTActionSheet (0.63.2):
     - React-Core/RCTActionSheetHeaders (= 0.63.2)
   - React-RCTAnimation (0.63.2):
@@ -459,15 +453,6 @@ PODS:
     - React
   - RNSVG (9.13.6):
     - React
-  - YandexMapKit (3.3.0):
-    - YandexRuntime (~> 3.3)
-  - YandexMapKitDirections (3.3.0):
-    - YandexMapKit (~> 3.3)
-    - YandexRuntime (~> 3.3)
-  - YandexMapKitSearch (3.3.0):
-    - YandexMapKit (~> 3.3)
-    - YandexRuntime (~> 3.3)
-  - YandexRuntime (3.3.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -515,7 +500,6 @@ DEPENDENCIES:
   - react-native-safari-view (from `../node_modules/react-native-safari-view`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
-  - react-native-yandex-mapkit (from `../node_modules/react-native-yandex-mapkit`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -573,10 +557,6 @@ SPEC REPOS:
     - OpenSSL-Universal
     - PromisesObjC
     - Protobuf
-    - YandexMapKit
-    - YandexMapKitDirections
-    - YandexMapKitSearch
-    - YandexRuntime
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -622,8 +602,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
-  react-native-yandex-mapkit:
-    :path: "../node_modules/react-native-yandex-mapkit"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -724,7 +702,6 @@ SPEC CHECKSUMS:
   react-native-safari-view: 955d7160d159241b8e9395d12d10ea0ef863dcdd
   react-native-safe-area-context: 4c3249e4840225c61fcd215b136af0a737bccb79
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
-  react-native-yandex-mapkit: d4069daa4dec47807e1b04163c17991038d7d4f8
   React-RCTActionSheet: 910163b6b09685a35c4ebbc52b66d1bfbbe39fc5
   React-RCTAnimation: 9a883bbe1e9d2e158d4fb53765ed64c8dc2200c6
   React-RCTBlob: 39cf0ece1927996c4466510e25d2105f67010e13
@@ -747,10 +724,6 @@ SPEC CHECKSUMS:
   RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da
   RNSound: c980916b596cc15c8dcd2f6ecd3b13c4881dbe20
   RNSVG: 8ba35cbeb385a52fd960fd28db9d7d18b4c2974f
-  YandexMapKit: 99644ba65a665b9e6985a1f6dccb8e305408a10c
-  YandexMapKitDirections: e0dd847710a7a3153f92b526c7d10bf08601dfe7
-  YandexMapKitSearch: dc48fc25d0bffc31c00357272dd65b6f96eb3fc4
-  YandexRuntime: f243159b9e273f089d6fe4c2b1b6640f04234f2e
   Yoga: 7740b94929bbacbddda59bf115b5317e9a161598
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
