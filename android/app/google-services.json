@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1046316758029",
+    "firebase_url": "https://rn-template-8a8a3.firebaseio.com",
+    "project_id": "rn-template-8a8a3",
+    "storage_bucket": "rn-template-8a8a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046316758029:android:86886242a5d181e5e8d144",
+        "android_client_info": {
+          "package_name": "com.volunteerspmr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046316758029-gh1urkogvm29ouirpcrss45q4h6t9fok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlpug0Q_Rhr9J4LEu8vlmaM8ADN0HNxuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046316758029-gh1urkogvm29ouirpcrss45q4h6t9fok.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1046316758029-30btfq2l6ack56hbon920jbqaddm5r2l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.Volunteers999"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
