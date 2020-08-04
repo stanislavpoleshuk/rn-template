@@ -2,7 +2,7 @@ import React, {useRef, useState} from "react";
 import MapboxGL from "@react-native-mapbox-gl/maps";
 import {Alert, StyleSheet, View} from "react-native";
 import MapBoxSettings from "infrastructure/settings/map-box/map-box.settings";
-import {BookIcon, PickDotIcon, PickIcon} from "resources/icons";
+import {PickDotIcon, PickIcon} from "resources/icons";
 import Animated, {Easing} from "react-native-reanimated";
 
 
@@ -10,24 +10,32 @@ type Props = {}
 export const MapBoxContainer = (props: Props): React.ReactElement => {
     const ref = useRef<MapboxGL.MapView>(null);
     const [isDrag, setDrag] = useState<boolean>(false);
-
+    const animatedValue = new Animated.Value(15);
 
     const onUserMarkerPress = () => {
         Alert.alert('You pressed on the user location annotation');
     }
 
-    const onRegionWillChange = (feature: any) => {
-        setDrag(true);
+    const animatingPick = (isDrag: boolean) => {
+        Animated.timing(animatedValue, {
+            toValue: isDrag ? 0 : 15,
+            duration: 220,
+            easing: Easing.sin
+        }).start();
+    }
 
+    const onRegionWillChange = (feature: any) => {
+        animatingPick(true);
     }
 
     const onRegionDidChange = (feature: any) => {
-        setDrag(false);
+        animatingPick(false);
     }
 
     const CenterIconMarker = () => {
         const animatedStyle = {
-            transform: [{translateY: isDrag ? 0 : 15}],
+
+            transform: [{translateY: animatedValue}],
         };
         return (
             <View style={styles.marker}>
