@@ -1,10 +1,11 @@
-import React, {useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import MapboxGL from "@react-native-mapbox-gl/maps";
 import {Alert, StyleSheet, View} from "react-native";
 import MapBoxSettings from "infrastructure/settings/map-box/map-box.settings";
 import {PickDotIcon, PickIcon} from "resources/icons";
 import Animated, {Easing} from "react-native-reanimated";
 import GeoCodingOSM, {IReverseParams} from "geocoding-osm";
+import {PermissionsRequest} from "../../../infrastructure/settings/permissions/permissions.request";
 
 GeoCodingOSM.setLanguage("ru");
 
@@ -15,6 +16,11 @@ export const MapBoxContainer = (props: Props): React.ReactElement => {
     const refCamera = useRef<MapboxGL.Camera>(null);
 
     const animatedValue = new Animated.Value(15);
+
+
+    useEffect(() => {
+        PermissionsRequest.requestLocationPermission().then();
+    }, []);
 
     const onUserMarkerPress = () => {
         Alert.alert('You pressed on the user location annotation');
@@ -74,7 +80,7 @@ export const MapBoxContainer = (props: Props): React.ReactElement => {
                 onRegionDidChange={onRegionDidChange}
                 localizeLabels={true}
                 logoEnabled={false}
-                attributionEnabled={true}
+                attributionEnabled={false}
                 compassEnabled={false}
                 styleURL={MapBoxSettings.mapStyleUrl}
                 style={styles.matchParent}

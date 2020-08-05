@@ -9,10 +9,6 @@ export const SignalsContainer = (props: Props): React.ReactElement => {
 
     return (
         <ContentArea style={styles.content}>
-            {/*<MapView*/}
-            {/*    style={styles.mapContainer}*/}
-            {/*/>*/}
-
             <MapBoxContainer/>
         </ContentArea>
     )
