@@ -29,6 +29,7 @@
     "@ui-kitten/eva-icons": "^5.0.0",
     "axios": "^0.18.0",
     "faker": "^4.1.0",
+    "geocoding-osm": "git+https://github.com/stanislavpoleshuk/geocoding-osm.git",
     "graphql": "^14.6.0",
     "graphql-tag": "^2.10.3",
     "jwt-decode": "^2.2.0",

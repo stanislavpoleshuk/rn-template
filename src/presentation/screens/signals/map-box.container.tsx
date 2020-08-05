@@ -1,15 +1,19 @@
-import React, {useRef, useState} from "react";
+import React, {useRef} from "react";
 import MapboxGL from "@react-native-mapbox-gl/maps";
 import {Alert, StyleSheet, View} from "react-native";
 import MapBoxSettings from "infrastructure/settings/map-box/map-box.settings";
 import {PickDotIcon, PickIcon} from "resources/icons";
 import Animated, {Easing} from "react-native-reanimated";
+import GeoCodingOSM, {IReverseParams} from "geocoding-osm";
 
+GeoCodingOSM.setLanguage("ru");
 
 type Props = {}
+
 export const MapBoxContainer = (props: Props): React.ReactElement => {
-    const ref = useRef<MapboxGL.MapView>(null);
-    const [isDrag, setDrag] = useState<boolean>(false);
+    const refMap = useRef<MapboxGL.MapView>(null);
+    const refCamera = useRef<MapboxGL.Camera>(null);
+
     const animatedValue = new Animated.Value(15);
 
     const onUserMarkerPress = () => {
@@ -24,17 +28,32 @@ export const MapBoxContainer = (props: Props): React.ReactElement => {
         }).start();
     }
 
+
     const onRegionWillChange = (feature: any) => {
         animatingPick(true);
     }
 
     const onRegionDidChange = (feature: any) => {
+        console.log(feature, 'feature')
         animatingPick(false);
+        searchPoint(feature.geometry.coordinates[1], feature.geometry.coordinates[0]);
+    }
+
+    const searchPoint = (lat: number, lon: number) => {
+        const reverseParams: IReverseParams = {
+            lat,
+            lon,
+            zoom: 18,
+            addressdetails: 1
+        };
+        const geoCodingOSM = new GeoCodingOSM();
+        geoCodingOSM.reverse(reverseParams).then(value => {
+            console.log('reverse: ', value);
+        })
     }
 
     const CenterIconMarker = () => {
         const animatedStyle = {
-
             transform: [{translateY: animatedValue}],
         };
         return (
@@ -50,7 +69,7 @@ export const MapBoxContainer = (props: Props): React.ReactElement => {
     return (
         <>
             <MapboxGL.MapView
-                ref={ref}
+                ref={refMap}
                 onRegionWillChange={onRegionWillChange}
                 onRegionDidChange={onRegionDidChange}
                 localizeLabels={true}
@@ -61,7 +80,8 @@ export const MapBoxContainer = (props: Props): React.ReactElement => {
                 style={styles.matchParent}
             >
                 <MapboxGL.Camera
-                    followZoomLevel={17}
+                    ref={refCamera}
+                    followZoomLevel={18}
                     followUserLocation
                 />
                 <MapboxGL.UserLocation onPress={onUserMarkerPress}/>
