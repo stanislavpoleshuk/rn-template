@@ -72,12 +72,17 @@ export const MapBoxContainer = (props: Props): React.ReactElement => {
         )
     }
 
+    const userLocation = (location: MapboxGL.Location) => {
+        console.log('location', location)
+    }
+
     return (
         <>
             <MapboxGL.MapView
                 ref={refMap}
                 onRegionWillChange={onRegionWillChange}
                 onRegionDidChange={onRegionDidChange}
+                regionDidChangeDebounceTime={300}
                 localizeLabels={true}
                 logoEnabled={false}
                 attributionEnabled={false}
@@ -87,10 +92,11 @@ export const MapBoxContainer = (props: Props): React.ReactElement => {
             >
                 <MapboxGL.Camera
                     ref={refCamera}
-                    followZoomLevel={18}
-                    followUserLocation
+                    centerCoordinate={[29.596805000000003, 46.848184999999994]}
+                    zoomLevel={17}
+                    minZoomLevel={10}
                 />
-                <MapboxGL.UserLocation onPress={onUserMarkerPress}/>
+                <MapboxGL.UserLocation onUpdate={userLocation} minDisplacement={500} onPress={onUserMarkerPress}/>
             </MapboxGL.MapView>
             <CenterIconMarker/>
         </>
@@ -109,9 +115,12 @@ const styles = StyleSheet.create({
         marginTop: -74,
         marginLeft: -32,
         left: '50%',
-        top: '50%'
+        top: '50%',
+        width: 64,
+        height: 64
     },
     pickIcon: {
         zIndex: 2,
+        right: -0.35
     }
 });
