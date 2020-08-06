@@ -5,19 +5,18 @@ import {
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {HomeBottomNavigation} from "screens/home/home-bottom-navigation.component";
 import {HomeDrawer} from "screens/home/home-drawer.component";
-import {createStackNavigator, TransitionPresets} from "@react-navigation/stack";
 import {RobotsScreen} from "screens/robots/robots.screen";
 import {SignalsScreen} from "screens/signals/signals.screen";
 import {NotificationsScreen} from "screens/notifications/notifications.screen";
 import {ProfileScreen} from "screens/profile/profile.screen";
 import {AuthNavigator} from "core/navigation/routes/auth.navigator";
-import {Platform} from "react-native";
+import {createNativeStackNavigator} from "react-native-screens/native-stack";
+import {BaseNavigationConfig} from "core/navigation/config/base-navigation.config";
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
-const MainStack = createStackNavigator();
-const RootStack = createStackNavigator();
-
+const MainStack = createNativeStackNavigator();
+const RootStack = createNativeStackNavigator();
 
 const initialTabRoute: string = 'Home';
 
@@ -42,23 +41,18 @@ export const HomeDrawerNavigator = (): React.ReactElement => (
 
 const MainStackScreen = (): React.ReactElement => {
     return (
-        <MainStack.Navigator headerMode={'none'}>
+        <MainStack.Navigator screenOptions={BaseNavigationConfig.hideHeader}>
             <MainStack.Screen name="Home" component={HomeDrawerNavigator}/>
         </MainStack.Navigator>
     );
 }
 
-const modalOptions = {
-    ...(Platform.OS === 'ios' && {
-        ...TransitionPresets.ModalPresentationIOS,
-        gestureEnabled: true,
-        cardOverlayEnabled: true,
-    })
-}
 
 export const HomeNavigator = (): React.ReactElement => {
     return (
-        <RootStack.Navigator headerMode={'none'} mode="modal" screenOptions={modalOptions}>
+        <RootStack.Navigator screenOptions={{
+            stackPresentation: "modal"
+        }}>
             <RootStack.Screen
                 name="Main"
                 component={MainStackScreen}
