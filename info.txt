@@ -1,61 +1,21 @@
+Exception thrown while executing UI block: End users must be able to opt out of Mapbox Telemetry in your app, either inside Settings (via Settings.bundle) or inside this app. By default, this opt-out control is included as a menu item in the attribution action sheet. If you reimplement the opt-out control inside this app, disable this assertion by setting MGLMapboxMetricsEnabledSettingShownInApp to YES in Info.plist.
 
- 1. Clear watchman watches: watchman watch-del-all
- 2. Delete node_modules: rm -rf node_modules and run yarn install
- 3. Reset Metro's cache: yarn start --reset-cache
- 4. Remove the cache: rm -rf /tmp/metro-*
+See https://docs.mapbox.com/help/how-mapbox-works/attribution/#mapbox-maps-sdk-for-ios for more information.
 
+Additionally, by hiding this attribution control you agree to display the required attribution elsewhere in this app.
 
-Invariant Violation: Objects are not valid as a React child (found: object with keys {$$typeof, render, displayName, style, insets, children}). If you meant to render a collection of children, use an array instead.
-    in Unknown (at login.modal.tsx:45)
-    in RobotsScreen (at app.component.tsx:48)
-    in RCTView
-    in Unknown (at app.component.tsx:46)
-    in RNCSafeAreaProvider (at SafeAreaContext.tsx:74)
-    in SafeAreaProvider (at app.component.tsx:44)
-    in RCTView (created by ModalPanel)
-    in ModalPanel (created by ApplicationProvider)
-    in ThemeProvider (created by StyleProvider)
-    in MappingProvider (created by StyleProvider)
-    in StyleProvider (created by ApplicationProvider)
-    in ApplicationProvider (at app.component.tsx:41)
-    in RNCAppearanceProvider (at src/index.tsx:70)
-    in AppearanceProvider (at app.component.tsx:40)
-    in App (at app.component.tsx:72)
-    in AppLoading (at app.component.tsx:68)
-    in _default (at gestureHandlerRootHOC.js:13)
-    in RCTView (at gestureHandlerRootHOC.js:12)
-    in gestureHandlerRootHOC(_default) (at renderApplication.js:40)
-    in RCTView (at AppContainer.js:101)
-    in RCTView (at AppContainer.js:119)
-    in AppContainer (at renderApplication.js:39)
-
-This error is located at:
-    in Unknown (at login.modal.tsx:45)
-    in RobotsScreen (at app.component.tsx:48)
-    in RCTView
-    in Unknown (at app.component.tsx:46)
-    in RNCSafeAreaProvider (at SafeAreaContext.tsx:74)
-    in SafeAreaProvider (at app.component.tsx:44)
-    in RCTView (created by ModalPanel)
-    in ModalPanel (created by ApplicationProvider)
-    in ThemeProvider (created by StyleProvider)
-    in MappingProvider (created by StyleProvider)
-    in StyleProvider (created by ApplicationProvider)
-    in ApplicationProvider (at app.component.tsx:41)
-    in RNCAppearanceProvider (at src/index.tsx:70)
-    in AppearanceProvider (at app.component.tsx:40)
-    in App (at app.component.tsx:72)
-    in AppLoading (at app.component.tsx:68)
-    in _default (at gestureHandlerRootHOC.js:13)
-    in RCTView (at gestureHandlerRootHOC.js:12)
-    in gestureHandlerRootHOC(_default) (at renderApplication.js:40)
-    in RCTView (at AppContainer.js:101)
-    in RCTView (at AppContainer.js:119)
-    in AppContainer (at renderApplication.js:39)
-
-renderRoot
-    [native code]:0
-runRootCallback
-    [native code]:0
-callFunctionReturnFlushedQueue
-    [native code]:0
+__44-[RCTUIManager flushUIBlocksWithCompletion:]_block_invoke
+    RCTUIManager.m:1192
+__44-[RCTUIManager flushUIBlocksWithCompletion:]_block_invoke.489
+__RCTExecuteOnMainQueue_block_invoke
+_dispatch_call_block_and_release
+_dispatch_client_callout
+_dispatch_main_queue_callback_4CF
+__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+__CFRunLoopRun
+CFRunLoopRunSpecific
+GSEventRunModal
+UIApplicationMain
+main
+start
+0x0
