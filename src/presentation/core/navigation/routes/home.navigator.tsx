@@ -11,6 +11,7 @@ import {SignalsScreen} from "screens/signals/signals.screen";
 import {NotificationsScreen} from "screens/notifications/notifications.screen";
 import {ProfileScreen} from "screens/profile/profile.screen";
 import {AuthNavigator} from "core/navigation/routes/auth.navigator";
+import {Platform} from "react-native";
 
 const BottomTab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -48,9 +49,11 @@ const MainStackScreen = (): React.ReactElement => {
 }
 
 const modalOptions = {
-    ...TransitionPresets.ModalPresentationIOS,
-    gestureEnabled: true,
-    cardOverlayEnabled: true,
+    ...(Platform.OS === 'ios' && {
+        ...TransitionPresets.ModalPresentationIOS,
+        gestureEnabled: true,
+        cardOverlayEnabled: true,
+    })
 }
 
 export const HomeNavigator = (): React.ReactElement => {

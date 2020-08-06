@@ -1,4 +1,3 @@
-import {ContentArea} from "components/layouts/content-area.component";
 import React from "react";
 import {CheckinForm, CheckinFormProps} from "./checkin.form";
 import {FormArea} from "components/layouts/form-area.component";

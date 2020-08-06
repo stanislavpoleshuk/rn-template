@@ -1,5 +1,5 @@
 import React from "react";
-import {KeyboardAvoidingView, StyleSheet, View, ViewProps} from "react-native";
+import {StyleSheet, ViewProps} from "react-native";
 import {StyledComponentProps} from "@ui-kitten/components";
 import {CommonStyle} from "core/theme/styles/common.styles";
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view'
