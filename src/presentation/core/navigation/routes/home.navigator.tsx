@@ -51,6 +51,7 @@ const MainStackScreen = (): React.ReactElement => {
 export const HomeNavigator = (): React.ReactElement => {
     return (
         <RootStack.Navigator screenOptions={{
+            headerShown: false,
             stackPresentation: "modal"
         }}>
             <RootStack.Screen
