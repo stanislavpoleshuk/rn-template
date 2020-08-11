@@ -1,6 +1,5 @@
 import React from "react";
 import {SafeAreaLayout} from "components/layouts/safe-area-layout.component";
-import {TopNavigationAction} from "@ui-kitten/components";
 import {HeaderNavigation} from "core/navigation/components/header-navigation.component";
 import {StyleSheet} from "react-native";
 import {CommonStyle} from "core/theme/styles/common.styles";

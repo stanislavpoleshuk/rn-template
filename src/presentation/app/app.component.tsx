@@ -9,6 +9,7 @@ import {AppThemeComponent} from "./app-theme.component";
 import {StatusBar} from "components/common/status-bar.component";
 import {NotificationProvider} from "core/notification/notification.provider";
 import MapboxGL from "@react-native-mapbox-gl/maps";
+import {StoreProvider} from "core/provider/store.provider";
 
 const loadingTasks: Task[] = [
     () => AppStorage.getMapping(defaultConfig.mapping).then(result => ['mapping', result]),
@@ -26,12 +27,14 @@ const App = ({mapping, theme}): React.ReactElement => {
             mapping={mapping}
             theme={theme}
         >
-            <NotificationProvider>
-                <SafeAreaProvider>
-                    <StatusBar/>
-                    <AppNavigator/>
-                </SafeAreaProvider>
-            </NotificationProvider>
+            <StoreProvider>
+                <NotificationProvider>
+                    <SafeAreaProvider>
+                        <StatusBar/>
+                        <AppNavigator/>
+                    </SafeAreaProvider>
+                </NotificationProvider>
+            </StoreProvider>
         </AppThemeComponent>
     );
 };
