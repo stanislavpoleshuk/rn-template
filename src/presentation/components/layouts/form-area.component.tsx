@@ -2,7 +2,7 @@ import React from "react";
 import {StyleSheet, ViewProps} from "react-native";
 import {StyledComponentProps} from "@ui-kitten/components";
 import {CommonStyle} from "core/theme/styles/common.styles";
-import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view'
+import { KeyboardAwareScrollView } from '@codler/react-native-keyboard-aware-scroll-view'
 
 
 export interface FormAreaProps extends ViewProps, StyledComponentProps {

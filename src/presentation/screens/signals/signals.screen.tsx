@@ -18,7 +18,6 @@ export const SignalsScreen = (props): React.ReactElement => {
         />
     );
 
-
     return (
         <SafeAreaLayout
             insets={'top'}
